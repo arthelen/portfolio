@@ -529,6 +529,14 @@ body {
   width: clamp(50px, 70vw, 700px);
 }
 
+.design-section p {
+  padding-bottom: 30px;
+}
+
+.design-cd-blurb p {
+  color: #B46D54;
+}
+
 /* colors */
 #double-exposure-one {
   background-color: #b18481;
@@ -817,19 +825,7 @@ a, a:hover {
     position: relative;
     background-color: #fbf5f1;
     color: #977053;
-    
-    /* color: #ffffff; */
-
-	/* &.dark {
-		background-color: #18151f;
-	} */
-	/* &.light {
-		background-color: #e1e5ea;
-        color: #977053;
-	} */
-	/* .t-dark {
-		color: #977053;
-	} */
+  
 a {
     color: inherit;
 }
