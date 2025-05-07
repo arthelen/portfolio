@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allison's Portfolio</title>
+    <link rel="icon" href="browser-heart.png">
+    <!-- bootstrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- bootstrap icon cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- devicon icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- add  javascript files or scripts here -->
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="30">
+
+    <!-- <header>
+        <h1>Welcome to My Website</h1>
+    </header> -->
+    <!-- navigation section -->
+    <!-- NEED TO GET SCROLLSPY WORKING BETTER -->
+    <nav class="navbar navbar-custom navbar-expand-lg text-center fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand custom-toggler" href="#"><i class="bi bi-postcard-heart-fill"></i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#intro-section">intro</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#skill-section">skills</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#project-section">projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#design-section">designs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#music-section">songs</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#about-section">contact</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <main>
+      <!-- intro section -->
+      <section class="intro-section">
+        <div class="intro-content">
+            <h1 class="intro-title">> <span id="typed-name"></span></h1>
+        </div>
+        <div class="intro-flex">
+          <div class="headshot-resume-container">
+          <img src="allison-pfp.jpeg" class="img-fluid headshot" alt="Headshot of Allison Thelen">
+
+            <div class="resume-links">
+              <a href="pretty-resume.pdf" target="_blank" class="resume pretty" id="prettyResume">
+                <span class="sparkle sparkle-1">✦</span>
+                <span class="sparkle sparkle-2">✦</span>
+                <i class="bi bi-postage-heart-fill"></i><br>
+                pretty resume
+              </a>
+              <a href="regular-resume.pdf" target="_blank" class="resume regular"><i class="bi bi-postage-heart"></i><br>regular resume</a>
+            </div>
+          </div>
+          
+          <div class="console-window" id="intro-section">
+            <div class="console-header">
+              <span class="circle console-red"></span>
+              <span class="circle console-yellow"></span>
+              <span class="circle console-green"></span>
+            </div>
+            
+            <div class="console-body">
+              <pre>
+              &gt; <span class="intro-code-title">allison.about</span>
+              ["I’m a web developer and UI/UX designer passionate about building friendly, beautiful user experiences. Take a peek at my <a href="#projects">projects</a> below!]"
+              
+              &gt; <span class="intro-code-title">allison.location</span>
+              ["Tampa, FL"]
+
+              &gt; <span class="intro-code-title">allison.skills</span>
+              ["HTML, CSS, JavaScript, Bootstrap, Java"]
+
+              &gt; <span class="intro-code-title">allison.programs</span>
+              ["VSCode, Notepad++, ChatGPT, Zoom, Adobe Suite, Google Workplace, Canva, Notion"]
+
+              &gt; <span class="intro-code-title">allison.projects</span>
+              ["Card Match Game, Hydro Hero Game, Mad Libs, more"]
+
+              &gt; <span class="intro-code-title">allison.interests</span>
+              ["Music, Gaming, Reading, Dancing"]
+              
+              &gt; <span class="intro-code-title">allison.contact</span>
+              ["<a href="https://www.linkedin.com/in/allisonrthelen/" target="_blank">LinkedIn</a>", "<a href="https://github.com/arthelen" target="_blank">GitHub</a>", "<a href="mailto:allisonrthelen@gmail.com" target="_blank">allisonrthelen@gmail.com</a>"]
+
+              <span class="intro-code-title">elevating experiences, one pixel at a time!</span>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <!-- about me section -->
+        <!-- <section id="about-section" class="about-section text-center">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <img src="allison-pfp.jpeg" class="img-fluid headshot" alt="Headshot of Allison Thelen">
+              </div>
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <div class="container"><h1 id="typed-name" class="typing"></h1>
+                      <p><span class="motto"><b><i>elevating experiences, one pixel at a time!</i></b></p></span>
+                      <p class="card-text">I am a motivated entry-level web developer + UI/UX designer seeking a full-time position! I leverage my education and 
+                      skills with my passion for design elements to collaborate and create enjoyable experiences for everyone. With every 
+                      project I bring a keen eye for detail and appreciation for aesthetics, solving problems and transforming them into 
+                      functional, appealing designs. I am confident that my academic background alongside my work experience has prepared me for such a role, but I am willing and
+                      open to learning along the way!<br><br></p>
+                      <div class="resume-links">
+                        <a href="pretty-resume.pdf" target="_blank" class="resume pretty" id="prettyResume">
+                          <span class="sparkle sparkle-1">✦</span>
+                          <span class="sparkle sparkle-2">✦</span>
+                          <i class="bi bi-postage-heart-fill"></i><br>
+                          pretty resume
+                        </a>
+                        <a href="regular-resume.pdf" target="_blank" class="resume regular"><i class="bi bi-postage-heart"></i><br>regular resume</a>
+                      </div>                      
+                    <div class="card-footer bg-transparent">
+                      <a href="https://www.linkedin.com/in/allisonrthelen/" target="new"><i id="contact-icon" class="bi bi-linkedin fa-7x"></i></a>
+                      <a href="mailto:allisonrthelen@gmail.com" target="new"><i id="contact-icon" class="bi bi-envelope-at-fill"></i></a>
+                      <a href="https://github.com/arthelen" target="new"><i id="contact-icon" class="bi bi-github"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section> -->
+
+        <!-- skill section -->
+        <!-- <section id="skill-section" class="skill-section text-center">
+          <div class="card mb-3">
+            <h1 class="card-title">skills</h1>
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-6 col-xl-3 skill-icon">
+                  <img src="html-pink.png" alt="Pink HTML icon"/>
+                  <p>html</p>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 skill-icon">
+                  <img src="css-pink.png" alt="Pink CSS icon"/>
+                  <p>css</p>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 skill-icon">
+                  <img src="bootstrap-pink.png" alt="Pink Bootstrap icon"/>
+                  <p>bootstrap</p>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 skill-icon">
+                  <img src="javascript-pink.png" alt="Pink JavaScript icon"/>
+                  <p>javascript</p>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 skill-icon">
+                  <img src="canva-pink.png" alt="Pink Canva icon"/>
+                  <p>canva</p>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 skill-icon">
+                  <img src="notion-pink.png" alt="Pink notion icon"/>
+                  <p>notion</p>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 skill-icon">
+                  <img src="vscode-pink.png" alt="Pink VSCode Icon"/>
+                  <p>vscode</p>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 skill-icon">
+                  <img src="zoom-pink.png" alt="Pink Zoom icon"/>
+                  <p>zoom</p>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 skill-icon">
+                  <img src="" alt="placeholder img" alt="Pink ??? icon"/>
+                  <p>ai</p>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 skill-icon">
+                  <img src="" alt="placeholder img" alt="Pink ??? icon"/>
+                  <p>google workspace</p>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 skill-icon">
+                  <img src="" alt="placeholder img"/>
+                  <p>adobe suite</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+        
+        <!-- project section -->
+      <section id="project-section" class="project-section text-center">
+        <div class="card mb-3">
+            <div class="card-body">
+              <div class="container">
+                <h1 class="card-title">projects</h1>
+                <!-- <h3><i>HTML + CSS + JavaScript</i></h3> -->
+                <div class="row">
+                    <!-- card matching game project -->
+                    <div class="col-12 col-md-6 col-xl-4">
+                      <br>
+                      <!-- <a href="card-game-ss.png" target="_blank"> -->
+                        <img src="card-game-ss.png" alt="Card game project preview" class="screenshot">
+                      <!-- </a> -->
+                      <br><br>
+                      <h4>card matching game</h4>
+                      <br>
+                      <p class="type-blurb"><strong>HTML, CSS, JavaScript</strong></p>
+                      <p>Play a card game in which a player must correctly match all 6 pairs of cards to win, but ideally do so in as little flips as possible. This game is enhanced with counters for players to keep track of progress, a colorful theme, cute images, and immersive sound effects for optimal user experience.</p>
+                      <p class="cd-blurb">
+                        <a href="https://github.com/arthelen/card-match-game" target="_blank" id="project-link">code&nbsp;</a>
+                        |
+                        <a href="https://arthelen.github.io/card-match-game/" target="new" id="project-link">&nbsp;demo</a>
+                      </p>
+                      <img src="spade.png" alt="Pink and brown spade icon" class="project-icon">
+                    </div>
+                    <!-- hydro hero project -->
+                    <div class="col-12 col-md-6 col-xl-4">
+                      <br>
+                      <!-- <a href="card-game-ss.png" target="_blank"> -->
+                        <img src="hydro-hero-ss.png" alt="Hydro Hero game project preview" class="screenshot">
+                      <!-- </a> -->
+                      <br><br>
+                      <h4>hydro hero game</h4>
+                      <br>
+                      <p class="type-blurb"><strong>HTML, CSS, JavaScript, AI</strong></p>
+                      <p>Play a Flappy Bird inspired game for the non-profit charity: water where a player must dodge obstacles to reach the end and deliver water. This game was made with the organization's branding and mission in mind to help reach and engage younger people to donate and get involved.</p>
+                      <p class="cd-blurb">
+                        <a href="https://github.com/arthelen/05-cw-game-hydro-hero" target="_blank" id="project-link">code&nbsp;</a>
+                        |
+                        <a href="https://arthelen.github.io/05-cw-game-hydro-hero/" target="new" id="project-link">&nbsp;demo</a>
+                      </p>
+                      <img src="droplet.png" alt="Pink and brown water droplet icon" class="project-icon">
+                    </div>
+                    <!-- nasa apod project -->
+                    <div class="col-12 col-md-6 col-xl-4">
+                      <br>
+                        <img src="nasa-apod-ss.png" alt="NASA APOD API project preview" class="screenshot">
+                      <br><br>
+                      <h4>nasa apod api</h4>
+                      <br>
+                      <p class="type-blurb"><strong>HTML, CSS, JavaScript, AI</strong></p>
+                      <p>????</p>
+                      <p class="cd-blurb">
+                        <a href="https://github.com/arthelen/nasa-apod-api" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
+                        
+                        <a href="https://arthelen.github.io/nasa-apod-api/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
+                      </p>
+                      <img src="planet.png" alt="Pink planet with brown ring" class="project-icon">
+                    </div>
+                    <!-- mad libs project -->
+                    <div class="col-12 col-md-6 col-xl-4">
+                      <br>
+                      <!-- <a href="madlibs-ss.png" target="_blank"> -->
+                        <img src="madlibs-ss.png" alt="Mad Libs project preview" class="screenshot">
+                      <!-- </a> -->
+                      <br><br>
+                      <h4>mad libs</h4>
+                      <br>
+                      <p class="type-blurb"><strong>HTML, CSS, JavaScript</strong></p>
+                      <p>Housing a bright and fun color palette, individuals can immerse themselves in the classic word game Mad Libs, but online! Users fill in a variety of fields as they typically would in the physical game, such as adjectives and nouns, and are then greeted with an unconventional yet humorous resulting prompt.</p>
+                      <p class="cd-blurb">
+                        <a href="https://github.com/arthelen/madlibs-madness" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
+                        
+                        <a href="https://arthelen.github.io/madlibs-madness/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
+                      </p>
+                      <!-- <img src="laughing-face.png" alt="Brown and pink laughing emoji icon" class="project-icon"> -->
+                    </div>
+                    <!-- words of encouragement project -->
+                    <div class="col-12 col-md-6 col-xl-4">
+                      <br>
+                      <!-- <a href="woe-ss.png" target="_blank"> -->
+                        <img src="woe-ss.png" alt="Words of Encouragement project preview" class="screenshot">
+                      <!-- </a> -->
+                      <br><br>
+                      <h4>words of encouragement</h4>
+                      <br>
+                      <p class="type-blurb"><strong>HTML, CSS, JavaScript</strong></p>
+                      <p>Need a few uplifting words today? Try out this text-to-speech website that allows people to fill in various fields, such as their name and what they would like to hear, and have it repeated back to them. Featuring a volume adjuster for the TTS aspect, this program can provide exactly what someone wants to hear!</p>
+                      <p class="cd-blurb">
+                        <a href="https://github.com/arthelen/words-of-encouragement" target="_blank" id="project-link">code&nbsp;</a>
+                        |
+                        <a href="https://arthelen.github.io/words-of-encouragement/" target="new" id="project-link">&nbsp;demo</a>
+                      </p>
+                      <img src="message-bubbles.png" alt="Pink and brown message bubble icon" class="project-icon">
+                    </div>
+                    <!-- airbnb website project -->
+                    <div class="col-12 col-md-6 col-xl-4">
+                      <br>
+                      <!-- <a href="airbnb-ss.png" target="_blank"> -->
+                        <img src="airbnb-ss.png" alt="Airbnb project preview" class="screenshot">
+                      <!-- </a> -->
+                      <br><br>
+                      <h4>airbnb website</h4>
+                      <br>
+                      <p class="type-blurb"><strong>HTML, CSS, JavaScript</strong></p>
+                      <p>Similar to the well-known renting and hosting site Airbnb, this website offers varying (fictitious) listings for people in the San Diego, California area. Visitors are able to search by location and further adjust their findings using provided filters, such as type of place and price range, with results disappearing/appearing as applicable.</p>
+                      <p class="cd-blurb">
+                        <a href="https://github.com/arthelen/airbnb" target="_blank" id="project-link">code&nbsp;</a>
+                        |
+                        <a href="https://arthelen.github.io/airbnb/" target="new" id="project-link">&nbsp;demo</a>
+                      </p>
+                      <img src="home.png" alt="Brown and pink home with a heart inside icon" class="project-icon">
+                    </div>
+                    <!-- carpet calculator project -->
+                    <!-- <center> -->
+                      <div class="col-12 col-md-6 col-xl-4">
+                        <br>
+                        <!-- <a href="carpet-calculator-ss.png" target="_blank"> -->
+                          <img src="carpet-calculator-ss.png" alt="Screenshot of the carpet calculator project" class="screenshot">
+                        <!-- </a> -->
+                        <br><br>
+                        <h4>carpet calculator</h4>
+                        <br>
+                        <p class="type-blurb"><strong>HTML, CSS, JavaScript</strong></p>
+                        <p>Reminiscent of a service website, this was created for a (fictitious) carpet company and features a handy calculator. Using this, potential customers can input the type of room they are looking to have carpet installed in along with the room's width and length. They then conveniently get the total amount of square footage of carpet they need without having to go to a third party or calculate it themselves!</p>
+                        <p class="cd-blurb">
+                          <a href="https://github.com/arthelen/cowboy-robs-carpet-calculator" target="_blank" id="project-link">code&nbsp;</a>
+                          |
+                          <a href="https://arthelen.github.io/cowboy-robs-carpet-calculator/" target="new" id="project-link">&nbsp;demo</a>
+                        </p>
+                        <img src="calculator.png" alt="Brown and pink calculator icon" class="project-icon">
+                      </div>
+                      <!-- magic 8 ball project -->
+                      <div class="col-12 col-md-6 col-xl-4">
+                        <br>
+                        <!-- <a href="8ball-ss.png" target="_blank"> -->
+                          <img src="8ball-ss.png" alt="Magic 8 Ball project preview" class="screenshot">
+                        <!-- </a> -->
+                        <br><br>
+                        <h4>magic 8 ball</h4>
+                        <br>
+                        <p class="type-blurb"><strong>HTML, CSS, JavaScript</strong></p>
+                        <p>...</p>
+                        <p class="cd-blurb">
+                          <a href="https://github.com/arthelen/magic-8-ball" target="_blank" id="project-link">code&nbsp;</a>
+                          |
+                          <a href="https://arthelen.github.io/magic-8-ball/" target="new" id="project-link">&nbsp;demo</a>
+                        </p>
+                        <img src="8ball.png" alt="8 ball project preview" class="project-icon">
+                      </div>
+                      <!-- portfolio page project -->
+                      <!-- <div class="col-12 col-md-6 col-xl-4">
+                        <br>
+                          <img src="portfolio-page-ss.png" alt="Portfolio project preview" class="screenshot">
+                        <br><br>
+                        <h4>portfolio page</h4>
+                        <br>
+                        <p class="type-blurb"><strong>HTML, CSS, Bootstrap</strong></p>
+                        <p>...</p>
+                        <p class="cd-blurb">
+                          <a href="https://github.com/arthelen/bio-page-functional" target="_blank" id="project-link">code&nbsp;</a>
+                          |
+                          <a href="https://arthelen.github.io/bio-page-functional/" target="new" id="project-link">&nbsp;demo</a>
+                        </p>
+                        <img src="portfolio.png" alt="Brown and pink outline of a briefcase icon" class="project-icon">
+                      </div> -->
+                      <!-- bio page project -->
+                      <div class="col-12 col-md-6 col-xl-4">
+                        <br>
+                        <!-- <a href="bio-page-ss.png" target="_blank"> -->
+                          <img src="bio-page-ss.png" alt="Bio page project preview" class="screenshot">
+                        <!-- </a> -->
+                        <br><br>
+                        <h4>bio page</h4>
+                        <br>
+                        <p class="type-blurb"><strong>HTML, CSS, Bootstrap</strong></p>
+                        <p>...</p>
+                        <p class="cd-blurb">
+                          <a href="https://github.com/arthelen/bio-page" target="_blank" id="project-link">code&nbsp;</a>
+                          |
+                          <a href="https://arthelen.github.io/bio-page/" target="new" id="project-link">&nbsp;demo</a>
+                        </p>
+                        <img src="bio.png" alt="Brown and pink outline of a person" class="project-icon">
+                      </div>
+                      <!-- fran's flowers project -->
+                      <div class="col-12 col-md-6 col-xl-4">
+                        <br>
+                        <!-- <a href="frans-flowers-ss.png" target="_blank"> -->
+                          <img src="frans-flowers-ss.png" alt="Fran's Flowers website project preview" class="screenshot">
+                        <!-- </a> -->
+                        <br><br>
+                        <h4>fran's flowers</h4>
+                        <br>
+                        <p class="type-blurb"><strong>HTML, CSS</strong></p>
+                        <p>...</p>
+                        <p class="cd-blurb">
+                          <a href="https://github.com/arthelen/frans-flowers" target="_blank" id="project-link">code&nbsp;</a>
+                          |
+                          <a href="https://arthelen.github.io/frans-flowers/" target="new" id="project-link">&nbsp;demo</a>
+                        </p>
+                        <img src="flower.png" alt="Brown and pink flower icon" class="project-icon">
+                      </div>
+                      <!-- eco steamers project -->
+                      <!-- <div class="col-12 col-md-6 col-xl-4">
+                        <br>
+                          <img src="eco-friendly-steamers-ss.png" alt="Eco-Friendly Steamers website project preview" class="screenshot">
+                        <br><br>
+                        <h4>eco-friendly steamers</h4>
+                        <br>
+                        <p class="type-blurb"><strong>HTML, CSS</strong></p>
+                        <p>...</p>
+                        <p class="cd-blurb">
+                          <a href="https://github.com/arthelen/eco-friendly-steamers" target="_blank" id="project-link">code&nbsp;</a>
+                          |
+                          <a href="https://arthelen.github.io/eco-friendly-steamers/" target="new" id="project-link">&nbsp;demo</a>
+                        </p>
+                        <img src="leaves.png" alt="Brown and pink leaves icon" class="project-icon">
+                      </div> -->
+                      <!-- intel projects, charity water, pet registration site -->
+                    <!-- </center> -->
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- design section -->
+    <section id="design-section" class="design-section light">
+      <div class="card mb-3">
+        <h1 class="card-title">designs</h1>
+        <div class="">
+          <div class="container py-2">
+            <article class="postcard light blue">
+              <a class="postcard__img_link" href="double-exposure.jpg" target="new">
+                <img class="postcard__img" src="double-exposure.jpg" alt="????" />
+              </a>
+              <div class="postcard__text t-dark">
+                <h1 class="postcard__title blue">double exposure edit</h1>
+                <div class="postcard__subtitle small">
+                  <!-- <time datetime="2020-05-25 12:00:00">
+                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                  </time> -->
+                </div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">An edit for one of my previous classes that consisted of a double exposure. Double exposure refers to combining two exposures into one to create a captivating image. For my creation, I used a picture of Felix from a music group called Stray Kids and some flowers.</div>
+                <ul class="postcard__tagbox">
+                  <li class="tag__item" id="double-exposure-one"><i class="fas fa-tag mr-2"></i>b18481</li>
+                  <li class="tag__item" id="double-exposure-two"><i class="fas fa-tag mr-2"></i>262024</li>
+                  <li class="tag__item" id="double-exposure-three"><i class="fas fa-tag mr-2"></i>48403d</li>
+                  <li class="tag__item" id="double-exposure-four"><i class="fas fa-tag mr-2"></i>ccc5cd</li>
+                  <li class="tag__item" id="double-exposure-five"><i class="fas fa-tag mr-2"></i>84575e</li>
+                </ul>
+                <ul class="postcard__tagbox__tools">
+                  <li class="tag__item" id="tools-two"><i class="fas fa-tag mr-2"></i>adobe photoshop</li>
+                </ul>
+              </div>
+            </article>
+            <article class="postcard light red">
+              <a class="postcard__img_link" href="vinyl.png" target="new">
+                <img class="postcard__img" src="vinyl.png" alt="????" />	
+              </a>
+              <div class="postcard__text t-dark">
+                <h1 class="postcard__title red">vinyl design</h1>
+                <div class="postcard__subtitle small">
+                  <!-- <time datetime="2020-05-25 12:00:00">
+                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                  </time> -->
+                </div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">For this assignment, we were tasked with creating both a front and back design for a vinyl. I used the music group Stray Kids and tied in one of their albums with my own twist on it. I further highlighted their silhouettes on the back of the vinyl along with some of my favorite tracks of theirs.</div>
+                <ul class="postcard__tagbox">
+                  <li class="tag__item" id="vinyl-one"><i class="fas fa-tag mr-2"></i>0f0f0f</li>
+                  <li class="tag__item" id="vinyl-two"><i class="fas fa-tag mr-2"></i>fcec8f</li>
+                  <li class="tag__item" id="vinyl-three"><i class="fas fa-tag mr-2"></i>a49142</li>
+                  <li class="tag__item" id="vinyl-four"><i class="fas fa-tag mr-2"></i>201f1b</li>
+                  <li class="tag__item" id="vinyl-five"><i class="fas fa-tag mr-2"></i>dadada</li>
+                </ul>
+                <ul class="postcard__tagbox__tools">
+                  <li class="tag__item" id="tools-two"><i class="fas fa-tag mr-2"></i>adobe illustrator</li>
+                  <li class="tag__item" id="tools-three"><i class="fas fa-tag mr-2"></i>adobe indesign</li>
+                  <li class="tag__item" id="tools-two"><i class="fas fa-tag mr-2"></i>adobe photoshop</li>
+                </ul>
+              </div>
+            </article>
+            <article class="postcard light green">
+              <a class="postcard__img_link" href="covid-sns.png" target="new">
+                <img class="postcard__img" src="covid-sns.png" alt="??????" />
+              </a>
+              <div class="postcard__text t-dark">
+                <h1 class="postcard__title green">social media post</h1>
+                <div class="postcard__subtitle small">
+                  <!-- <time datetime="2020-05-25 12:00:00">
+                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                  </time> -->
+                </div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">As of lately, more and more news outlets are promoting and spreading information via social media in short, quick to comprehend slides on platforms such as Instagram. This would be an example of a series of images that could go into such a post. In this case, the public is being informed about masks and the details relating to them, mainly in regard to COVID-19.</div>
+                <ul class="postcard__tagbox">
+                  <li class="tag__item" id="covid-sns-one"><i class="fas fa-tag mr-2"></i>cdfdf0</li>
+                  <li class="tag__item" id="covid-sns-two"><i class="fas fa-tag mr-2"></i>315382</li>
+                  <li class="tag__item" id="covid-sns-three"><i class="fas fa-tag mr-2"></i>5190a0</li>
+                  <li class="tag__item" id="covid-sns-four"><i class="fas fa-tag mr-2"></i>131a50</li>
+                  <li class="tag__item" id="covid-sns-five"><i class="fas fa-tag mr-2"></i>2c3f69</li>
+                </ul>
+                <ul class="postcard__tagbox__tools">
+                  <li class="tag__item" id="tools-two"><i class="fas fa-tag mr-2"></i>adobe illustrator</li>
+                </ul>
+              </div>
+            </article>
+            <article class="postcard light green">
+              <a class="postcard__img_link" href="van-instructions-redo.png" target="new">
+                <img class="postcard__img" src="van-instructions-redo.png" alt="??????" />
+              </a>
+              <div class="postcard__text t-dark">
+                <h1 class="postcard__title green">van instructions re-do</h1>
+                <div class="postcard__subtitle small">
+                  <!-- <time datetime="2020-05-25 12:00:00">
+                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                  </time> -->
+                </div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">A redesign of van instructions changed for clarity and ease of comprehension. The original image is on the left and the right is after applicable changes were made.</div>
+                <ul class="postcard__tagbox">
+                  <li class="tag__item" id="van-redo-one"><i class="fas fa-tag mr-2"></i>fedc76</li>
+                  <li class="tag__item" id="van-redo-two"><i class="fas fa-tag mr-2"></i>1983b9</li>
+                  <li class="tag__item" id="van-redo-three"><i class="fas fa-tag mr-2"></i>fefefe</li>
+                  <li class="tag__item" id="van-redo-four"><i class="fas fa-tag mr-2"></i>1b396b</li>
+                  <li class="tag__item" id="van-redo-five"><i class="fas fa-tag mr-2"></i>a9abad</li>
+                </ul>
+                <ul class="postcard__tagbox__tools">
+                  <li class="tag__item" id="tools-two"><i class="fas fa-tag mr-2"></i>canva</li>
+                </ul>
+              </div>
+            </article>
+            <article class="postcard light green">
+              <a class="postcard__img_link" href="concert-poster.jpg" target="new">
+                <img class="postcard__img" src="concert-poster.jpg" alt="??????" />
+              </a>
+              <div class="postcard__text t-dark">
+                <h1 class="postcard__title green">concert poster</h1>
+                <div class="postcard__subtitle small">
+                  <!-- <time datetime="2020-05-25 12:00:00">
+                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                  </time> -->
+                </div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">Here is a fictitious concert poster I created for the music group Stray Kids. I integrated the facial silhouettes of each member on the sides and used the same font as used on on of their past albums to help tie in the relation to them.</div>
+                <ul class="postcard__tagbox">
+                  <li class="tag__item" id="poster-one"><i class="fas fa-tag mr-2"></i>03060c</li>
+                  <li class="tag__item" id="poster-two"><i class="fas fa-tag mr-2"></i>b69e35</li>
+                  <li class="tag__item" id="poster-three"><i class="fas fa-tag mr-2"></i>bc8e31</li>
+                  <li class="tag__item" id="poster-four"><i class="fas fa-tag mr-2"></i>979790</li>
+                  <li class="tag__item" id="poster-five"><i class="fas fa-tag mr-2"></i>f1eab7</li>
+                </ul>
+                <ul class="postcard__tagbox__tools">
+                  <li class="tag__item" id="tools-two"><i class="fas fa-tag mr-2"></i>adobe illustrator</li>
+                  <li class="tag__item" id="tools-two"><i class="fas fa-tag mr-2"></i>adobe photoshop</li>
+                </ul>
+              </div>
+            </article>
+            <article class="postcard light green">
+              <a class="postcard__img_link" href="zine.png" target="new">
+                <img class="postcard__img" src="zine.png" alt="??????" />
+              </a>
+              <div class="postcard__text t-dark">
+                <h1 class="postcard__title green">zine</h1>
+                <div class="postcard__subtitle small">
+                  <!-- <time datetime="2020-05-25 12:00:00">
+                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                  </time> -->
+                </div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">A zine is a small, usually physical, document that aims to spread information in some capacity. Social media usage is clearly rapidly increasing and there are still many individuals out there that are not familiar with it. For this reason, I made a zine to inform of a few of the most popular platforms out there, while maintaining a variety, and what goes on within each.</div>
+                <ul class="postcard__tagbox">
+                  <li class="tag__item" id="zine-one"><i class="fas fa-tag mr-2"></i>fdb5b5</li>
+                  <li class="tag__item" id="zine-two"><i class="fas fa-tag mr-2"></i>bbbaba</li>
+                  <li class="tag__item" id="zine-three"><i class="fas fa-tag mr-2"></i>fedddd</li>
+                  <li class="tag__item" id="zine-four"><i class="fas fa-tag mr-2"></i>fffff</li>
+                  <li class="tag__item" id="zine-five"><i class="fas fa-tag mr-2"></i>878585</li>
+                </ul>
+                <ul class="postcard__tagbox__tools">
+                  <li class="tag__item" id="tools-two"><i class="fas fa-tag mr-2"></i>canva</li>
+                </ul>
+              </div>
+            </article>
+            <article class="postcard light green">
+              <a class="postcard__img_link" href="wireframe.png" target="new">
+                <img class="postcard__img" src="wireframe.png" alt="??????" />
+              </a>
+              <div class="postcard__text t-dark">
+                <h1 class="postcard__title green">wireframe</h1>
+                <div class="postcard__subtitle small">
+                  <!-- <time datetime="2020-05-25 12:00:00">
+                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                  </time> -->
+                </div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">A high fidelity wireframe I created for a class in which we made a fictitious website. The website depicted would be a place for those looking for gluten-free food and recipes would come to, being able to use various filters to help find the perfect food option(s).</div>
+                <ul class="postcard__tagbox">
+                  <li class="tag__item" id="wireframe-one"><i class="fas fa-tag mr-2"></i>e19f99</li>
+                  <li class="tag__item" id="wireframe-two"><i class="fas fa-tag mr-2"></i>ddb879</li>
+                  <li class="tag__item" id="wireframe-three"><i class="fas fa-tag mr-2"></i>1b171a</li>
+                  <li class="tag__item" id="wireframe-four"><i class="fas fa-tag mr-2"></i>c7bfbf</li>
+                  <li class="tag__item" id="wireframe-five"><i class="fas fa-tag mr-2"></i>ffffff</li>
+                </ul>
+                <ul class="postcard__tagbox__tools">
+                  <li class="tag__item" id="tools-two"><i class="fas fa-tag mr-2"></i>balsamiq</li>
+                </ul>
+              </div>
+            </article>
+            <article class="postcard light green">
+              <a class="postcard__img_link" href="covid-poster.jpg" target="new">
+                <img class="postcard__img" src="covid-poster.jpg" alt="??????" />
+              </a>
+              <div class="postcard__text t-dark">
+                <h1 class="postcard__title green">covid-19</h1>
+                <div class="postcard__subtitle small">
+                  <!-- <time datetime="2020-05-25 12:00:00">
+                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                  </time> -->
+                </div>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">The focal point of the image is COVID-19 and its various feelings and aspects the pandemic involved. My main goal was to highlight the stark differences on each side of this poster, with the left highlighting the darker, more stressful parts while the right focuses more on the positive and hopeful features of the pandemic.</div>
+                <ul class="postcard__tagbox">
+                  <li class="tag__item" id="covid-poster-one"><i class="fas fa-tag mr-2"></i>b2cfd2</li>
+                  <li class="tag__item" id="covid-poster-two"><i class="fas fa-tag mr-2"></i>3d626a</li>
+                  <li class="tag__item" id="covid-poster-three"><i class="fas fa-tag mr-2"></i>cfeaeb</li>
+                  <li class="tag__item" id="covid-poster-four"><i class="fas fa-tag mr-2"></i>a1c1c4</li>
+                  <li class="tag__item" id="covid-poster-five"><i class="fas fa-tag mr-2"></i>dcf5f6</li>
+                </ul>
+                <ul class="postcard__tagbox__tools">
+                  <li class="tag__item" id="tools-three"><i class="fas fa-tag mr-2"></i>adobe photoshop</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="music-section" class="music-section light">
+      <div class="card mb-3">
+        <h1 class="card-title">songs</h1>
+        <div class="">
+          <div class="container py-2">
+            <p>some of my favorite songs to code to (or just listen in general)!</p>
+            <p>click on the artist image to hear a snippet, but be aware of volume</p>
+            <div class="music-cards">
+              <!-- Card for Song 1 -->
+              <div class="music-card">
+                <img src="stray-kids-card.jpg" alt="Korean pop group Stray Kids" class="circular-image" onclick="playAudio('bounce-back.mp3', 'progress-bounce-back')">
+                <div class="progress-bar" id="progress-bounce-back"></div>
+                <h3>bounce back</h3>
+                <p>stray kids</p>
+              </div>
+              <!-- Card for Song 2 -->
+              <div class="music-card">
+                <img src="hans-zimmer-card.jpg" alt="German composer Hans Zimmer" class="circular-image" onclick="playAudio('supermarine.mp3', 'progress-hans-zimmer')">
+                <div class="progress-bar" id="progress-hans-zimmer"></div>
+                <h3>supermarine</h3>
+                <p>hans zimmer</p>
+              </div>
+              <!-- Card for Song 3 -->
+              <div class="music-card">
+                <img src="sleep-token-card.jpg" alt="London band Sleep Token" class="circular-image" onclick="playAudio('alkaline.mp3', 'progress-sleep-token')">
+                <div class="progress-bar" id="progress-sleep-token"></div>
+                <h3>alkaline</h3>
+                <p>sleep token</p>
+              </div>
+              <!-- Card for Song 4 -->
+              <div class="music-card">
+                <img src="tate-mcrae-card.jpg" alt="Canadian artist Tate Mcrae" class="circular-image" onclick="playAudio('run-for-the-hills.mp3', 'progress-tate-mcrae')">
+                <div class="progress-bar" id="progress-tate-mcrae"></div>
+                <h3>run for the hills</h3>
+                <p>tate mcrae</p>
+              </div>
+              <!-- Card for Song 5 -->
+              <div class="music-card">
+                <img src="the-marias-card.jpg" alt="Los Angeles based music group The Marías" class="circular-image" onclick="playAudio('heavy.mp3', 'progress-the-marias')">
+                <div class="progress-bar" id="progress-the-marias"></div>
+                <h3>heavy</h3>
+                <p>the marías</p>
+              </div>
+            </div>
+            <!-- Hidden audio player -->
+            <audio id="audio-player" controls style="display: none;"></audio>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="implementation-section" class="implementation-section light">
+      <div class="card mb-3">
+        <h1 class="card-title">idea to implementation</h1>
+        <div class="">
+          <div class="container py-2">
+            <p>charity water game</p>
+            <p>charity water landing page</p>
+            <p>intel stuff</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    </main>
+
+    <footer>
+        <p class="text-center">&copy; 2025 Allison Thelen</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
