@@ -384,6 +384,15 @@ body {
   color: #F6B6AC;
 }
 
+.skill-blurb {
+  background-color: #F6B6AC;
+  border: solid 3px #F6B6AC;
+  border-radius: 25px;
+  font-weight: bold;
+  color: #333;
+  padding: 5px 10px;
+}
+
 .cd-blurb {
   color: #B46D54;
 }
