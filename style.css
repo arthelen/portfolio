@@ -373,16 +373,16 @@ body {
 }
 
 .project-section h4 {
-	font-size: clamp(1.5rem, 1vw, 2.3rem);
+	font-size: clamp(1.7rem, 1vw, 2.1rem);
 	color: #B46D54;
   font-weight: bold;
 	vertical-align: middle;
-  margin-bottom: -10px;
+  margin: 20px auto -10px auto;
 }
 
-.type-blurb {
+/* .type-blurb {
   color: #F6B6AC;
-}
+} */
 
 .skill-blurb {
   display: inline-block;
