@@ -377,7 +377,7 @@ body {
 	color: #B46D54;
   font-weight: bold;
 	vertical-align: middle;
-  margin-bottom: -20px;
+  margin-bottom: -10px;
 }
 
 .type-blurb {
@@ -385,8 +385,11 @@ body {
 }
 
 .skill-blurb {
-  background-color: #F6B6AC;
-  border: solid 3px #F6B6AC;
+  display: inline-block;
+  text-wrap: wrap;
+  font-size: 0.9em;
+  background-color: #f7e6de;
+  border: solid 3px #f7e6de;
   border-radius: 25px;
   font-weight: bold;
   color: #333;
@@ -448,7 +451,7 @@ body {
 }
 
 #project-link {
-  font-size: clamp(1rem, 1vw, 2rem);
+  font-size: clamp(1rem, 1vw, 1.5rem);
   padding: 0 2px;
   color: #B46D54;
   text-decoration: none;
