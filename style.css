@@ -414,7 +414,7 @@ body {
 } */
 
 .badge-section .skill-blurb {
-   
+  display: inline-block;
   text-wrap: wrap;
   font-size: 0.9em;
   background-color: #f7e6de;
@@ -516,6 +516,7 @@ body {
   border-radius: 25px;
   font-weight: bold;
   color: #333;
+  margin: 5px;
   padding: 5px 10px;
 }
 
