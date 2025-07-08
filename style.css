@@ -345,6 +345,129 @@ body {
 	transition: .3s ease-in-out;
 }
 
+/* badge section */
+.badge-section .card-title {
+  font-weight: 700;
+  padding-top: 15px;
+  color: #B46D54;
+  cursor: default;
+  margin: auto;
+}
+
+.badge-section p {
+  padding: 20px 0;
+  font-size: clamp(0.2rem, 1.2rem, 1.5rem);
+  cursor: default;
+}
+
+.badge-section .col-md-8 {
+  margin: auto;
+  width: clamp(50px, 70vw, 700px);
+}
+
+.badge-section {
+  /* width: clamp(200px, 70vw, 1200px); */
+  padding: 70px;
+  margin: auto;
+}
+
+.badge-section .card {
+  border: 3px solid #F6B6AC;
+  /* border-radius: 5vw; */
+  width: clamp(70px, 75vw, 1500px);
+  margin: auto;
+  padding: 40px;
+}
+
+#badge {
+  padding: 20px;
+  text-align: center;
+}
+
+#badge p:nth-of-type(2) {
+  font-size: 0.9em; /* Make the font size smaller */
+  margin-top: 3px; /* Reduce the spacing on top */
+  font-style: italic; /* Italicize the text */
+}
+
+.badge-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  justify-content: center; /* Center the cards */
+  gap: 15px; /* Add spacing between cards */
+  z-index: 5;;
+}
+
+.badge-card {
+  background-color: transparent; /* Remove background color */
+  border: none; /* Remove border */
+  box-shadow: none; /* Remove shadow */
+  padding: 25px; /* Remove padding */
+  width: auto; /* Allow flexible width */
+  text-align: center; /* Keep text centered */
+  position: relative; /* Ensure the progress bar is positioned correctly */
+}
+
+/* .badge-section p {
+  text-align: center;
+  margin: 0;
+} */
+
+.badge-section .skill-blurb {
+   
+  text-wrap: wrap;
+  font-size: 0.9em;
+  background-color: #f7e6de;
+  border: solid 3px #f7e6de;
+  border-radius: 25px;
+  font-weight: bold;
+  color: #333;
+  padding: 5px 10px;
+}
+
+.badge-card h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #977053;
+  margin: 20px 0;
+}
+
+.badge-card p {
+  font-size: 1em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #333; /* Neutral color for artist name */
+}
+
+.badge-card a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px; /* Rounded button style */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.badge-card img {
+  width: 270px; /* Smaller size for music card images */
+  height: 270px;
+  margin-bottom: 10px; /* Add spacing below the image */
+  padding: 10px; /* Add padding around the image */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  border: solid 3px #F6B6AC;
+  border-radius: 50%;
+  cursor: pointer; /* Indicate the image is clickable */
+  transition: 0.3s ease-in-out;
+}
+
+.badge-card img:hover {
+  transform: scale(1.04); /* Slightly enlarge the image on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+  background-color: #fdb5b5;
+  transition: 0.3s ease-in-out;
+}
+/* end badge section */
+
 /* project section */
 .project-section {
   /* width: clamp(200px, 70vw, 1200px); */
