@@ -416,7 +416,7 @@ body {
 .badge-section .skill-blurb {
   display: inline-block;
   text-wrap: wrap;
-  font-size: 0.9em;
+  font-size: 1.1em;
   background-color: #f7e6de;
   border: solid 3px #f7e6de;
   border-radius: 25px;
@@ -482,6 +482,12 @@ body {
   margin: auto;
 }
 
+.project-section .description {
+  padding: 20px 0;
+  font-size: clamp(0.3rem, 1.3rem, 1.5rem);
+  cursor: default;
+}
+
 .project-section .card {
   border: 3px solid #F6B6AC;
   /* border-radius: 5vw; */
@@ -500,7 +506,7 @@ body {
 	color: #B46D54;
   font-weight: bold;
 	vertical-align: middle;
-  margin: 20px auto -10px auto;
+  margin: 50px auto -10px auto;
 }
 
 /* .type-blurb {
@@ -510,7 +516,7 @@ body {
 .skill-blurb {
   display: inline-block;
   text-wrap: wrap;
-  font-size: 0.9em;
+  font-size: 1.1em;
   background-color: #f7e6de;
   border: solid 3px #f7e6de;
   border-radius: 25px;
@@ -621,7 +627,7 @@ body {
   padding: 10px 10px;
   transition: .3s ease-in-out;
   /* padding-bottom: 40px; */
-  font-size: clamp(1.1rem, 1vw, 2.3rem);
+  font-size: 1rem;
 }
 
 .skill-section p:hover {
@@ -665,12 +671,31 @@ body {
   width: clamp(50px, 70vw, 700px);
 }
 
+.design-section .postcard__preview-txt {
+  padding: 20px 0;
+  font-size: clamp(0.3rem, 1.3rem, 1.5rem);
+  cursor: default;
+}
+
 .design-section p {
   padding-bottom: 30px;
 }
 
 .design-cd-blurb p {
   color: #B46D54;
+}
+
+.design-section .skill-blurb {
+  display: inline-block;
+  text-wrap: wrap;
+  font-size: 1.1em;
+  background-color: #f7e6de;
+  border: solid 3px #f7e6de;
+  border-radius: 25px;
+  font-weight: bold;
+  color: #333;
+  margin: 5px;
+  padding: 5px 10px;
 }
 
 /* colors */
