@@ -658,6 +658,14 @@ body {
   margin: auto;
 }
 
+.design-section .card-subtitle {
+  font-weight: 300;
+  padding: -20px 0 20px 0;
+  color: #B46D54;
+  cursor: default;
+  margin: auto;
+}
+
 .design-section .card {
   border: 3px solid #F6B6AC;
   /* border-radius: 5vw; */
