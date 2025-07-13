@@ -12,6 +12,27 @@ function typeLetter() {
 
 document.addEventListener("DOMContentLoaded", typeLetter);
 
+// scroll reveal effect
+function revealOnScroll() {
+  const reveals = document.querySelectorAll('.reveal');
+
+  reveals.forEach(el => {
+    const windowHeight = window.innerHeight;
+    const elementTop = el.getBoundingClientRect().top;
+    const elementBottom = el.getBoundingClientRect().bottom;
+    const revealPoint = 150;
+
+    if (elementTop < windowHeight - revealPoint && elementBottom > 0) {
+      el.classList.add('active');
+    } else {
+      el.classList.remove('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+document.addEventListener('DOMContentLoaded', revealOnScroll);
+
 // Function to play or pause audio and animate the progress bar
 function playAudio(audioSrc, progressBarId) {
   const audioPlayer = document.getElementById('audio-player');
