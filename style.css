@@ -469,6 +469,38 @@ body {
 /* end badge section */
 
 /* project section */
+/* Styling the filter label */
+.filter-label {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #B46D54;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Styling the dropdown */
+.filter-dropdown {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto 30px auto;
+  padding: 10px;
+  font-size: 1rem;
+  color: #B46D54;
+  background-color: #fff0ec;
+  border: 2px solid #F6B6AC;
+  border-radius: 12px;
+  outline: none;
+  appearance: none;
+  height: auto;
+  min-height: 100px;
+}
+
+/* Optional: make it scrollable if too many skills are added */
+.filter-dropdown option {
+  padding: 5px;
+}
+y
 .project-section {
   /* width: clamp(200px, 70vw, 1200px); */
   padding: 70px;
@@ -641,7 +673,6 @@ body {
 	transition: .3s ease-in-out;
 }
 /* skills section end */
-
 
 
 /* design section start */
@@ -1256,6 +1287,47 @@ h1,	.h1 {
   background-color: #F6B6AC; /* Darker pink for the progress bar */
   transition: width 0.1s linear; /* Smooth width transition */
   border-radius: 10px;
+}
+
+.selected-skills-display {
+  font-size: 1rem;
+  color: #B46D54;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+#showAllBtn {
+  font-size: 1rem;
+  color: #B46D54;
+  border-color: #F6B6AC;
+  background-color: #fff0ec;
+  margin-bottom: 10px;
+  transition: .3s ease-in-out;
+}
+
+#showAllBtn:hover {
+  background-color: #F6B6AC;
+  color: white;
+  transition: .3s ease-in-out;
+}
+
+.filter-checkbox-group label {
+  font-size: 1rem;
+  color: #B46D54;
+  background: #fff0ec;
+  border-radius: 8px;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.filter-checkbox-group label:hover {
+  background: #F6B6AC;
+  color: white;
+}
+
+.filter-checkbox-group input[type="checkbox"] {
+  margin-right: 6px;
 }
 
 @media screen and (min-width: 769px) {

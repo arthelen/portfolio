@@ -319,7 +319,25 @@
             <div class="card-body">
               <div class="container">
                 <h1 class="card-title">Coding Projects</h1>
-                <h3>FILTER!!!!</h3>
+                <label for="skillFilter" class="filter-label">Filter by Skill:</label>
+                <div id="skillFilter" class="filter-checkbox-group" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 10px;">
+                  <label><input type="checkbox" value="HTML5"> HTML5</label>
+                  <label><input type="checkbox" value="CSS3"> CSS3</label>
+                  <label><input type="checkbox" value="JavaScript (ES6)"> JavaScript (ES6)</label>
+                  <label><input type="checkbox" value="DOM Manipulation"> DOM Manipulation</label>
+                  <label><input type="checkbox" value="API Integration"> API Integration</label>
+                  <label><input type="checkbox" value="User Input Handling"> User Input Handling</label>
+                  <label><input type="checkbox" value="AI Integration"> AI Integration</label>
+                  <label><input type="checkbox" value="UI Design"> UI/UX Design</label>
+                  <label><input type="checkbox" value="Creative Theming"> Creative Theming</label>
+                  <label><input type="checkbox" value="Accessibility"> Accessibility</label>
+
+                  <label><input type="checkbox" value="Brand Integration"> Brand Integration</label>
+                  <label><input type="checkbox" value="AI Assisted"> AI Assisted</label>
+
+                </div>
+                <button id="showAllBtn" class="btn btn-outline-secondary" style="margin: 10px auto 10px auto; display: block;">Show All</button>
+                <div id="selectedSkillsDisplay" class="selected-skills-display" style="text-align:center; margin-bottom:20px;"></div>
                 <div class="row">
                     <!-- card matching game project -->
                     <div class="col-12 col-md-6 col-xl-4">
@@ -358,7 +376,7 @@
                       <p class="skill-blurb">JavaScript (ES6)</p>
                       <p class="skill-blurb">Brand Integration</p>
                       <p class="skill-blurb">AI Assisted</p>
-                      <p class="skill-blurb">UI Design</p>
+                      <p class="skill-blurb">UI/UX Design</p>
                     </div>
                     <!-- loreal chatbot project -->
                     <div class="col-12 col-md-6 col-xl-4">
@@ -395,7 +413,7 @@
                       <p class="skill-blurb">HTML5</p>
                       <p class="skill-blurb">CSS4</p>
                       <p class="skill-blurb">JavaScript (ES6)</p>
-                      <p class="skill-blurb">REST API Integration</p>
+                      <p class="skill-blurb">API Integration</p>
                       <p class="skill-blurb">AI Assisted</p>
                       <p class="skill-blurb">UI/UX Design</p>
                     </div>
@@ -417,7 +435,7 @@
                       <p class="skill-blurb">CSS3</p>
                       <p class="skill-blurb">JavaScript (ES6)</p>
                       <p class="skill-blurb">DOM Manipulation</p>
-                      <p class="skill-blurb">UX Design</p>
+                      <p class="skill-blurb">UI/UX Design</p>
                       <!-- <img src="laughing-face.png" alt="Brown and pink laughing emoji icon" class="project-icon"> -->
                     </div>
                     <!-- words of encouragement project -->
@@ -456,7 +474,7 @@
                       <p class="skill-blurb">CSS3</p>
                       <p class="skill-blurb">JavaScript (ES6)</p>
                       <p class="skill-blurb">DOM Manipulation</p>
-                      <p class="skill-blurb">UX Logix Implementation</p>
+                      <p class="skill-blurb">UI/UX Design</p>
                     </div>
                       <!-- magic 8 ball project -->
                       <div class="col-12 col-md-6 col-xl-4">
@@ -475,7 +493,7 @@
                         <p class="skill-blurb">CSS3</p>
                         <p class="skill-blurb">JavaScript (ES6)</p>
                         <p class="skill-blurb">User Input Handling</p>
-                        <p class="skill-blurb">Interactive UI Design</p>
+                        <p class="skill-blurb">UI/UX Design</p>
                       </div>
                       <!-- portfolio page project -->
                       <!-- <div class="col-12 col-md-6 col-xl-4">
