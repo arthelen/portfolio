@@ -394,10 +394,10 @@ body {
 
 .badge-cards {
   display: flex;
-  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
-  justify-content: center; /* Center the cards */
-  gap: 15px; /* Add spacing between cards */
-  z-index: 5;;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center; /* or flex-start if you want left alignment */
+  margin-top: 0.5rem;
 }
 
 .badge-card {
@@ -405,7 +405,7 @@ body {
   border: none; /* Remove border */
   box-shadow: none; /* Remove shadow */
   padding: 25px; /* Remove padding */
-  width: auto; /* Allow flexible width */
+  max-width: 500px; /* Allow flexible width */
   text-align: center; /* Keep text centered */
   position: relative; /* Ensure the progress bar is positioned correctly */
 }
@@ -415,11 +415,17 @@ body {
   margin: 0;
 } */
 
+.skill-tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
 .badge-section .skill-blurb {
-  display: inline-block;
-  text-wrap: wrap;
-  white-space: pre-wrap;
-  word-break: break-word;
+  /* display: inline-block; */
+  white-space: nowrap;
   font-size: 1.1em;
   background-color: #f7e6de;
   border: solid 3px #f7e6de;
@@ -453,8 +459,8 @@ body {
 }
 
 .badge-card img {
-  width: 200px; /* Smaller size for music card images */
-  height: 200px;
+  width: 370px; /* Smaller size for music card images */
+  height: 370px;
   margin-bottom: 10px; /* Add spacing below the image */
   padding: 10px; /* Add padding around the image */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
@@ -676,10 +682,6 @@ section {
   padding: 20px 0;
   font-size: clamp(0.3rem, 1.3rem, 1.5rem);
   cursor: default;
-}
-
-.design-section p {
-  padding-bottom: 30px;
 }
 
 .design-cd-blurb p {
