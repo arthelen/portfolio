@@ -524,14 +524,14 @@ body {
 .filter-dropdown option {
   padding: 5px;
 }
-y
-.project-section {
+
+section {
   /* width: clamp(200px, 70vw, 1200px); */
   padding: 70px;
   margin: auto;
 }
 
-.project-section .card-title {
+.card-title {
   font-weight: 700;
   padding-bottom: 30px;
   color: #B46D54;
@@ -544,7 +544,7 @@ y
   cursor: default;
 }
 
-.project-section .card {
+.card {
   border: 3px solid #F6B6AC;
   /* border-radius: 5vw; */
   width: clamp(70px, 75vw, 1500px);
@@ -653,27 +653,6 @@ y
 }
 
 /* skills section start */
-.skill-section {
-  /* width: clamp(200px, 70vw, 1200px); */
-  padding: 70px;
-  margin: auto;
-}
-
-.skill-section .card-title {
-  font-weight: 700;
-  padding-bottom: 40px;
-  color: #B46D54;
-  margin: auto;
-}
-
-.skill-section .card {
-  border: 3px solid #F6B6AC;
-  /* border-radius: 5vw; */
-  width: clamp(70px, 75vw, 1500px);
-  margin: auto;
-  padding: 40px;
-}
-
 .skill-section img {
   width: clamp(110px, 30%, 370px);
   margin: 10px;
@@ -700,33 +679,12 @@ y
 
 
 /* design section start */
-.design-section {
-  /* width: clamp(200px, 70vw, 1200px); */
-  padding: 70px;
-  margin: auto;
-}
-
-.design-section .card-title {
-  font-weight: 700;
-  padding-bottom: 40px;
-  color: #B46D54;
-  margin: auto;
-}
-
 .design-section .card-subtitle {
   font-weight: 300;
   padding: -20px 0 20px 0;
   color: #B46D54;
   cursor: default;
   margin: auto;
-}
-
-.design-section .card {
-  border: 3px solid #F6B6AC;
-  /* border-radius: 5vw; */
-  width: clamp(70px, 75vw, 1500px);
-  margin: auto;
-  padding: 40px;
 }
 
 .design-section .col-md-8 {
@@ -1179,28 +1137,6 @@ h1,	.h1 {
   }
 }
 
-.implementation-section {
-  /* width: clamp(200px, 70vw, 1200px); */
-  padding: 70px;
-  margin: auto;
-}
-
-.implementation-section .card {
-  border: 3px solid #F6B6AC;
-  /* border-radius: 5vw; */
-  width: clamp(70px, 75vw, 1500px);
-  margin: auto;
-  padding: 40px;
-}
-
-.music-section .card-title {
-  font-weight: 700;
-  padding-top: 15px;
-  color: #B46D54;
-  cursor: default;
-  margin: auto;
-}
-
 .music-section p {
   padding: 20px 0;
   font-size: clamp(0.2rem, 1.2rem, 1.5rem);
@@ -1210,20 +1146,6 @@ h1,	.h1 {
 .music-section .col-md-8 {
   margin: auto;
   width: clamp(50px, 70vw, 700px);
-}
-
-.music-section {
-  /* width: clamp(200px, 70vw, 1200px); */
-  padding: 70px;
-  margin: auto;
-}
-
-.music-section .card {
-  border: 3px solid #F6B6AC;
-  /* border-radius: 5vw; */
-  width: clamp(70px, 75vw, 1500px);
-  margin: auto;
-  padding: 40px;
 }
 
 /* Fun Music Section */
