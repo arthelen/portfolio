@@ -108,3 +108,21 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initial display
   updateSelectedSkillsDisplay([]);
 });
+
+
+
+
+
+function showSkillInfo(id) {
+  // Close all other subskills
+  const allCards = document.querySelectorAll('.skill-card');
+  allCards.forEach(card => {
+    if (card.querySelector('.subskills').id !== id) {
+      card.classList.remove('active');
+    }
+  });
+
+  // Toggle clicked one
+  const clickedCard = document.getElementById(id).parentElement;
+  clickedCard.classList.toggle('active');
+}
