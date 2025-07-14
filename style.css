@@ -370,14 +370,6 @@ body {
 }
 
 /* badge section */
-.badge-section .card-title {
-  font-weight: 700;
-  padding-top: 15px;
-  color: #B46D54;
-  cursor: default;
-  margin: auto;
-}
-
 .badge-section p {
   padding: 20px 0;
   font-size: clamp(0.2rem, 1.2rem, 1.5rem);
@@ -387,20 +379,6 @@ body {
 .badge-section .col-md-8 {
   margin: auto;
   width: clamp(50px, 70vw, 700px);
-}
-
-.badge-section {
-  /* width: clamp(200px, 70vw, 1200px); */
-  padding: 70px;
-  margin: auto;
-}
-
-.badge-section .card {
-  border: 3px solid #F6B6AC;
-  /* border-radius: 5vw; */
-  width: clamp(70px, 75vw, 1500px);
-  margin: auto;
-  padding: 40px;
 }
 
 #badge {
@@ -440,6 +418,8 @@ body {
 .badge-section .skill-blurb {
   display: inline-block;
   text-wrap: wrap;
+  white-space: pre-wrap;
+  word-break: break-word;
   font-size: 1.1em;
   background-color: #f7e6de;
   border: solid 3px #f7e6de;
@@ -473,8 +453,8 @@ body {
 }
 
 .badge-card img {
-  width: 270px; /* Smaller size for music card images */
-  height: 270px;
+  width: 200px; /* Smaller size for music card images */
+  height: 200px;
   margin-bottom: 10px; /* Add spacing below the image */
   padding: 10px; /* Add padding around the image */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
