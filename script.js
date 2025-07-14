@@ -109,10 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
   updateSelectedSkillsDisplay([]);
 });
 
-
-
-
-
 function showSkillInfo(id) {
   // Close all other subskills
   const allCards = document.querySelectorAll('.skill-card');

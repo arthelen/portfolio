@@ -589,7 +589,7 @@ section {
 .card {
   border: 3px solid #F6B6AC;
   /* border-radius: 5vw; */
-  width: clamp(70px, 75vw, 1500px);
+  width: clamp(70px, 75vw, 1700px);
   margin: auto;
   padding: 40px;
 }
@@ -662,7 +662,7 @@ section {
 .screenshot {
 	height: auto;
   width: em;
-  max-width: 100%;
+  max-width: 77%;
   border: 3px solid #F6B6AC;
   border-radius: 15px;
   transition: .3s ease-in-out;
@@ -679,7 +679,7 @@ section {
 }
 
 #project-link {
-  font-size: clamp(1rem, 1vw, 1.5rem);
+  font-size: clamp(1.4rem, 1.5vw, 1.7rem);
   padding: 0 2px;
   color: #B46D54;
   text-decoration: none;
@@ -1105,7 +1105,7 @@ h1,	.h1 {
   .postcard__tagbox {
     display: flex;
     flex-flow: row wrap;
-    font-size: 14px;
+    font-size: 17px;
     margin: 20px 0 0 0;
 		padding: 0;
     justify-content: center;
@@ -1296,7 +1296,7 @@ h1,	.h1 {
 }
 
 .filter-checkbox-group label {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #B46D54;
   background: #fff0ec;
   border-radius: 8px;
