@@ -488,6 +488,7 @@ body {
   border-radius: 25px;
   font-weight: bold;
   color: #333;
+  margin: 2px;
   padding: 5px 10px;
 }
 
@@ -591,6 +592,7 @@ section {
   padding: 20px 0;
   font-size: clamp(0.3rem, 1.3rem, 1.5rem);
   cursor: default;
+  margin: 0;
 }
 
 .card {
@@ -606,12 +608,12 @@ section {
   width: clamp(50px, 70vw, 700px);
 }
 
-.project-section h4 {
+h4 {
 	font-size: clamp(1.7rem, 1vw, 2.1rem);
 	color: #B46D54;
   font-weight: bold;
 	vertical-align: middle;
-  margin: 50px auto -10px auto;
+  margin: 55px auto -10px auto;
 }
 
 /* .type-blurb {
@@ -633,6 +635,7 @@ section {
 
 .cd-blurb {
   color: #B46D54;
+  margin: 0;
 }
 
 .project-section a {
