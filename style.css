@@ -573,6 +573,13 @@ section {
   margin: auto;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .card-title {
   font-weight: 700;
   padding-bottom: 30px;
