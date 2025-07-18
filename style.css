@@ -516,8 +516,8 @@ body {
 }
 
 .badge-card img {
-  width: 370px; /* Smaller size for music card images */
-  height: 370px;
+  width: 300px; /* Smaller size for music card images */
+  height: 300px;
   margin-bottom: 10px; /* Add spacing below the image */
   padding: 10px; /* Add padding around the image */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
