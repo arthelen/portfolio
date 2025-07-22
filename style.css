@@ -545,6 +545,7 @@ body {
   margin: 0 0.5rem;
   border-radius: 8px;
   cursor: pointer;
+  font-size: 1rem;
   color: #B46D54;
   font-weight: bold;
   transition: background 0.3s;
@@ -916,13 +917,13 @@ h4 {
 
 
 /* design section start */
-.design-section .card-subtitle {
+/* .design-section .card-subtitle button {
   font-weight: 300;
   padding: -20px 0 20px 0;
   color: #B46D54;
   cursor: default;
   margin: auto;
-}
+} */
 
 .design-section .col-md-8 {
   margin: auto;
@@ -935,7 +936,7 @@ h4 {
   cursor: default;
 }
 
-.design-section .card-subtitle {
+/* .design-section .card-subtitle {
   background-color: #F6B6AC;
   color: #B46D54;
   padding: 15px;
@@ -943,6 +944,36 @@ h4 {
   font-weight: bold;
   margin: 0 auto 30px auto;
   width: fit-content;
+} */
+
+.toggle-trigger {
+  display: block;
+  margin: 2rem auto 1rem;
+  font-weight: bold;
+  color: #B46D54;
+  border: solid 3px #f6b6ac;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  background: #F7E6DE;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.toggle-trigger.active, .toggle-trigger:hover {
+  background: #f6b6ac;
+}
+
+.design-group {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.design-group.show {
+  display: block;
+  opacity: 1;
 }
 
 .design-cd-blurb p {

@@ -125,6 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
   updateSelectedSkillsDisplay([]);
 });
 
+// Skills section new
 function showSkillInfo(id) {
   // Close all other subskills
   const allCards = document.querySelectorAll('.skill-card');
@@ -172,9 +173,21 @@ const skills = {
   ]
 };        
           
+let activeCategory = 'frontend'; // Track current active category
+
 function showSkillCategory(category) {
   const container = document.getElementById('skill-display');
   const buttons = document.querySelectorAll('.skill-tab');
+
+  // If same category is clicked again, hide everything
+  if (activeCategory === category) {
+    container.innerHTML = '';
+    buttons.forEach(btn => btn.classList.remove('active'));
+    activeCategory = null;
+    return;
+  }
+
+  // Otherwise, show new skills
   buttons.forEach(btn => btn.classList.remove('active'));
   document.querySelector(`[onclick*='${category}']`).classList.add('active');
 
@@ -184,7 +197,33 @@ function showSkillCategory(category) {
       <h5>${skill.name}</h5>
     </div>
   `).join('');
+
+  activeCategory = category;
 }
 
 // Load default
 showSkillCategory('frontend');
+
+// Design section toggle
+const triggers = document.querySelectorAll('.toggle-trigger');
+
+triggers.forEach(trigger => {
+  trigger.addEventListener('click', () => {
+    const nextGroup = trigger.nextElementSibling;
+
+    // Toggle class to show/hide with fade
+    if (nextGroup.classList.contains('show')) {
+      nextGroup.classList.remove('show');
+      // Wait for opacity transition to finish before hiding
+      setTimeout(() => {
+        nextGroup.style.display = 'none';
+      }, 400);
+    } else {
+      nextGroup.style.display = 'block';
+      // Small delay to trigger the transition
+      setTimeout(() => {
+        nextGroup.classList.add('show');
+      }, 10);
+    }
+  });
+});
