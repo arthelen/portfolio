@@ -536,6 +536,76 @@ body {
 
 
 
+.skills-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.skills-section h5 {
+  text-align: center;
+  color: #B46D54;
+  padding: 2rem 0 0 0
+}
+
+.skill-categories {
+  margin-bottom: 1.5rem;
+}
+.skill-tab {
+  background: #F7E6DE;
+  border: solid 3px #f6b6ac;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #B46D54;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.skill-tab.active,
+.skill-tab:hover {
+  background: #f6b6ac;
+}
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centers all items */
+  gap: 30px; /* spacing between cards */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.skill-card {
+  max-width: 250px;
+  padding: 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.skill-card:hover {
+  transform: scale(1.05);
+}
+.skill-card img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: -1.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -622,7 +692,7 @@ body {
 .badge-card h3 {
   font-size: 1.4em;
   font-weight: bold;
-  color: #977053;
+  color: #B46D54;
   margin: 20px 0;
 }
 

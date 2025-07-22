@@ -208,41 +208,21 @@
           </div>
         </section> -->
 
-      <section class="skills-showcase" id="skills-section">
-        <div class="skills-section">
-          <h2>Skills</h2>
-          <div class="skills-grid">
-            <div class="skill-card" onclick="showSkillInfo('js')">
-              <h3>JavaScript</h3>
-              <p class="subskills" id="js">DOM Manipulation, Fetch API, Event Handling, ES6+</p>
-            </div>
-            <div class="skill-card" onclick="showSkillInfo('css')">
-              <h3>CSS</h3>
-              <p class="subskills" id="css">Flexbox, Grid, Transitions, Responsive Design</p>
-            </div>
-            <div class="skill-card" onclick="showSkillInfo('html')">
-              <h3>HTML</h3>
-              <p class="subskills" id="html">Semantic Tags, Accessibility, Forms, Media Embeds</p>
-            </div>
-            <div class="skill-card" onclick="showSkillInfo('uiux')">
-              <h3>UI/UX</h3>
-              <p class="subskills" id="uiux">Wireframing, Prototyping, Usability Testing, Figma</p>
-            </div>
+        <!-- skills section -->
+        <section id="skills" class="skills-section">
+          <h4 class="card-title">Skills</h4>
+          <div class="skill-categories">
+            <button class="skill-tab active" onclick="showSkillCategory('frontend')">Front-End</button>
+            <button class="skill-tab" onclick="showSkillCategory('design')">Design</button>
+            <button class="skill-tab" onclick="showSkillCategory('tools')">Tools</button>
           </div>
-        </div>
-      </section>
 
-
-
-
-
-
-
-
-
+          <div class="skills-grid" id="skill-display">
+          </div>
+        </section>
 
         <section id="badge-timeline" class="py-5 text-center">
-          <h2 class="mb-4">Certifications & Badges</h2>
+          <h4 class="mb-4 card-title">Certifications & Badges</h4>
           <div class="position-relative container">
 
             <!-- Arrows -->
@@ -371,28 +351,6 @@
           </div>
         </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <!-- badge section -->
       <!-- <section id="badge-section" class="badge-section light reveal">
       <div class="card mb-3">
@@ -517,7 +475,7 @@
         </div>
       </div>
     </section> -->
-        
+  
       <!-- coding project section -->
       <section id="project-section" class="project-section text-center reveal">
         <div class="card mb-3">
@@ -1209,6 +1167,7 @@
         <p class="text-center">&copy; 2025 Allison Thelen</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/aec2b1abc4.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

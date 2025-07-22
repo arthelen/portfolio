@@ -62,34 +62,13 @@ function playAudio(audioSrc, progressBarId) {
   }
 }
 
-
-
-
-
-
-
+// Badge or certification section
 function scrollBadges(direction) {
   const carousel = document.getElementById('badgeCarousel');
   const card = carousel.querySelector('.badge-card');
   const scrollAmount = card.offsetWidth + 24; // 24 = gap size
   carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
   const filterGroup = document.getElementById('skillFilter');
@@ -151,3 +130,70 @@ function showSkillInfo(id) {
   const clickedCard = document.getElementById(id).parentElement;
   clickedCard.classList.toggle('active');
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const skills = {
+  frontend: [
+    { name: 'HTML', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
+    { name: 'CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
+    { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+    { name: 'Bootstrap', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg' }
+  ],
+  design: [
+    { name: 'Figma', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' },
+    { name: 'Canva', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg' },
+    { name: 'Photoshop', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg' },
+    { name: 'Illustrator', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-original.svg' },
+    { name: 'InDesign', icon: 'https://img.icons8.com/?size=100&id=51lMuEpYaQ8k&format=png&color=000000' },
+    { name: 'Wireframing', icon: 'img/wireframe-logo.png' },
+    { name: 'Prototyping', icon: 'img/prototype-logo.png' },
+    { name: 'Accessibility & Responsive Design', icon: 'img/accessible-logo.png' }
+  ],
+  tools: [
+    { name: 'VSCode', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg' },
+    { name: 'GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
+    { name: 'Docs', icon: 'https://img.icons8.com/?size=100&id=30464&format=png&color=000000' },
+    { name: 'Sheets', icon: 'https://img.icons8.com/?size=100&id=30461&format=png&color=000000' },
+    { name: 'Slides', icon: 'https://img.icons8.com/?size=100&id=30462&format=png&color=000000' },
+    { name: 'Forms', icon: 'https://img.icons8.com/?size=100&id=30465&format=png&color=000000' },
+    { name: 'Excel', icon: 'https://img.icons8.com/?size=100&id=117561&format=png&color=000000' },
+    { name: 'Access', icon: 'https://img.icons8.com/?size=100&id=121160&format=png&color=000000' },
+    { name: 'PowerPoint', icon: 'https://img.icons8.com/?size=100&id=ifP93G7BXUhU&format=png&color=000000' },
+    { name: 'Word', icon: 'https://img.icons8.com/?size=100&id=pGHcje298xSl&format=png&color=000000' },
+    { name: 'ChatGPT', icon: 'https://img.icons8.com/?size=100&id=TUk7vxvtu6hX&format=png&color=000000' },
+    { name: 'Notion', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg' }
+  ]
+};        
+          
+          
+
+function showSkillCategory(category) {
+  const container = document.getElementById('skill-display');
+  const buttons = document.querySelectorAll('.skill-tab');
+  buttons.forEach(btn => btn.classList.remove('active'));
+  document.querySelector(`[onclick*='${category}']`).classList.add('active');
+
+  container.innerHTML = skills[category].map(skill => `
+    <div class="skill-card">
+      <img src="${skill.icon}" alt="${skill.name} icon">
+      <h5>${skill.name}</h5>
+    </div>
+  `).join('');
+}
+
+// Load default
+showSkillCategory('frontend');
