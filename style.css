@@ -104,7 +104,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin: 20px 250px;
   /* margin-top: 3rem; */
 }
 
@@ -139,6 +138,7 @@ body {
 
 .console-window {
   background-color: #fff;
+  border: 3px solid #F6B6AC;
   border-radius: 10px;
   max-width: 900px;
   width: 90%;
@@ -205,6 +205,9 @@ body {
   /* width: clamp(200px, 70vw, 1200px); */
   padding: 70px;
   margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .headshot {
@@ -212,8 +215,15 @@ body {
   height: auto;
   border: 10px solid #F6B6AC;
   border-radius: 50vw;
-  margin: auto;
   transition: .3s ease-in-out;
+}
+
+.headshot-resume-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex: 1 1 300px;
 }
 
 /* .headshot:hover {
@@ -395,7 +405,7 @@ body {
 
 
 
-.badge-carousel {
+.badge-carousel, .business-carousel {
   display: flex;
   scroll-behavior: smooth;
   overflow-x: auto;
@@ -408,6 +418,7 @@ body {
 }
 
 .badge-card {
+  border: 3px solid #F6B6AC;
   flex: 0 0 auto;
   width: 90%;
   scroll-snap-align: start;
@@ -420,6 +431,38 @@ body {
   background: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   text-align: center;
+}
+
+.business-card {
+  border: 3px solid #F6B6AC;
+  flex: 0 0 auto;
+  width: 70%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  max-width: 700px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.business-card .screenshot {
+	max-height: auto;
+  max-width: 90%;
+  border: 3px solid #F6B6AC;
+  border-radius: 15px;
+  transition: .3s ease-in-out;
+	/* padding: 30px; */
+}
+
+.business-section .description {
+  padding: 20px 0;
+  font-size: clamp(0.3rem, 1rem, 1.3rem);
+  cursor: default;
+  margin: 0;
 }
 
 .scroll-btn {
@@ -450,7 +493,7 @@ body {
 .badge-card .skill-blurb {
   display: inline-block;
   text-wrap: wrap;
-  font-size: 1em;
+  font-size: 0.9em;
   background-color: #f7e6de;
   border: solid 3px #f7e6de;
   border-radius: 25px;
@@ -460,28 +503,26 @@ body {
   padding: 5px 10px;
 }
 
-.badge-carousel::-webkit-scrollbar {
+.badge-carousel::-webkit-scrollbar, .business-carousel::-webkit-scrollbar {
   height: 10px;
 }
 
-.badge-carousel::-webkit-scrollbar-track {
+.badge-carousel::-webkit-scrollbar-track, .business-carousel::-webkit-scrollbar-track {
   background: #fceeee;
   border-radius: 999px;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
 }
 
-.badge-carousel::-webkit-scrollbar-thumb {
+.badge-carousel::-webkit-scrollbar-thumb, .business-carousel::-webkit-scrollbar-thumb {
   background: linear-gradient(135deg, #f6b6ac, #fcd8d4);
   border-radius: 999px;
   border: 2px solid #fff5f4;
   transition: background 0.3s ease;
 }
 
-.badge-carousel::-webkit-scrollbar-thumb:hover {
+.badge-carousel::-webkit-scrollbar-thumb:hover, .business-carousel::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(135deg, #f4a49a, #fcd0c7);
 }
-
-
 
 .skills-section {
   text-align: center;
@@ -527,6 +568,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
+  border: 3px solid #F6B6AC;
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -626,7 +668,7 @@ body {
 .badge-section .skill-blurb {
   /* display: inline-block; */
   white-space: nowrap;
-  font-size: 1.1em;
+  font-size: 0.9em;
   background-color: #f7e6de;
   border: solid 3px #f7e6de;
   border-radius: 25px;
@@ -815,7 +857,6 @@ h4 {
 
 .screenshot {
 	height: auto;
-  width: em;
   max-width: 77%;
   border: 3px solid #F6B6AC;
   border-radius: 15px;
@@ -833,7 +874,7 @@ h4 {
 }
 
 #project-link {
-  font-size: clamp(1.4rem, 1.3vw, 1.5rem);
+  font-size: clamp(1.4rem, 1vw, 1.2rem);
   padding: 0 2px;
   color: #B46D54;
   text-decoration: none;
@@ -911,7 +952,7 @@ h4 {
 .design-section .skill-blurb {
   display: inline-block;
   text-wrap: wrap;
-  font-size: 1.1em;
+  font-size: 0.9em;
   background-color: #f7e6de;
   border: solid 3px #f7e6de;
   border-radius: 25px;

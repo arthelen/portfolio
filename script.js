@@ -70,6 +70,14 @@ function scrollBadges(direction) {
   carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
 }
 
+// Business section
+function scrollBadges(direction) {
+  const carousel = document.getElementById('businessCarousel');
+  const card = carousel.querySelector('.business-card');
+  const scrollAmount = card.offsetWidth + 24; // 24 = gap size
+  carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const filterGroup = document.getElementById('skillFilter');
   const checkboxes = filterGroup.querySelectorAll('input[type="checkbox"]');
