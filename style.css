@@ -31,6 +31,11 @@ body {
   background-color: #F6B6AC;
 }
 
+.navbar-custom li {
+  list-style: none;
+  padding: 0 20px;
+}
+
 .navbar-custom a {
   color: white;
   transition: .3s ease-in-out;
@@ -771,6 +776,7 @@ section {
   /* width: clamp(200px, 70vw, 1200px); */
   padding: 70px;
   margin: auto;
+  scroll-margin-top: 80px;
 }
 
 .row {
@@ -1656,6 +1662,8 @@ h1,	.h1 {
 
 /* footer */
 footer {
+    background-color: #F6B6AC;
     color: #B46D54;
-    margin-bottom: 77px;
+    padding: 50px;
+    /* margin-bottom: 77px; */
 }
