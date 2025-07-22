@@ -559,7 +559,7 @@ body {
   background: #F7E6DE;
   border: solid 3px #f6b6ac;
   padding: 0.5rem 1rem;
-  margin: 0 0.5rem;
+  margin: 1rem;
   border-radius: 8px;
   cursor: pointer;
   font-size: 1rem;
@@ -615,20 +615,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* badge section */
 .badge-section p {
   padding: 20px 0;
@@ -660,15 +646,10 @@ body {
   margin-top: 0.5rem;
 }
 
-/* .badge-card {
-  background-color: transparent; 
-  border: none; 
-  box-shadow: none; 
-  padding: 25px; 
-  max-width: 500px; 
+.badge-card {
+  padding: 25px;
   text-align: center; 
-  position: relative; 
-} */
+} 
 
 /* .badge-section p {
   text-align: center;
@@ -720,8 +701,7 @@ body {
 }
 
 .badge-card img {
-  max-width: 220px; /* Smaller size for music card images */
-  max-height: 220px;
+  max-width: 90%;
   margin-bottom: 10px; /* Add spacing below the image */
   padding: 10px; /* Add padding around the image */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
