@@ -425,6 +425,133 @@ body {
 
 
 
+
+
+
+.badge-carousel {
+  display: flex;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding: 1rem 0;
+  margin: 0 auto;
+  scrollbar-color: #f6b6ac #fceeee;
+  scrollbar-width: thin;
+}
+
+.badge-card {
+  flex: 0 0 auto;
+  width: 90%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  max-width: 280px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 45%;
+  color: #F7E6DE;
+  transform: translateY(-50%);
+  background: #f5c2be;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.scroll-btn.left { left: -15px; }
+.scroll-btn.right { right: -15px; }
+
+@media (min-width: 768px) {
+  .badge-card { width: 45%; }
+}
+@media (min-width: 992px) {
+  .badge-card { width: 30%; }
+}
+
+.badge-card .skill-blurb {
+  display: inline-block;
+  text-wrap: wrap;
+  font-size: 1em;
+  background-color: #f7e6de;
+  border: solid 3px #f7e6de;
+  border-radius: 25px;
+  font-weight: bold;
+  color: #333;
+  margin: 2px;
+  padding: 5px 10px;
+}
+
+.badge-carousel::-webkit-scrollbar {
+  height: 10px;
+}
+
+.badge-carousel::-webkit-scrollbar-track {
+  background: #fceeee;
+  border-radius: 999px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.badge-carousel::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #f6b6ac, #fcd8d4);
+  border-radius: 999px;
+  border: 2px solid #fff5f4;
+  transition: background 0.3s ease;
+}
+
+.badge-carousel::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #f4a49a, #fcd0c7);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* badge section */
 .badge-section p {
   padding: 20px 0;
@@ -456,15 +583,15 @@ body {
   margin-top: 0.5rem;
 }
 
-.badge-card {
-  background-color: transparent; /* Remove background color */
-  border: none; /* Remove border */
-  box-shadow: none; /* Remove shadow */
-  padding: 25px; /* Remove padding */
-  max-width: 500px; /* Allow flexible width */
-  text-align: center; /* Keep text centered */
-  position: relative; /* Ensure the progress bar is positioned correctly */
-}
+/* .badge-card {
+  background-color: transparent; 
+  border: none; 
+  box-shadow: none; 
+  padding: 25px; 
+  max-width: 500px; 
+  text-align: center; 
+  position: relative; 
+} */
 
 /* .badge-section p {
   text-align: center;
@@ -516,8 +643,8 @@ body {
 }
 
 .badge-card img {
-  width: 300px; /* Smaller size for music card images */
-  height: 300px;
+  max-width: 220px; /* Smaller size for music card images */
+  max-height: 220px;
   margin-bottom: 10px; /* Add spacing below the image */
   padding: 10px; /* Add padding around the image */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */

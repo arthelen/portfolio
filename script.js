@@ -62,6 +62,35 @@ function playAudio(audioSrc, progressBarId) {
   }
 }
 
+
+
+
+
+
+
+function scrollBadges(direction) {
+  const carousel = document.getElementById('badgeCarousel');
+  const card = carousel.querySelector('.badge-card');
+  const scrollAmount = card.offsetWidth + 24; // 24 = gap size
+  carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const filterGroup = document.getElementById('skillFilter');
   const checkboxes = filterGroup.querySelectorAll('input[type="checkbox"]');
