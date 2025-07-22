@@ -61,7 +61,7 @@
 
     <main>
       <!-- intro section -->
-      <section class="intro-section text-center">
+      <section class="intro-section text-center reveal">
         <div class="intro-content">
             <h1 class="intro-title">> <span id="typed-name"></span></h1>
         </div>
@@ -82,7 +82,7 @@
         </div>
       </section>
 
-      <section id="intro-console" class="console-section">
+      <section id="intro-console" class="console-section reveal">
         <div class="console-window">
           <div class="console-header">
             <span class="dot red"></span>
@@ -147,7 +147,7 @@
         </section> -->
 
         <!-- skills section -->
-        <section id="skills" class="skills-section">
+        <section id="skills" class="skills-section reveal">
           <h4 class="card-title">Skills</h4>
           <div class="skill-categories">
             <button class="skill-tab active" onclick="showSkillCategory('frontend')">Front-End</button>
@@ -159,7 +159,7 @@
           </div>
         </section>
 
-        <section id="badge-timeline" class="py-5 text-center">
+        <section id="badge-timeline" class="py-5 text-center reveal">
           <h4 class="mb-4 card-title">Certifications & Badges</h4>
           <div class="position-relative container">
 
@@ -295,24 +295,6 @@
         <div class="card mb-3">
             <div class="card-body">
               <div class="container">
-                <!-- <label for="skillFilter" class="filter-label">Filter by Skill:</label> -->
-                <!-- <div id="skillFilter" class="filter-checkbox-group" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 10px;">
-                  <label><input type="checkbox" value="HTML"> HTML</label>
-                  <label><input type="checkbox" value="CSS"> CSS</label>
-                  <label><input type="checkbox" value="JavaScript"> JavaScript</label>
-                  <label><input type="checkbox" value="DOM Manipulation"> DOM Manipulation</label>
-                  <label><input type="checkbox" value="API Integration"> API Integration</label>
-                  <label><input type="checkbox" value="User Input Handling"> User Input Handling</label>
-                  <label><input type="checkbox" value="AI Integration"> AI Integration</label>
-                  <label><input type="checkbox" value="UI Design"> UI/UX Design</label>
-                  <label><input type="checkbox" value="Creative Theming"> Creative Theming</label>
-                  <label><input type="checkbox" value="Accessibility"> Accessibility</label>
-                  <label><input type="checkbox" value="Brand Integration"> Brand Integration</label>
-                  <label><input type="checkbox" value="AI Assisted"> AI Assisted</label>
-
-                </div>
-                <button id="showAllBtn" class="btn btn-outline-secondary" style="margin: 10px auto 10px auto; display: block;">Show All (Reset)</button> -->
-                <!-- <div id="selectedSkillsDisplay" class="selected-skills-display" style="text-align:center; margin-bottom:20px;"></div> -->
                 <div class="row">
                     <!-- card matching game project -->
                     <div class="col-12 col-lg-6">
@@ -470,23 +452,6 @@
                         <p class="skill-blurb">User Input Handling</p>
                         <p class="skill-blurb">UI/UX Design</p>
                       </div>
-                      <!-- portfolio page project -->
-                      <!-- <div class="col-12 col-md-6 col-xl-4">
-                        <br>
-                          <img src="portfolio-page-ss.png" alt="Portfolio project preview" class="screenshot">
-                        <br><br>
-                        <h4>portfolio page</h4>
-                        <br>
-                        <p class="type-blurb"><strong>HTML, CSS, Bootstrap</strong></p>
-                        <p>...</p>
-                        <p class="cd-blurb">
-                          <a href="https://github.com/arthelen/bio-page-functional" target="_blank" id="project-link">code&nbsp;</a>
-                          |
-                          <a href="https://arthelen.github.io/bio-page-functional/" target="new" id="project-link">&nbsp;demo</a>
-                        </p>
-                        <img src="portfolio.png" alt="Brown and pink outline of a briefcase icon" class="project-icon">
-                      </div> -->
-                      <!-- bio page project -->
                       <div class="col-12 col-lg-6">
                         <h4>Bio Page</h4>
                         <br>
@@ -512,185 +477,83 @@
         </div>
     </section>
 
-        <!-- business/marketing/analytics project section -->
-        <section id="business-timeline" class="py-5 text-center business-section">
-          <h4 class="mb-4 card-title">Business Projects</h4>
-          <div class="position-relative container">
+    <!-- business/marketing/analytics project section -->
+    <section id="business-timeline" class="py-5 text-center business-section reveal">
+      <h4 class="mb-4 card-title">Business Projects</h4>
+      <div class="position-relative container">
 
-            <!-- Arrows -->
-            <button class="scroll-btn left" onclick="scrollBadges(-1)">
-              <i class="bi bi-chevron-left"></i>
-            </button>
-            <button class="scroll-btn right" onclick="scrollBadges(1)">
-              <i class="bi bi-chevron-right"></i>
-            </button>
+        <!-- Arrows -->
+        <button class="scroll-btn left" onclick="scrollBusiness(-1)">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <button class="scroll-btn right" onclick="scrollBusiness(1)">
+          <i class="bi bi-chevron-right"></i>
+        </button>
 
-            <!-- Scrollable badges wrapper -->
-            <div class="business-carousel d-flex overflow-auto" id="businessCarousel">
-              <div class="business-card">
-                <h4>Charity: Water Marketing Campaign</h4>
-                <br>
-                <a href="img/Charity Water Marketing.pdf" target="_blank">
-                  <img src="img/charity water thumbnail.png" alt="Man in a white outfit and green turban sits on bright white stairs, holding a metal cup. Large bold text on the left reads 'Activating the next generation of charity: water supporters' with 'charity: water' in vibrant yellow. A yellow footer bar displays the charity: water logo." class="screenshot">
-                </a>
-                <br><br>
-                <p class="cd-blurb">
-                  <a href="img/Charity Water Marketing.pdf" target="_blank" id="project-link"><i class="bi bi-easel-fill"></i>&nbsp;slideshow</a>
-                  <a href="" target="new" id="project-link"><a href="https://github.com/arthelen/CR-02-charity-water-lp" target="new" id="project-link"><i class="bi bi-github"></i>code</a>
-                  <a href="" target="new" id="project-link"><a href="https://arthelen.github.io/CR-02-charity-water-lp/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-                </p>
-                <p class="description">Designed a donation-focused landing page aimed at college students using Canva. Based on a Gen Z persona, the project included an empathy map, value proposition, and tailored visuals aligned with Charity: Water’s brand. Focused on making giving feel easy, transparent, and impactful.</p>
-                <p class="skill-blurb">UI/UX Design</p>
-                <p class="skill-blurb">Brand Strategy & Visual Identity</p>
-                <p class="skill-blurb">Digital Marketing</p>
-                <p class="skill-blurb">Audience & Persona Targeting</p>
-                <p class="skill-blurb">Copywriting for Nonprofits</p>
-                <br><br>
-                <!-- <img src="img/droplet.png" alt="Pink and brown water droplet icon" class="project-icon"> -->
-              </div>
-              <div class="business-card">
-                <h4>Cerave SEO Marketing Campaign</h4>
-                <br>
-                <a href="img/CeraVe SEO.pdf" target="_blank">
-                  <img src="img/cerave thumbnail.png" alt="CeraVe Hydrating Facial Cleanser and Moisturizing Cream sit on a marble tray in a softly lit bathroom. Bold white and blue headline on a black curved background reads 'Google It: Reaching CeraVe’s Male Skincare Searchers.'" class="screenshot">
-                </a>
-                <br><br>
-                <p class="cd-blurb">
-                  <a href="img/CeraVe SEO.pdf" target="_blank" id="project-link"><i class="bi bi-easel-fill"></i>&nbsp;slideshow</a>
-                </p>
-                <p class="description">Developed a search-optimized content plan targeting a specific skincare persona. Conducted keyword research using SEMrush and Google Trends, refined CeraVe’s keyword list, and wrote three blog posts aligned with brand voice and user search intent. Strengthened skills in content strategy, SEO, and audience targeting.</p>
-                <p class="skill-blurb">Search Engine Optimization (SEO)</p>
-                <p class="skill-blurb">Content Marketing</p>
-                <p class="skill-blurb">Keyword Research</p>
-                <p class="skill-blurb">Audience & Persona Targeting</p>
-                <p class="skill-blurb">Brand Voice Alignment</p>
-                <br><br>
-                <!-- <img src="img/bottle.png" alt="Pink and brown water skincare bottle icon" class="project-icon"> -->
-              </div>
-              <div class="business-card">
-                <h4>Grammy's Analytics Evaluation</h4>
-                <br>
-                <a href="img/Grammys Social Media.pdf" target="_blank">
-                  <img src="img/grammy thumbnail.png" alt="Beyoncé holds three Grammy trophies in her left hand and one in her right, smiling in front of a gold Grammy backdrop. On the left, a sleek black background with white and yellow text says 'Stage to Shelf: Grammys Merch That Rocks!'" class="screenshot">
-                </a>
-                <br><br>
-                <p class="cd-blurb">
-                  <a href="img/Grammys Social Media.pdf" target="_blank" id="project-link"><i class="bi bi-easel-fill"></i>&nbsp;slideshow&nbsp;</a>
-                </p>
-                <p class="description">Built a paid social strategy to drive merch sales for the GRAMMY Awards, targeting a Gen Z persona with platform-specific ads. Selected channels and ad formats based on user behavior, and analyzed campaign metrics (CTR, CPC, CPA) to evaluate performance. Blended creative thinking with data-driven decision-making for a high-impact campaign.</p>
-                <p class="skill-blurb">Social Media Marketing</p>
-                <p class="skill-blurb">Audience Targeting & Persona Development</p>
-                <p class="skill-blurb">Campaign Data Analysis (CTR, CPC, CPA)</p>
-                <p class="skill-blurb">Marketing Strategy</p>
-                <p class="skill-blurb">Ad Platform & Format Selection</p>
-                <br><br>
-                <!-- <img src="img/person-star.png" alt="Brown star outline with pink outline of a person" class="project-icon"> -->
-              </div>
-            </div>
+        <!-- Scrollable badges wrapper -->
+        <div class="business-carousel d-flex overflow-auto" id="businessCarousel">
+          <div class="business-card">
+            <h4>Charity: Water Marketing Campaign</h4>
+            <br>
+            <a href="img/Charity Water Marketing.pdf" target="_blank">
+              <img src="img/charity water thumbnail.png" alt="Man in a white outfit and green turban sits on bright white stairs, holding a metal cup. Large bold text on the left reads 'Activating the next generation of charity: water supporters' with 'charity: water' in vibrant yellow. A yellow footer bar displays the charity: water logo." class="screenshot">
+            </a>
+            <br><br>
+            <p class="cd-blurb">
+              <a href="img/Charity Water Marketing.pdf" target="_blank" id="project-link"><i class="bi bi-easel-fill"></i>&nbsp;slideshow</a>
+              <a href="" target="new" id="project-link"><a href="https://github.com/arthelen/CR-02-charity-water-lp" target="new" id="project-link"><i class="bi bi-github"></i>code</a>
+              <a href="" target="new" id="project-link"><a href="https://arthelen.github.io/CR-02-charity-water-lp/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
+            </p>
+            <p class="description">Designed a donation-focused landing page aimed at college students using Canva. Based on a Gen Z persona, the project included an empathy map, value proposition, and tailored visuals aligned with Charity: Water’s brand. Focused on making giving feel easy, transparent, and impactful.</p>
+            <p class="skill-blurb">UI/UX Design</p>
+            <p class="skill-blurb">Brand Strategy & Visual Identity</p>
+            <p class="skill-blurb">Digital Marketing</p>
+            <p class="skill-blurb">Audience & Persona Targeting</p>
+            <p class="skill-blurb">Copywriting for Nonprofits</p>
+            <br><br>
+            <!-- <img src="img/droplet.png" alt="Pink and brown water droplet icon" class="project-icon"> -->
           </div>
-        </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!-- <section id="project-section" class="project-section text-center reveal">
-        <h4 class="mb-4 card-title">Business Projects</h4>
-        <div class="card mb-3">
-            <div class="card-body">
-              <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                      <h4>Charity: Water Marketing Campaign</h4>
-                      <br>
-                      <a href="img/Charity Water Marketing.pdf" target="_blank">
-                        <img src="img/charity water thumbnail.png" alt="Man in a white outfit and green turban sits on bright white stairs, holding a metal cup. Large bold text on the left reads 'Activating the next generation of charity: water supporters' with 'charity: water' in vibrant yellow. A yellow footer bar displays the charity: water logo." class="screenshot">
-                      </a>
-                      <br><br>
-                      <p class="cd-blurb">
-                        <a href="img/Charity Water Marketing.pdf" target="_blank" id="project-link"><i class="bi bi-easel-fill"></i>&nbsp;slideshow</a>
-                        <a href="" target="new" id="project-link"><a href="https://github.com/arthelen/CR-02-charity-water-lp" target="new" id="project-link"><i class="bi bi-github"></i>code</a>
-                        <a href="" target="new" id="project-link"><a href="https://arthelen.github.io/CR-02-charity-water-lp/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-                      </p>
-                      <p class="description">Designed a donation-focused landing page aimed at college students using Canva. Based on a Gen Z persona, the project included an empathy map, value proposition, and tailored visuals aligned with Charity: Water’s brand. Focused on making giving feel easy, transparent, and impactful.</p>
-                      <p class="skill-blurb">UI/UX Design</p>
-                      <p class="skill-blurb">Brand Strategy & Visual Identity</p>
-                      <p class="skill-blurb">Digital Marketing</p>
-                      <p class="skill-blurb">Audience & Persona Targeting</p>
-                      <p class="skill-blurb">Copywriting for Nonprofits</p>
-                      <br><br>
-                      <img src="img/droplet.png" alt="Pink and brown water droplet icon" class="project-icon">
-                    </div>
-                    <div class="col-12 col-md-6">
-                      <h4>Cerave SEO Marketing Campaign</h4>
-                      <br>
-                      <a href="img/CeraVe SEO.pdf" target="_blank">
-                        <img src="img/cerave thumbnail.png" alt="CeraVe Hydrating Facial Cleanser and Moisturizing Cream sit on a marble tray in a softly lit bathroom. Bold white and blue headline on a black curved background reads 'Google It: Reaching CeraVe’s Male Skincare Searchers.'" class="screenshot">
-                      </a>
-                      <br><br>
-                      <p class="cd-blurb">
-                        <a href="img/CeraVe SEO.pdf" target="_blank" id="project-link"><i class="bi bi-easel-fill"></i>&nbsp;slideshow</a>
-                      </p>
-                      <p class="description">Developed a search-optimized content plan targeting a specific skincare persona. Conducted keyword research using SEMrush and Google Trends, refined CeraVe’s keyword list, and wrote three blog posts aligned with brand voice and user search intent. Strengthened skills in content strategy, SEO, and audience targeting.</p>
-                      <p class="skill-blurb">Search Engine Optimization (SEO)</p>
-                      <p class="skill-blurb">Content Marketing</p>
-                      <p class="skill-blurb">Keyword Research</p>
-                      <p class="skill-blurb">Audience & Persona Targeting</p>
-                      <p class="skill-blurb">Brand Voice Alignment</p>
-                      <br><br>
-                      <img src="img/bottle.png" alt="Pink and brown water skincare bottle icon" class="project-icon">
-                    </div>
-                    <div class="col-12 col-md-6">
-                      <h4>Grammy's Analytics Evaluation</h4>
-                      <br>
-                      <a href="img/Grammys Social Media.pdf" target="_blank">
-                        <img src="img/grammy thumbnail.png" alt="Beyoncé holds three Grammy trophies in her left hand and one in her right, smiling in front of a gold Grammy backdrop. On the left, a sleek black background with white and yellow text says 'Stage to Shelf: Grammys Merch That Rocks!'" class="screenshot">
-                      </a>
-                      <br><br>
-                      <p class="cd-blurb">
-                        <a href="img/Grammys Social Media.pdf" target="_blank" id="project-link"><i class="bi bi-easel-fill"></i>&nbsp;slideshow&nbsp;</a>
-                      </p>
-                      <p class="description">Built a paid social strategy to drive merch sales for the GRAMMY Awards, targeting a Gen Z persona with platform-specific ads. Selected channels and ad formats based on user behavior, and analyzed campaign metrics (CTR, CPC, CPA) to evaluate performance. Blended creative thinking with data-driven decision-making for a high-impact campaign.</p>
-                      <p class="skill-blurb">Social Media Marketing</p>
-                      <p class="skill-blurb">Audience Targeting & Persona Development</p>
-                      <p class="skill-blurb">Campaign Data Analysis (CTR, CPC, CPA)</p>
-                      <p class="skill-blurb">Marketing Strategy</p>
-                      <p class="skill-blurb">Ad Platform & Format Selection</p>
-                      <br><br>
-                      <img src="img/person-star.png" alt="Brown star outline with pink outline of a person" class="project-icon">
-                    </div>
-                </div>
-              </div>
-            </div>
+          <div class="business-card">
+            <h4>Cerave SEO Marketing Campaign</h4>
+            <br>
+            <a href="img/CeraVe SEO.pdf" target="_blank">
+              <img src="img/cerave thumbnail.png" alt="CeraVe Hydrating Facial Cleanser and Moisturizing Cream sit on a marble tray in a softly lit bathroom. Bold white and blue headline on a black curved background reads 'Google It: Reaching CeraVe’s Male Skincare Searchers.'" class="screenshot">
+            </a>
+            <br><br>
+            <p class="cd-blurb">
+              <a href="img/CeraVe SEO.pdf" target="_blank" id="project-link"><i class="bi bi-easel-fill"></i>&nbsp;slideshow</a>
+            </p>
+            <p class="description">Developed a search-optimized content plan targeting a specific skincare persona. Conducted keyword research using SEMrush and Google Trends, refined CeraVe’s keyword list, and wrote three blog posts aligned with brand voice and user search intent. Strengthened skills in content strategy, SEO, and audience targeting.</p>
+            <p class="skill-blurb">Search Engine Optimization (SEO)</p>
+            <p class="skill-blurb">Content Marketing</p>
+            <p class="skill-blurb">Keyword Research</p>
+            <p class="skill-blurb">Audience & Persona Targeting</p>
+            <p class="skill-blurb">Brand Voice Alignment</p>
+            <br><br>
+            <!-- <img src="img/bottle.png" alt="Pink and brown water skincare bottle icon" class="project-icon"> -->
+          </div>
+          <div class="business-card">
+            <h4>Grammy's Analytics Evaluation</h4>
+            <br>
+            <a href="img/Grammys Social Media.pdf" target="_blank">
+              <img src="img/grammy thumbnail.png" alt="Beyoncé holds three Grammy trophies in her left hand and one in her right, smiling in front of a gold Grammy backdrop. On the left, a sleek black background with white and yellow text says 'Stage to Shelf: Grammys Merch That Rocks!'" class="screenshot">
+            </a>
+            <br><br>
+            <p class="cd-blurb">
+              <a href="img/Grammys Social Media.pdf" target="_blank" id="project-link"><i class="bi bi-easel-fill"></i>&nbsp;slideshow&nbsp;</a>
+            </p>
+            <p class="description">Built a paid social strategy to drive merch sales for the GRAMMY Awards, targeting a Gen Z persona with platform-specific ads. Selected channels and ad formats based on user behavior, and analyzed campaign metrics (CTR, CPC, CPA) to evaluate performance. Blended creative thinking with data-driven decision-making for a high-impact campaign.</p>
+            <p class="skill-blurb">Social Media Marketing</p>
+            <p class="skill-blurb">Audience Targeting & Persona Development</p>
+            <p class="skill-blurb">Campaign Data Analysis (CTR, CPC, CPA)</p>
+            <p class="skill-blurb">Marketing Strategy</p>
+            <p class="skill-blurb">Ad Platform & Format Selection</p>
+            <br><br>
+            <!-- <img src="img/person-star.png" alt="Brown star outline with pink outline of a person" class="project-icon"> -->
+          </div>
         </div>
-    </section> -->
+      </div>
+    </section>
 
     <!-- design section -->
     <section id="design-section" class="design-section light reveal">

@@ -14,6 +14,18 @@ body {
   transform: translateY(0);
 }
 
+@keyframes bounce {
+  0%   { transform: scale(1); }
+  30%  { transform: scale(1.15); }
+  50%  { transform: scale(0.95); }
+  70%  { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.bounce {
+  animation: bounce 0.5s ease;
+}
+
 /* navigation */
 .navbar-custom {
   background-color: #F6B6AC;
@@ -1410,6 +1422,35 @@ h1,	.h1 {
   &:hover .postcard__bar {
     width: 100px;
   }
+}
+
+
+.music-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+  position: relative;
+  z-index: 1;
+}
+
+.music-card img {
+  pointer-events: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.music-card.floaty {
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+
+
+
+.music-section {
+  padding-top: 0;
 }
 
 .music-section p {

@@ -71,59 +71,59 @@ function scrollBadges(direction) {
 }
 
 // Business section
-function scrollBadges(direction) {
+function scrollBusiness(direction) {
   const carousel = document.getElementById('businessCarousel');
   const card = carousel.querySelector('.business-card');
   const scrollAmount = card.offsetWidth + 24; // 24 = gap size
   carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const filterGroup = document.getElementById('skillFilter');
-  const checkboxes = filterGroup.querySelectorAll('input[type="checkbox"]');
-  const projects = document.querySelectorAll('.col-xl-4');
-  const showAllBtn = document.getElementById('showAllBtn');
-  const selectedSkillsDisplay = document.getElementById('selectedSkillsDisplay');
+// document.addEventListener('DOMContentLoaded', () => {
+//   const filterGroup = document.getElementById('skillFilter');
+//   const checkboxes = filterGroup.querySelectorAll('input[type="checkbox"]');
+//   const projects = document.querySelectorAll('.col-xl-4');
+//   const showAllBtn = document.getElementById('showAllBtn');
+//   const selectedSkillsDisplay = document.getElementById('selectedSkillsDisplay');
 
-  function getSelectedSkills() {
-    return Array.from(checkboxes)
-      .filter(cb => cb.checked)
-      .map(cb => cb.value);
-  }
+//   function getSelectedSkills() {
+//     return Array.from(checkboxes)
+//       .filter(cb => cb.checked)
+//       .map(cb => cb.value);
+//   }
 
-  function updateSelectedSkillsDisplay(selectedSkills) {
-    if (selectedSkills.length === 0) {
-      selectedSkillsDisplay.textContent = 'No skills selected.';
-    } else {
-      selectedSkillsDisplay.textContent = 'Selected: ' + selectedSkills.join(', ');
-    }
-  }
+//   function updateSelectedSkillsDisplay(selectedSkills) {
+//     if (selectedSkills.length === 0) {
+//       selectedSkillsDisplay.textContent = 'No skills selected.';
+//     } else {
+//       selectedSkillsDisplay.textContent = 'Selected: ' + selectedSkills.join(', ');
+//     }
+//   }
 
-  function filterProjects() {
-    const selectedSkills = getSelectedSkills();
-    projects.forEach(project => {
-      const projectSkills = Array.from(project.querySelectorAll('.skill-blurb')).map(skill => skill.textContent.trim());
-      const hasMatch = selectedSkills.some(skill => projectSkills.includes(skill));
-      project.style.display = selectedSkills.length === 0 || hasMatch ? 'block' : 'none';
-    });
-    updateSelectedSkillsDisplay(selectedSkills);
-  }
+//   function filterProjects() {
+//     const selectedSkills = getSelectedSkills();
+//     projects.forEach(project => {
+//       const projectSkills = Array.from(project.querySelectorAll('.skill-blurb')).map(skill => skill.textContent.trim());
+//       const hasMatch = selectedSkills.some(skill => projectSkills.includes(skill));
+//       project.style.display = selectedSkills.length === 0 || hasMatch ? 'block' : 'none';
+//     });
+//     updateSelectedSkillsDisplay(selectedSkills);
+//   }
 
-  checkboxes.forEach(cb => {
-    cb.addEventListener('change', filterProjects);
-  });
+//   checkboxes.forEach(cb => {
+//     cb.addEventListener('change', filterProjects);
+//   });
 
-  showAllBtn.addEventListener('click', () => {
-    checkboxes.forEach(cb => cb.checked = false);
-    projects.forEach(project => {
-      project.style.display = 'block';
-    });
-    updateSelectedSkillsDisplay([]);
-  });
+//   showAllBtn.addEventListener('click', () => {
+//     checkboxes.forEach(cb => cb.checked = false);
+//     projects.forEach(project => {
+//       project.style.display = 'block';
+//     });
+//     updateSelectedSkillsDisplay([]);
+//   });
 
-  // Initial display
-  updateSelectedSkillsDisplay([]);
-});
+//   // Initial display
+//   updateSelectedSkillsDisplay([]);
+// });
 
 // Skills section new
 function showSkillInfo(id) {
@@ -177,32 +177,45 @@ let activeCategory = 'frontend'; // Track current active category
 
 function showSkillCategory(category) {
   const container = document.getElementById('skill-display');
-  const buttons = document.querySelectorAll('.skill-tab');
+  const button = document.querySelector(`[onclick*='${category}']`);
+  const alreadyActive = button.classList.contains('active');
 
-  // If same category is clicked again, hide everything
-  if (activeCategory === category) {
-    container.innerHTML = '';
-    buttons.forEach(btn => btn.classList.remove('active'));
-    activeCategory = null;
-    return;
+  if (alreadyActive) {
+    // Deactivate and remove this category’s cards
+    button.classList.remove('active');
+    const cardsToRemove = container.querySelectorAll(`.skill-card[data-category="${category}"]`);
+    cardsToRemove.forEach(card => card.remove());
+  } else {
+    // Activate and add this category’s cards
+    button.classList.add('active');
+    const newCards = skills[category].map(skill => `
+      <div class="skill-card" data-category="${category}">
+        <img src="${skill.icon}" alt="${skill.name} icon">
+        <h5>${skill.name}</h5>
+      </div>
+    `).join('');
+    container.insertAdjacentHTML('beforeend', newCards);
   }
-
-  // Otherwise, show new skills
-  buttons.forEach(btn => btn.classList.remove('active'));
-  document.querySelector(`[onclick*='${category}']`).classList.add('active');
-
-  container.innerHTML = skills[category].map(skill => `
-    <div class="skill-card">
-      <img src="${skill.icon}" alt="${skill.name} icon">
-      <h5>${skill.name}</h5>
-    </div>
-  `).join('');
-
-  activeCategory = category;
 }
 
 // Load default
 showSkillCategory('frontend');
+
+document.querySelectorAll('.skill-tab').forEach(button => {
+  button.addEventListener('click', () => {
+    button.classList.remove('bounce'); // Reset animation if already applied
+    void button.offsetWidth; // Trigger reflow to restart animation
+    button.classList.add('bounce');
+  });
+});
+
+document.querySelectorAll('.card-subtitle').forEach(button => {
+  button.addEventListener('click', () => {
+    button.classList.remove('bounce'); // Reset animation if already applied
+    void button.offsetWidth; // Trigger reflow to restart animation
+    button.classList.add('bounce');
+  });
+});
 
 // Design section toggle
 const triggers = document.querySelectorAll('.toggle-trigger');
