@@ -131,21 +131,6 @@ function showSkillInfo(id) {
   clickedCard.classList.toggle('active');
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const skills = {
   frontend: [
     { name: 'HTML', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
@@ -179,8 +164,6 @@ const skills = {
   ]
 };        
           
-          
-
 function showSkillCategory(category) {
   const container = document.getElementById('skill-display');
   const buttons = document.querySelectorAll('.skill-tab');

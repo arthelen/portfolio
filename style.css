@@ -86,7 +86,7 @@ body {
 
 /* intro Section */
 .intro-section {
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 1rem 2rem;
   text-align: center;
 }
 
@@ -116,100 +116,6 @@ body {
   flex: 1 1 300px;
 }
 
-.console-window {
-  flex: 1 1 800px;
-  width: clamp(70px, 75vw, 1500px);
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
-  /* max-width: 950px; */
-  margin: 0 auto;
-  font-family: 'Courier New', monospace;
-  overflow: hidden;
-  border: 3px solid #F6B6AC;
-}
-
-.console-header {
-  background-color: #F6B6AC;
-  padding: 0.5rem 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-}
-
-.console-body {
-  padding: 1.5rem;
-  white-space: pre-wrap;
-  word-break: break-word;
-  color: #333;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  text-align: left;
-}
-
-.console-body pre {
-  white-space: pre-wrap;
-  word-break: break-word;
-  overflow-wrap: break-word;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-.console-body a {
-  color: #333;
-  transition: 0.2s ease-in-out;
-}
-
-.console-body a:hover {
-  color: #F6B6AC;
-  transition: 0.2s ease-in-out;
-}
-
-.console-body a:visited {
-  color: #333;
-  transition: 0.2s ease-in-out;
-}
-
-.circle {
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.console-red {
-  background-color: #eb4a41;
-}
-
-.console-yellow {
-  background-color: #ffd16c;
-}
-
-.console-green {
-  background-color: #89eb73;
-}
-
-.intro-code-title {
-  font-weight: bolder;
-  color: #B46D54;
-}
-
-.console-body {
-  font-family: 'Courier New', monospace;
-  font-size: 1rem;
-  color: #6f2e1d;
-}
-
-.code-line {
-  white-space: pre-wrap;
-  text-indent: -1.5em;
-  padding-left: 1.5em;
-  line-height: 1.6;
-}
-
 @media (max-width: 768px) {
   .intro-flex {
     flex-direction: column;
@@ -219,6 +125,75 @@ body {
   .console-window {
     width: 100%;
   }
+}
+
+.console-section {
+  color: #333;
+  padding: 2rem 1rem;
+  display: flex;
+  font-size: rem;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Courier New', monospace;
+}
+
+.console-window {
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 900px;
+  width: 90%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+.console-header {
+  background-color: #F6B6AC;
+  padding: 0.5rem 1rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.console-header .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.red { background-color: #f2736d; }
+.dot.yellow { background-color: #f0d59b; }
+.dot.green { background-color: #88e296; }
+
+.console-body {
+  padding: 1.5rem;
+  font-weight: bolder;
+}
+
+.console-line {
+  margin: 0.6rem 0;
+}
+
+.prompt {
+  color: #F6B6AC;
+}
+
+.name {
+  color: #977053;;
+  font-weight: bolder;
+}
+
+.console-section a {
+  color: #B46D54;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .3s ease-in-out;
+}
+
+.console-section a:hover {
+  color: #F6B6AC;
+  text-decoration: underline;
+  text-shadow: 0 0 10px #F6B6AC;
+  transform: scale(1.05);
+  transition: .3s ease-in-out;
 }
 
 .card-footer {
@@ -233,7 +208,7 @@ body {
 }
 
 .headshot {
-  width: clamp(50px, 50vw, 400px);
+  max-width: clamp(100px, 50vw, 400px);
   height: auto;
   border: 10px solid #F6B6AC;
   border-radius: 50vw;
@@ -420,14 +395,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
 .badge-carousel {
   display: flex;
   scroll-behavior: smooth;
@@ -516,26 +483,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .skills-section {
   text-align: center;
   padding: 2rem;
@@ -543,7 +490,7 @@ body {
 
 .skills-section h5 {
   text-align: center;
-  color: #B46D54;
+  color: #333;
   padding: 2rem 0 0 0
 }
 
@@ -692,7 +639,7 @@ body {
 .badge-card h3 {
   font-size: 1.4em;
   font-weight: bold;
-  color: #B46D54;
+  color: #977053;;
   margin: 20px 0;
 }
 
@@ -787,7 +734,7 @@ section {
 
 .project-section .description {
   padding: 20px 0;
-  font-size: clamp(0.3rem, 1.3rem, 1.5rem);
+  font-size: clamp(0.3rem, 1rem, 1.3rem);
   cursor: default;
   margin: 0;
 }
@@ -807,7 +754,7 @@ section {
 
 h4 {
 	font-size: clamp(1.7rem, 1vw, 2.1rem);
-	color: #B46D54;
+	color: #977053;;
   font-weight: bold;
 	vertical-align: middle;
   margin: 55px auto -10px auto;
@@ -820,7 +767,7 @@ h4 {
 .skill-blurb {
   display: inline-block;
   text-wrap: wrap;
-  font-size: 1.1em;
+  font-size: 0.9em;
   background-color: #f7e6de;
   border: solid 3px #f7e6de;
   border-radius: 25px;
@@ -886,7 +833,7 @@ h4 {
 }
 
 #project-link {
-  font-size: clamp(1.4rem, 1.5vw, 1.7rem);
+  font-size: clamp(1.4rem, 1.3vw, 1.5rem);
   padding: 0 2px;
   color: #B46D54;
   text-decoration: none;
@@ -945,6 +892,16 @@ h4 {
   padding: 20px 0;
   font-size: clamp(0.3rem, 1.3rem, 1.5rem);
   cursor: default;
+}
+
+.design-section .card-subtitle {
+  background-color: #F6B6AC;
+  color: #B46D54;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin: 0 auto 30px auto;
+  width: fit-content;
 }
 
 .design-cd-blurb p {
@@ -1250,7 +1207,7 @@ a, a:hover {
     margin: 0 0 2rem 0;
     overflow: hidden;
     position: relative;
-    background-color: #fbf5f1;
+    background-color: #fff;
     color: #977053;
   
 a {
@@ -1268,7 +1225,7 @@ h1,	.h1 {
 }
 
   .postcard__title {
-    font-size: 1.75rem;
+    font-size: 1.7rem !important;
     cursor: default;
     font-weight: bold;
   }
@@ -1306,13 +1263,14 @@ h1,	.h1 {
     text-overflow: ellipsis;
     text-align: justify;
     height: 100%;
+    font-size: 1.1rem;
     color: black;
   }
 
   .postcard__tagbox {
     display: flex;
     flex-flow: row wrap;
-    font-size: 17px;
+    font-size: 15px;
     margin: 20px 0 0 0;
 		padding: 0;
     justify-content: center;
@@ -1410,7 +1368,7 @@ h1,	.h1 {
   flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
   justify-content: center; /* Center the cards */
   gap: 15px; /* Add spacing between cards */
-  z-index: 5;;
+  z-index: 5;
 }
 
 .music-card {
@@ -1423,15 +1381,11 @@ h1,	.h1 {
   position: relative; /* Ensure the progress bar is positioned correctly */
 }
 
-.music-section p {
-  text-align: center;
-  margin: 0;
-}
-
 .music-card h3 {
   font-size: 1.2em;
   font-weight: bold;
-  color: #977053; /* Darker pink for song title */
+  text-align: center;
+  color: #977053;
   margin: 0;
 }
 
@@ -1459,6 +1413,7 @@ h1,	.h1 {
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
   border: solid 3px #F6B6AC;
   border-radius: 50%;
+  background-color: #fff;
   cursor: pointer; /* Indicate the image is clickable */
   transition: 0.3s ease-in-out;
 }
@@ -1466,7 +1421,7 @@ h1,	.h1 {
 .music-card img:hover {
   transform: scale(1.04); /* Slightly enlarge the image on hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
-  background-color: #FBF5F1;
+  background-color: #F6B6AC;
   transition: 0.3s ease-in-out;
 }
 
@@ -1521,7 +1476,7 @@ h1,	.h1 {
   margin-right: 6px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .postcard {
     flex-wrap: inherit;
     
