@@ -78,6 +78,66 @@ function scrollBusiness(direction) {
   carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
 }
 
+
+
+
+
+
+
+
+
+
+
+// new project section
+const buttons = document.querySelectorAll(".filter-btn");
+  const projectCards = document.querySelectorAll(".project-card");
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      btn.classList.toggle("active");
+
+      const activeCategories = Array.from(buttons)
+        .filter(b => b.classList.contains("active"))
+        .map(b => b.dataset.category);
+
+      projectCards.forEach((card) => {
+        const cardCategory = card.dataset.category;
+        card.style.display = activeCategories.includes(cardCategory) ? "block" : "none";
+      });
+
+      // OPTIONAL: if nothing selected, show all
+      if (activeCategories.length === 0) {
+        projectCards.forEach((card) => card.style.display = "block");
+      }
+    });
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // document.addEventListener('DOMContentLoaded', () => {
 //   const filterGroup = document.getElementById('skillFilter');
 //   const checkboxes = filterGroup.querySelectorAll('input[type="checkbox"]');
@@ -210,6 +270,14 @@ document.querySelectorAll('.skill-tab').forEach(button => {
 });
 
 document.querySelectorAll('.card-subtitle').forEach(button => {
+  button.addEventListener('click', () => {
+    button.classList.remove('bounce'); // Reset animation if already applied
+    void button.offsetWidth; // Trigger reflow to restart animation
+    button.classList.add('bounce');
+  });
+});
+
+document.querySelectorAll('.filter-btn').forEach(button => {
   button.addEventListener('click', () => {
     button.classList.remove('bounce'); // Reset animation if already applied
     void button.offsetWidth; // Trigger reflow to restart animation

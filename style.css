@@ -721,6 +721,28 @@ body {
 
 /* project section */
 /* Styling the filter label */
+.filter-btn {
+  margin: 2rem auto 1rem;
+  font-weight: bold;
+  color: #B46D54;
+  border: solid 3px #f6b6ac;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  background: #F7E6DE;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.filter-btn.active, .filter-btn:hover {
+  background: #f6b6ac;
+}
+
+
+
+
+
 .filter-label {
   font-weight: 600;
   font-size: 1.1rem;
@@ -772,6 +794,108 @@ section {
   color: #B46D54;
   margin: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Container for grid layout */
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* Individual card responsiveness */
+.project-card {
+  border: 3px solid #F6B6AC;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 1rem;
+  flex: 1 1 300px; /* flex-grow | flex-shrink | flex-basis */
+  max-width: 350px;
+  min-width: 260px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .project-cards {
+    gap: 1.25rem;
+    padding: 0.5rem;
+  }
+
+  .project-card {
+    flex: 1 1 90%;
+    max-width: 100%;
+  }
+}
+
+/* For extra small screens */
+@media (max-width: 480px) {
+  .project-card {
+    padding: 0.75rem;
+  }
+
+  .project-card img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .project-section .description {
   padding: 20px 0;
