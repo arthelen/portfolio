@@ -27,7 +27,7 @@ h4 {
 
 .card-title {
   font-weight: 700;
-  padding-bottom: 30px;
+  padding: 0;
   color: #B46D54;
   margin: auto;
 }
@@ -854,8 +854,12 @@ h4 {
   transition: opacity 0.4s ease;
 }
 
-.design-group.show {
+.design-group.showing {
   display: block;
+  opacity: 0;
+}
+
+.design-group.fading-in {
   opacity: 1;
 }
 

@@ -205,17 +205,17 @@ document.querySelectorAll('.project-toggle-trigger').forEach(button => {
 
 
 // ********design section query selector for see more buttons to change text accordingly
-document.querySelectorAll('.see-more-btn').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    const isSeeMore = btn.innerHTML.includes("See More");
+// document.querySelectorAll('.see-more-btn').forEach((btn) => {
+//   btn.addEventListener('click', () => {
+//     const isSeeMore = btn.innerHTML.includes("See More");
 
-    // Swap inner HTML with icon + text
-    btn.innerHTML = isSeeMore
-  ? 'See Less <i class="bi bi-arrow-up-short"></i>'
-  : 'See More <i class="bi bi-arrow-down-short"></i>';
+//     // Swap inner HTML with icon + text
+//     btn.innerHTML = isSeeMore
+//   ? 'See Less <i class="bi bi-arrow-up-short"></i>'
+//   : 'See More <i class="bi bi-arrow-down-short"></i>';
 
-  });
-});
+//   });
+// });
 
 // ******* design and project section see more buttons bounce effect
 document.querySelectorAll('.card-subtitle').forEach(button => {
@@ -229,25 +229,28 @@ document.querySelectorAll('.card-subtitle').forEach(button => {
 
 
 // *******Design section see more button functionality toggle
-const triggers = document.querySelectorAll('.toggle-trigger');
+document.querySelectorAll('.toggle-trigger').forEach(button => {
+  button.addEventListener('click', () => {
+    const wrapper = button.closest('.design-group-wrapper');
+    const group = wrapper.querySelector('.design-group');
+    const isOpen = group.classList.contains('fading-in');
 
-triggers.forEach(trigger => {
-  trigger.addEventListener('click', () => {
-    const nextGroup = trigger.nextElementSibling;
-
-    // Toggle class to show/hide with fade
-    if (nextGroup.classList.contains('show')) {
-      nextGroup.classList.remove('show');
-      // Wait for opacity transition to finish before hiding
+    if (isOpen) {
+      group.classList.remove('fading-in');
       setTimeout(() => {
-        nextGroup.style.display = 'none';
-      }, 400);
+        group.classList.remove('showing');
+        group.style.display = 'none';
+      }, 400); // match CSS transition duration
+      button.innerHTML = 'See More <i class="bi bi-arrow-down-short"></i>';
+      wrapper.insertBefore(button, group);
     } else {
-      nextGroup.style.display = 'block';
-      // Small delay to trigger the transition
+      group.style.display = 'block';
+      group.classList.add('showing');
       setTimeout(() => {
-        nextGroup.classList.add('show');
-      }, 10);
+        group.classList.add('fading-in');
+      }, 5); // small delay so transition kicks in
+      button.innerHTML = 'See Less <i class="bi bi-arrow-up-short"></i>';
+      group.appendChild(button);
     }
   });
 });
