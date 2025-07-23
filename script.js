@@ -231,18 +231,16 @@ const skills = {
           
 let activeCategory = 'frontend'; // Track current active category
 
-function showSkillCategory(category) {
+function showSkillCategory(category, buttonEl = null) {
   const container = document.getElementById('skill-display');
-  const button = document.querySelector(`[onclick*='${category}']`);
+  const button = buttonEl || document.querySelector(`.skill-tab[data-category="${category}"]`);
   const alreadyActive = button.classList.contains('active');
 
   if (alreadyActive) {
-    // Deactivate and remove this category’s cards
     button.classList.remove('active');
     const cardsToRemove = container.querySelectorAll(`.skill-card[data-category="${category}"]`);
     cardsToRemove.forEach(card => card.remove());
   } else {
-    // Activate and add this category’s cards
     button.classList.add('active');
     const newCards = skills[category].map(skill => `
       <div class="skill-card" data-category="${category}">
@@ -255,14 +253,24 @@ function showSkillCategory(category) {
 }
 
 // Load default
-showSkillCategory('frontend');
-
 document.querySelectorAll('.skill-tab').forEach(button => {
   button.addEventListener('click', () => {
-    button.classList.remove('bounce'); // Reset animation if already applied
-    void button.offsetWidth; // Trigger reflow to restart animation
+    const category = button.dataset.category;
+    showSkillCategory(category, button);
+
+    // Bounce animation
+    button.classList.remove('bounce');
+    void button.offsetWidth;
     button.classList.add('bounce');
   });
+});
+
+// Default load on page
+window.addEventListener('DOMContentLoaded', () => {
+  const defaultTab = document.querySelector('.skill-tab[data-category="frontend"]');
+  if (defaultTab) {
+    showSkillCategory('frontend', defaultTab);
+  }
 });
 
 document.querySelectorAll('.card-subtitle').forEach(button => {
