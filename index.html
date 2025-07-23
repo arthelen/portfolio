@@ -103,184 +103,155 @@
         </div>
       </section>
 
-        <!-- about me section -->
-        <!-- <section id="about-section" class="about-section text-center">
-            <div class="card mb-3">
-              <div class="row g-0">
-                <img src="allison-pfp.jpeg" class="img-fluid headshot" alt="Headshot of Allison Thelen">
-              </div>
-              <div class="row g-0">
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <div class="container"><h1 id="typed-name" class="typing"></h1>
-                      <p><span class="motto"><b><i>elevating experiences, one pixel at a time!</i></b></p></span>
-                      <p class="card-text">I am a motivated entry-level web developer + UI/UX designer seeking a full-time position! I leverage my education and 
-                      skills with my passion for design elements to collaborate and create enjoyable experiences for everyone. With every 
-                      project I bring a keen eye for detail and appreciation for aesthetics, solving problems and transforming them into 
-                      functional, appealing designs. I am confident that my academic background alongside my work experience has prepared me for such a role, but I am willing and
-                      open to learning along the way!<br><br></p>
-                      <div class="resume-links">
-                        <a href="pretty-resume.pdf" target="_blank" class="resume pretty" id="prettyResume">
-                          <span class="sparkle sparkle-1">✦</span>
-                          <span class="sparkle sparkle-2">✦</span>
-                          <i class="bi bi-postage-heart-fill"></i><br>
-                          pretty resume
-                        </a>
-                        <a href="regular-resume.pdf" target="_blank" class="resume regular"><i class="bi bi-postage-heart"></i><br>regular resume</a>
-                      </div>                      
-                    <div class="card-footer bg-transparent">
-                      <a href="https://www.linkedin.com/in/allisonrthelen/" target="new"><i id="contact-icon" class="bi bi-linkedin fa-7x"></i></a>
-                      <a href="mailto:allisonrthelen@gmail.com" target="new"><i id="contact-icon" class="bi bi-envelope-at-fill"></i></a>
-                      <a href="https://github.com/arthelen" target="new"><i id="contact-icon" class="bi bi-github"></i></a>
-                    </div>
-                  </div>
-                </div>
+      <!-- skills section -->
+      <section id="skills-section" class="skills-section reveal">
+        <h4 class="card-title">Skills</h4>
+        <div class="skill-categories">
+          <button class="skill-tab" data-category="frontend">Front-End</button>
+          <button class="skill-tab" data-category="design">Design</button>
+          <button class="skill-tab" data-category="tools">Tools</button>
+        </div>
+
+        <div class="skills-grid" id="skill-display">
+        </div>
+      </section>
+
+      <section id="badge-section" class="py-5 text-center reveal">
+        <h4 class="mb-4 card-title">Certifications & Badges</h4>
+        <div class="position-relative container">
+
+          <button class="scroll-btn left" onclick="scrollBadges(-1)">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button class="scroll-btn right" onclick="scrollBadges(1)">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+
+          <div class="badge-carousel d-flex overflow-auto" id="badgeCarousel">
+            <div class="badge-card">
+              <a href="https://www.credential.net/96597f68-afb0-4c20-b2d0-26a290859766#acc.7ht6GLsA" target="_blank">
+                <img src="img/AI Professional Skills Certification.png" alt="A circular badge with a lavender border labeled 'The Global Career Accelerator'. Center text reads 'AI Professional Skills – Applying AI to real-world projects with OpenAI', with the OpenAI logo beneath the text." class="circular-image">
+              </a>
+              <h3>AI Professional Skills</h3>
+              <div class="skill-tag-container">
+                <p class="skill-blurb">Artifical Intelligence (AI)</p>
+                <p class="skill-blurb">ChatGPT</p>
               </div>
             </div>
-        </section> -->
 
-        <!-- skills section -->
-        <section id="skills-section" class="skills-section reveal">
-          <h4 class="card-title">Skills</h4>
-          <div class="skill-categories">
-            <button class="skill-tab" data-category="frontend">Front-End</button>
-            <button class="skill-tab" data-category="design">Design</button>
-            <button class="skill-tab" data-category="tools">Tools</button>
-          </div>
+            <div class="badge-card">
+              <a href="https://www.credential.net/257d06ea-1e3d-41d7-ad2a-05bec6949246#acc.Je9t6Ks2" target="_blank">
+                <img src="img/ui-ux-prototyping-gca-badge.png" alt="A circular badge with a red border labeled 'The Global Career Accelerator'. Center text reads 'UX/UI & Prototyping – Building prototypes of consumer tools with L’Oréal'." class="circular-image">
+              </a>
+              <h3>UI/UX & Prototyping</h3>
+              <div class="skill-tag-container">
+                <p class="skill-blurb">UI</p>
+                <p class="skill-blurb">UX</p>
+                <p class="skill-blurb">Prototyping</p>
+              </div>
+            </div>
 
-          <div class="skills-grid" id="skill-display">
-          </div>
-        </section>
+            <div class="badge-card">
+              <a href="https://www.credential.net/28855149-1212-4f5b-827d-e659551d7700#acc.nebLFyJq" target="_blank">
+                <img src="img/data-visualization-gca-badge.png" alt="A circular badge with a blue border labeled 'The Global Career Accelerator'. Center text reads 'Data Visualization – Visualizing impact on sustainability with Intel'." class="circular-image">
+              </a>
+              <h3>Data Visualization</h3>
+              <div class="skill-tag-container">
+                <p class="skill-blurb">Excel</p>
+                <p class="skill-blurb">Data Visualization</p>
+                <p class="skill-blurb">Data Insights</p>
+              </div>
+            </div>
 
-        <section id="badge-section" class="py-5 text-center reveal">
-          <h4 class="mb-4 card-title">Certifications & Badges</h4>
-          <div class="position-relative container">
+            <div class="badge-card">
+              <a href="https://www.credential.net/08205383-5119-4ddf-8420-82e651a5ce1d#acc.BN2yxscu" target="_blank">
+                <img src="img/ai-powered-js-gca-badge.png" alt="A circular badge with a red border labeled 'The Global Career Accelerator'. Center text reads 'AI-Powered JavaScript – Developing an app and OpenAI chatbot with L’Oréal'." class="circular-image">
+              </a>
+              <h3>AI-Powered JavaScript</h3>
+              <div class="skill-tag-container">
+                <p class="skill-blurb">JavaScript</p>
+                <p class="skill-blurb">DOM Manipulation</p>
+                <p class="skill-blurb">Coding</p>
+              </div>
+            </div>
 
-            <!-- Arrows -->
-            <button class="scroll-btn left" onclick="scrollBadges(-1)">
-              <i class="bi bi-chevron-left"></i>
-            </button>
-            <button class="scroll-btn right" onclick="scrollBadges(1)">
-              <i class="bi bi-chevron-right"></i>
-            </button>
+            <div class="badge-card">
+              <a href="https://www.credential.net/c97d4fc3-86e8-44f5-aadb-c3e19cc905bd#acc.VspSvnG8" target="_blank">
+                <img src="img/web-development-gca-badge.png" alt="A circular badge with a blue border labeled 'The Global Career Accelerator'. Center text reads 'Web Development – Building a website using AI with Intel'." class="circular-image">
+              </a>
+              <h3>Web Development</h3>
+              <div class="skill-tag-container">
+                <p class="skill-blurb">HTML</p>
+                <p class="skill-blurb">CSS</p>
+                <p class="skill-blurb">AI-Assisted Coding</p>
+              </div>
+            </div>
 
-            <!-- Scrollable badges wrapper -->
-            <div class="badge-carousel d-flex overflow-auto" id="badgeCarousel">
-              <div class="badge-card">
-                <a href="https://www.credential.net/96597f68-afb0-4c20-b2d0-26a290859766#acc.7ht6GLsA" target="_blank">
-                  <img src="img/AI Professional Skills Certification.png" alt="A circular badge with a lavender border labeled 'The Global Career Accelerator'. Center text reads 'AI Professional Skills – Applying AI to real-world projects with OpenAI', with the OpenAI logo beneath the text." class="circular-image">
-                </a>
-                <h3>AI Professional Skills</h3>
-                <div class="skill-tag-container">
-                  <p class="skill-blurb">Artifical Intelligence (AI)</p>
-                  <p class="skill-blurb">ChatGPT</p>
+            <div class="badge-card">
+              <a href="https://www.credential.net/8187004f-8248-4681-959e-ba987e01940c#acc.RLVHNoAp" target="_blank">
+                <img src="img/js-specialist-usf-badge.png" alt="A green and gold circular badge from the University of South Florida. Center text reads 'JavaScript Specialist – Web Development with JavaScript & APIs'." class="circular-image">
+              </a>
+              <h3>JavaScript Specialist</h3>
+              <div class="skill-tag-container">
+                <p class="skill-blurb">JavaScript</p>
+                <p class="skill-blurb">DOM Manipulation</p>
+                <p class="skill-blurb">Coding</p>
                 </div>
+            </div>
+
+            <div class="badge-card">
+              <a href="https://www.credential.net/015f3b8a-6794-4d0f-a851-6fca00d47fda#acc.EvLBuSb3" target="_blank">
+                <img src="img/html-css-specialist-usf-badge.png" alt="A green and gold circular badge from the University of South Florida. Center text reads 'HTML & CSS Specialist – Web Development with HTML, CSS, and Bootstrap'." class="circular-image">
+              </a>
+              <h3>HTML & CSS Specialist</h3>
+              <div class="skill-tag-container">
+                <p class="skill-blurb">HTML</p>
+                <p class="skill-blurb">CSS</p>
+                <p class="skill-blurb">Bootstrap</p>
               </div>
-              <div class="badge-card">
-                <a href="https://www.credential.net/257d06ea-1e3d-41d7-ad2a-05bec6949246#acc.Je9t6Ks2" target="_blank">
-                  <img src="img/ui-ux-prototyping-gca-badge.png" alt="A circular badge with a red border labeled 'The Global Career Accelerator'. Center text reads 'UX/UI & Prototyping – Building prototypes of consumer tools with L’Oréal'." class="circular-image">
-                </a>
-                <h3>UI/UX & Prototyping</h3>
-                <div class="skill-tag-container">
-                  <p class="skill-blurb">UI</p>
-                  <p class="skill-blurb">UX</p>
-                  <p class="skill-blurb">Prototyping</p>
-                </div>
+            </div>
+
+            <div class="badge-card">
+              <a href="https://www.credential.net/4db34763-1320-4aed-8bc1-b48edff283c5#acc.Za89hVfx" target="_blank">
+                <img src="img/intercultural-skills-usf-badge.png" alt="A green and gold circular badge from the University of South Florida. Center text reads 'Intercultural Skills – The Global Tech Experience'." class="circular-image">
+              </a>
+              <h3>Intercultural Skills</h3>
+              <div class="skill-tag-container">
+                <p class="skill-blurb">Intercultural Communication</p>
+                <p class="skill-blurb">Intercultural Collaboration</p>
+                <p class="skill-blurb">Self-awareness</p>
               </div>
-              <div class="badge-card">
-                <a href="https://www.credential.net/28855149-1212-4f5b-827d-e659551d7700#acc.nebLFyJq" target="_blank">
-                  <img src="img/data-visualization-gca-badge.png" alt="A circular badge with a blue border labeled 'The Global Career Accelerator'. Center text reads 'Data Visualization – Visualizing impact on sustainability with Intel'." class="circular-image">
-                </a>
-                <h3>Data Visualization</h3>
-                <div class="skill-tag-container">
-                  <p class="skill-blurb">Excel</p>
-                  <p class="skill-blurb">Data Visualization</p>
-                  <p class="skill-blurb">Data Insights</p>
-                </div>
+            </div>
+
+            <div class="badge-card">
+              <a href="https://www.credential.net/89dcb8f1-79f3-4f3c-ac6c-754f1f77906b#acc.HjX3Le57" target="_blank">
+                <img src="img/gte-wd-usf-completion-certificate.png" alt="Certificate from the University of South Florida awarded to Allison Thelen for completing the Web Development Track. States proficiency in HTML, CSS, and JavaScript. Signed by Dr. Matthew Small." class="circular-image">
+              </a>
+              <h3>Certificate of Completion for Global Tech Experience Web Development Track</h3>
+              <div class="skill-tag-container">
+                <p class="skill-blurb">HTML</p>
+                <p class="skill-blurb">CSS</p>
+                <p class="skill-blurb">JavaScript</p>
+                <p class="skill-blurb">Bootstrap</p>
               </div>
-              <div class="badge-card">
-                <a href="https://www.credential.net/08205383-5119-4ddf-8420-82e651a5ce1d#acc.BN2yxscu" target="_blank">
-                  <img src="img/ai-powered-js-gca-badge.png" alt="A circular badge with a red border labeled 'The Global Career Accelerator'. Center text reads 'AI-Powered JavaScript – Developing an app and OpenAI chatbot with L’Oréal'." class="circular-image">
-                </a>
-                <h3>AI-Powered JavaScript</h3>
-                <div class="skill-tag-container">
-                  <p class="skill-blurb">JavaScript</p>
-                  <p class="skill-blurb">DOM Manipulation</p>
-                  <p class="skill-blurb">Coding</p>
-                </div>
-              </div>
-              <div class="badge-card">
-                <a href="https://www.credential.net/c97d4fc3-86e8-44f5-aadb-c3e19cc905bd#acc.VspSvnG8" target="_blank">
-                  <img src="img/web-development-gca-badge.png" alt="A circular badge with a blue border labeled 'The Global Career Accelerator'. Center text reads 'Web Development – Building a website using AI with Intel'." class="circular-image">
-                </a>
-                <h3>Web Development</h3>
-                <div class="skill-tag-container">
-                  <p class="skill-blurb">HTML</p>
-                  <p class="skill-blurb">CSS</p>
-                  <p class="skill-blurb">AI-Assisted Coding</p>
-                </div>
-              </div>
-              <div class="badge-card">
-                <a href="https://www.credential.net/8187004f-8248-4681-959e-ba987e01940c#acc.RLVHNoAp" target="_blank">
-                  <img src="img/js-specialist-usf-badge.png" alt="A green and gold circular badge from the University of South Florida. Center text reads 'JavaScript Specialist – Web Development with JavaScript & APIs'." class="circular-image">
-                </a>
-                <h3>JavaScript Specialist</h3>
-                <div class="skill-tag-container">
-                  <p class="skill-blurb">JavaScript</p>
-                  <p class="skill-blurb">DOM Manipulation</p>
-                  <p class="skill-blurb">Coding</p>
-                  </div>
-              </div>
-              <div class="badge-card">
-                <a href="https://www.credential.net/015f3b8a-6794-4d0f-a851-6fca00d47fda#acc.EvLBuSb3" target="_blank">
-                  <img src="img/html-css-specialist-usf-badge.png" alt="A green and gold circular badge from the University of South Florida. Center text reads 'HTML & CSS Specialist – Web Development with HTML, CSS, and Bootstrap'." class="circular-image">
-                </a>
-                <h3>HTML & CSS Specialist</h3>
-                <div class="skill-tag-container">
-                  <p class="skill-blurb">HTML</p>
-                  <p class="skill-blurb">CSS</p>
-                  <p class="skill-blurb">Bootstrap</p>
-                </div>
-              </div>
-              <div class="badge-card">
-                <a href="https://www.credential.net/4db34763-1320-4aed-8bc1-b48edff283c5#acc.Za89hVfx" target="_blank">
-                  <img src="img/intercultural-skills-usf-badge.png" alt="A green and gold circular badge from the University of South Florida. Center text reads 'Intercultural Skills – The Global Tech Experience'." class="circular-image">
-                </a>
-                <h3>Intercultural Skills</h3>
-                <div class="skill-tag-container">
-                  <p class="skill-blurb">Intercultural Communication</p>
-                  <p class="skill-blurb">Intercultural Collaboration</p>
-                  <p class="skill-blurb">Self-awareness</p>
-                </div>
-              </div>
-              <div class="badge-card">
-                <a href="https://www.credential.net/89dcb8f1-79f3-4f3c-ac6c-754f1f77906b#acc.HjX3Le57" target="_blank">
-                  <img src="img/gte-wd-usf-completion-certificate.png" alt="Certificate from the University of South Florida awarded to Allison Thelen for completing the Web Development Track. States proficiency in HTML, CSS, and JavaScript. Signed by Dr. Matthew Small." class="circular-image">
-                </a>
-                <h3>Certificate of Completion for Global Tech Experience Web Development Track</h3>
-                <div class="skill-tag-container">
-                  <p class="skill-blurb">HTML</p>
-                  <p class="skill-blurb">CSS</p>
-                  <p class="skill-blurb">JavaScript</p>
-                  <p class="skill-blurb">Bootstrap</p>
-                </div>
-              </div>
-              <div class="badge-card">
-                <a href="img/ui-ux-for-beginners-completion-certificate.jpg" target="_blank">
-                  <img src="img/ui-ux-for-beginners-completion-certificate.jpg" alt="Certificate of completion awarded to Allison Thelen from Great Learning Academy for finishing the UI/UX for Beginners course, dated February 2025 and signed by Harish K. Subramanian." class="circular-image">
-                </a>
-                <h3>Certificate of Completion for UI/UX for Beginners Online Course</h3>
-                <div class="skill-tag-container">
-                  <p class="skill-blurb">UI</p>
-                  <p class="skill-blurb">UX</p>
-                  <p class="skill-blurb">Wireframing</p>
-                  <p class="skill-blurb">Prototyping</p>
-                  <p class="skill-blurb">Usability Testing</p>
-                </div>
+            </div>
+            
+            <div class="badge-card">
+              <a href="img/ui-ux-for-beginners-completion-certificate.jpg" target="_blank">
+                <img src="img/ui-ux-for-beginners-completion-certificate.jpg" alt="Certificate of completion awarded to Allison Thelen from Great Learning Academy for finishing the UI/UX for Beginners course, dated February 2025 and signed by Harish K. Subramanian." class="circular-image">
+              </a>
+              <h3>Certificate of Completion for UI/UX for Beginners Online Course</h3>
+              <div class="skill-tag-container">
+                <p class="skill-blurb">UI</p>
+                <p class="skill-blurb">UX</p>
+                <p class="skill-blurb">Wireframing</p>
+                <p class="skill-blurb">Prototyping</p>
+                <p class="skill-blurb">Usability Testing</p>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
 
 
@@ -289,252 +260,242 @@
 
 
 
-<section id="project-section" class="project-section text-center reveal">
-  <h4 class="mb-4 card-title">Projects</h4>
+      <section id="project-section" class="project-section text-center reveal">
+        <h4 class="mb-4 card-title">Projects</h4>
 
-  <div class="filter-buttons mb-3">
-    <button class="filter-btn active" data-category="coding">Coding Projects</button>
-    <button class="filter-btn" data-category="business">Business Projects</button>
-  </div>
+        <div class="filter-buttons mb-3">
+          <button class="filter-btn active" data-category="coding">Coding Projects</button>
+          <button class="filter-btn" data-category="business">Business Projects</button>
+        </div>
 
-  <div class="project-container">
-    <!-- Coding Projects -->
-     <div class="project-card" data-category="coding">
-      <h4>L'Oréal AI Routine Assistant</h4>
-      <br>
-      <!-- <a href="card-game-ss.png" target="_blank"> -->
-        <img src="img/loreal-chatbot-ss.png" alt="Minimal black-and-white layout with dropdown filters, a chatbot box, and product selection panels under a L’Oréal header." class="screenshot">
-      <!-- </a> -->
-      <br><br>
-      <p class="cd-blurb">
-        <a href="https://github.com/arthelen/09-prj-loreal-routine-builder/" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
-        <a href="https://arthelen.github.io/09-prj-loreal-routine-builder/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-      </p>
-      <p class="description">A personalized skincare web app for L’Oréal that lets users search real product data, filter by category, and build custom routines. Features include a dynamic product selector and an AI-powered chatbot that mimics a digital beauty advisor. This project showcases my ability to merge frontend development with AI integration to create polished, user-centric experiences.</p>
-      <p class="skill-blurb">HTML</p>
-      <p class="skill-blurb">CSS</p>
-      <p class="skill-blurb">JavaScript</p>
-      <p class="skill-blurb">AI Integration</p>
-      <p class="skill-blurb">API Integration</p>
-      <p class="skill-blurb">UI/UX Design</p>
-    </div>
+        <div class="project-container">
+          <!-- Coding Projects -->
+          <div class="project-card" data-category="coding">
+            <h4>L'Oréal AI Routine Assistant</h4>
+            <br>
+            <!-- <a href="card-game-ss.png" target="_blank"> -->
+              <img src="img/loreal-chatbot-ss.png" alt="Minimal black-and-white layout with dropdown filters, a chatbot box, and product selection panels under a L’Oréal header." class="screenshot">
+            <!-- </a> -->
+            <br><br>
+            <p class="cd-blurb">
+              <a href="https://github.com/arthelen/09-prj-loreal-routine-builder/" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
+              <a href="https://arthelen.github.io/09-prj-loreal-routine-builder/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
+            </p>
+            <p class="description">A personalized skincare web app for L’Oréal that lets users search real product data, filter by category, and build custom routines. Features include a dynamic product selector and an AI-powered chatbot that mimics a digital beauty advisor. This project showcases my ability to merge frontend development with AI integration to create polished, user-centric experiences.</p>
+            <p class="skill-blurb">HTML</p>
+            <p class="skill-blurb">CSS</p>
+            <p class="skill-blurb">JavaScript</p>
+            <p class="skill-blurb">AI Integration</p>
+            <p class="skill-blurb">API Integration</p>
+            <p class="skill-blurb">UI/UX Design</p>
+          </div>
 
-    <div class="project-card" data-category="coding">
-      <h4>Card Matching Game</h4>
-      <br>
-      <!-- <a href="card-game-ss.png" target="_blank"> -->
-        <img src="img/card-game-ss.png" alt="Pink Stray Kids (K-Pop group) themed memory game with cute cards, a 4x3 grid, and blush background featuring floating cartoon faces." class="screenshot">
-      <!-- </a> -->
-      <br><br>
-      <p class="cd-blurb">
-        <a href="https://github.com/arthelen/card-match-game" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
-        <a href="https://arthelen.github.io/card-match-game/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-      </p>
-      <p class="description">Built a custom card-matching game using JavaScript to handle logic like flips, matches, and score tracking. Features a responsive grid, randomized cards, and flip/match counters. Styled with soft pastels and K-pop visuals to showcase both technical skills (arrays, loops, conditionals) and playful, user-centered design.</p>
-      <p class="skill-blurb">HTML</p>
-      <p class="skill-blurb">CSS</p>
-      <p class="skill-blurb">JavaScript</p>
-      <p class="skill-blurb">DOM Manipulation</p>
-      <p class="skill-blurb">Creative Theming</p>
-    </div>
+          <div class="project-card" data-category="coding">
+            <h4>Card Matching Game</h4>
+            <br>
+            <!-- <a href="card-game-ss.png" target="_blank"> -->
+              <img src="img/card-game-ss.png" alt="Pink Stray Kids (K-Pop group) themed memory game with cute cards, a 4x3 grid, and blush background featuring floating cartoon faces." class="screenshot">
+            <!-- </a> -->
+            <br><br>
+            <p class="cd-blurb">
+              <a href="https://github.com/arthelen/card-match-game" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
+              <a href="https://arthelen.github.io/card-match-game/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
+            </p>
+            <p class="description">Built a custom card-matching game using JavaScript to handle logic like flips, matches, and score tracking. Features a responsive grid, randomized cards, and flip/match counters. Styled with soft pastels and K-pop visuals to showcase both technical skills (arrays, loops, conditionals) and playful, user-centered design.</p>
+            <p class="skill-blurb">HTML</p>
+            <p class="skill-blurb">CSS</p>
+            <p class="skill-blurb">JavaScript</p>
+            <p class="skill-blurb">DOM Manipulation</p>
+            <p class="skill-blurb">Creative Theming</p>
+          </div>
 
-    <div class="project-card" data-category="coding">
-      <h4>NASA APOD API Variation</h4>
-      <br>
-        <img src="img/nasa-apod-ss.png" alt="Light blue interface with NASA logo, date pickers, and red 'Get Space Images' button above a cartoon planet icon." class="screenshot">
-      <br><br>
-      <p class="cd-blurb">
-        <a href="https://github.com/arthelen/nasa-apod-api" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
-        
-        <a href="https://arthelen.github.io/nasa-apod-api/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-      </p>
-      <p class="description">An interactive web app that fetches and displays space imagery using NASA’s APOD API. Users can browse photos by custom date range, view high-res images in modals, and explore detailed descriptions within a clean, responsive UI. This project demonstrates my skills in API integration, dynamic rendering, and thoughtful front-end design.</p>
-      <p class="skill-blurb">HTML</p>
-      <p class="skill-blurb">CSS4</p>
-      <p class="skill-blurb">JavaScript</p>
-      <p class="skill-blurb">API Integration</p>
-      <p class="skill-blurb">AI Assisted</p>
-      <p class="skill-blurb">UI/UX Design</p>
-    </div>
+          <div class="project-card" data-category="coding">
+            <h4>NASA APOD API Variation</h4>
+            <br>
+              <img src="img/nasa-apod-ss.png" alt="Light blue interface with NASA logo, date pickers, and red 'Get Space Images' button above a cartoon planet icon." class="screenshot">
+            <br><br>
+            <p class="cd-blurb">
+              <a href="https://github.com/arthelen/nasa-apod-api" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
+              
+              <a href="https://arthelen.github.io/nasa-apod-api/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
+            </p>
+            <p class="description">An interactive web app that fetches and displays space imagery using NASA’s APOD API. Users can browse photos by custom date range, view high-res images in modals, and explore detailed descriptions within a clean, responsive UI. This project demonstrates my skills in API integration, dynamic rendering, and thoughtful front-end design.</p>
+            <p class="skill-blurb">HTML</p>
+            <p class="skill-blurb">CSS4</p>
+            <p class="skill-blurb">JavaScript</p>
+            <p class="skill-blurb">API Integration</p>
+            <p class="skill-blurb">AI Assisted</p>
+            <p class="skill-blurb">UI/UX Design</p>
+          </div>
 
-    <button class="card-subtitle toggle-trigger see-more-btn">See More <i class="bi bi-arrow-down-short"></i></button>
+          <button class="card-subtitle toggle-trigger see-more-btn">See More <i class="bi bi-arrow-down-short"></i></button>
 
-    <div class="project-card" data-category="coding">
-      <h4>Hydro Hero Game</h4>
-      <br>
-      <img src="img/hydro-hero-ss.png" alt="Pixel art game screen with a blue sky, green hills, and a caped character holding a jug. Bold yellow title along with charity: water branding, and difficulty buttons below." class="screenshot">
-      <br><br>
-      <p class="cd-blurb">
-        <a href="https://github.com/arthelen/05-cw-game-hydro-hero" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
-        <a href="https://arthelen.github.io/05-cw-game-hydro-hero/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-      </p>
-      <p class="description">A pixel-style, side-scrolling game built with HTML, CSS, and JavaScript to raise awareness for the global water crisis. Players dodge obstacles while carrying water, with features like multiple difficulty levels, scoring, avatar customization (soon), and Charity: Water branding. This project blends storytelling and advocacy with interactive game mechanics and front-end development skills.</p>
-      <p class="skill-blurb">HTML</p>
-      <p class="skill-blurb">CSS</p>
-      <p class="skill-blurb">JavaScript</p>
-      <p class="skill-blurb">Brand Integration</p>
-      <p class="skill-blurb">AI Assisted</p>
-      <p class="skill-blurb">UI/UX Design</p>
-    </div>
+          <div class="project-card" data-category="coding">
+            <h4>Hydro Hero Game</h4>
+            <br>
+            <img src="img/hydro-hero-ss.png" alt="Pixel art game screen with a blue sky, green hills, and a caped character holding a jug. Bold yellow title along with charity: water branding, and difficulty buttons below." class="screenshot">
+            <br><br>
+            <p class="cd-blurb">
+              <a href="https://github.com/arthelen/05-cw-game-hydro-hero" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
+              <a href="https://arthelen.github.io/05-cw-game-hydro-hero/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
+            </p>
+            <p class="description">A pixel-style, side-scrolling game built with HTML, CSS, and JavaScript to raise awareness for the global water crisis. Players dodge obstacles while carrying water, with features like multiple difficulty levels, scoring, avatar customization (soon), and Charity: Water branding. This project blends storytelling and advocacy with interactive game mechanics and front-end development skills.</p>
+            <p class="skill-blurb">HTML</p>
+            <p class="skill-blurb">CSS</p>
+            <p class="skill-blurb">JavaScript</p>
+            <p class="skill-blurb">Brand Integration</p>
+            <p class="skill-blurb">AI Assisted</p>
+            <p class="skill-blurb">UI/UX Design</p>
+          </div>
 
-    <div class="project-card" data-category="coding">
-      <h4>Mad Libs Game</h4>
-      <br>
-        <img src="img/madlibs-ss.png" alt="Bright pink screen with gradient background, silly emoji title, white input boxes with orange borders, and a hot pink generate button." class="screenshot">
-      <br><br>
-      <p class="cd-blurb">
-        <a href="https://github.com/arthelen/madlibs-madness" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
-        <a href="https://arthelen.github.io/madlibs-madness/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-      </p>
-      <p class="description">A playful web game where users fill out a form to generate a custom Mad Libs-style story. Built with HTML, CSS, and JavaScript, using string interpolation and dynamic user input. Highlights front-end development and user-focused design with a fun, colorful UI.</p>
-      <p class="skill-blurb">HTML</p>
-      <p class="skill-blurb">CSS</p>
-      <p class="skill-blurb">JavaScript</p>
-      <p class="skill-blurb">DOM Manipulation</p>
-      <p class="skill-blurb">UI/UX Design</p>
-    </div>
+          <div class="project-card" data-category="coding">
+            <h4>Mad Libs Game</h4>
+            <br>
+              <img src="img/madlibs-ss.png" alt="Bright pink screen with gradient background, silly emoji title, white input boxes with orange borders, and a hot pink generate button." class="screenshot">
+            <br><br>
+            <p class="cd-blurb">
+              <a href="https://github.com/arthelen/madlibs-madness" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
+              <a href="https://arthelen.github.io/madlibs-madness/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
+            </p>
+            <p class="description">A playful web game where users fill out a form to generate a custom Mad Libs-style story. Built with HTML, CSS, and JavaScript, using string interpolation and dynamic user input. Highlights front-end development and user-focused design with a fun, colorful UI.</p>
+            <p class="skill-blurb">HTML</p>
+            <p class="skill-blurb">CSS</p>
+            <p class="skill-blurb">JavaScript</p>
+            <p class="skill-blurb">DOM Manipulation</p>
+            <p class="skill-blurb">UI/UX Design</p>
+          </div>
 
-    <div class="project-card" data-category="coding">
-      <h4>Words of Encouragement Generator</h4>
-      <br>
-        <img src="img/woe-ss.png" alt="Soft aqua design with calming fonts, white input boxes, volume slider, and a navy blue 'Hear It!' button at the bottom." class="screenshot">
-      <br><br>
-      <p class="cd-blurb">
-        <a href="https://github.com/arthelen/words-of-encouragement" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
-        <a href="https://arthelen.github.io/words-of-encouragement/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-      </p>
-      <p class="description">A feel-good web app that uses Google’s Text-to-Speech API to speak personalized encouragement messages aloud. Built with JavaScript, featuring dynamic input handling, a postscript add-on, and a volume slider. Blends accessible tech with calming, user-centered design.</p>
-      <p class="skill-blurb">HTML</p>
-      <p class="skill-blurb">CSS</p>
-      <p class="skill-blurb">JavaScript</p>
-      <p class="skill-blurb">API Integration</p>
-      <p class="skill-blurb">User Input & Audio Control</p>
-    </div>
+          <div class="project-card" data-category="coding">
+            <h4>Words of Encouragement Generator</h4>
+            <br>
+              <img src="img/woe-ss.png" alt="Soft aqua design with calming fonts, white input boxes, volume slider, and a navy blue 'Hear It!' button at the bottom." class="screenshot">
+            <br><br>
+            <p class="cd-blurb">
+              <a href="https://github.com/arthelen/words-of-encouragement" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
+              <a href="https://arthelen.github.io/words-of-encouragement/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
+            </p>
+            <p class="description">A feel-good web app that uses Google’s Text-to-Speech API to speak personalized encouragement messages aloud. Built with JavaScript, featuring dynamic input handling, a postscript add-on, and a volume slider. Blends accessible tech with calming, user-centered design.</p>
+            <p class="skill-blurb">HTML</p>
+            <p class="skill-blurb">CSS</p>
+            <p class="skill-blurb">JavaScript</p>
+            <p class="skill-blurb">API Integration</p>
+            <p class="skill-blurb">User Input & Audio Control</p>
+          </div>
 
-    <div class="project-card" data-category="coding">
-      <h4>Magic 8 Ball Simulator</h4>
-      <br>
-        <img src="img/8ball-ss.png" alt="Starry dark blue background with large black 8-ball in the center and white prompt text above a translucent purple input box." class="screenshot">
-      <br><br>
-      <p class="cd-blurb">
-        <a href="https://github.com/arthelen/magic-8-ball" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
-        <a href="https://arthelen.github.io/magic-8-ball/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-      </p>
-      <p class="description">A playful web app that mimics the classic fortune-telling toy using HTML, CSS, and JavaScript. Users ask a yes-or-no question and receive a randomized response, styled with a cosmic theme. Showcases DOM manipulation, random logic, and interactive UI design.</p>
-      <p class="skill-blurb">HTML</p>
-      <p class="skill-blurb">CSS</p>
-      <p class="skill-blurb">JavaScript</p>
-      <p class="skill-blurb">User Input Handling</p>
-      <p class="skill-blurb">UI/UX Design</p>
-    </div>
+          <div class="project-card" data-category="coding">
+            <h4>Magic 8 Ball Simulator</h4>
+            <br>
+              <img src="img/8ball-ss.png" alt="Starry dark blue background with large black 8-ball in the center and white prompt text above a translucent purple input box." class="screenshot">
+            <br><br>
+            <p class="cd-blurb">
+              <a href="https://github.com/arthelen/magic-8-ball" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
+              <a href="https://arthelen.github.io/magic-8-ball/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
+            </p>
+            <p class="description">A playful web app that mimics the classic fortune-telling toy using HTML, CSS, and JavaScript. Users ask a yes-or-no question and receive a randomized response, styled with a cosmic theme. Showcases DOM manipulation, random logic, and interactive UI design.</p>
+            <p class="skill-blurb">HTML</p>
+            <p class="skill-blurb">CSS</p>
+            <p class="skill-blurb">JavaScript</p>
+            <p class="skill-blurb">User Input Handling</p>
+            <p class="skill-blurb">UI/UX Design</p>
+          </div>
 
-    <div class="project-card" data-category="coding">
-      <h4>Mock Airbnb Website</h4>
-      <br>
-        <img src="img/airbnb-ss.png" alt="Clean white layout with hot pink accents, filter bar, and colorful cards for San Diego listings showing prices and room types." class="screenshot">
-      <br><br>
-      <p class="cd-blurb">
-        <a href="https://github.com/arthelen/airbnb" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
-        <a href="https://arthelen.github.io/airbnb/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-      </p>
-      <p class="description">A mock Airbnb-style app where users can filter San Diego listings by city, price range, and property type. Built with HTML, CSS, and JavaScript using arrays, functions, and conditionals to handle real-time filtering. Highlights dynamic rendering and front-end logic for an intuitive user experience.</p>
-      <p class="skill-blurb">HTML</p>
-      <p class="skill-blurb">CSS</p>
-      <p class="skill-blurb">JavaScript</p>
-      <p class="skill-blurb">DOM Manipulation</p>
-      <p class="skill-blurb">UI/UX Design</p>
-    </div>
+          <div class="project-card" data-category="coding">
+            <h4>Mock Airbnb Website</h4>
+            <br>
+              <img src="img/airbnb-ss.png" alt="Clean white layout with hot pink accents, filter bar, and colorful cards for San Diego listings showing prices and room types." class="screenshot">
+            <br><br>
+            <p class="cd-blurb">
+              <a href="https://github.com/arthelen/airbnb" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
+              <a href="https://arthelen.github.io/airbnb/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
+            </p>
+            <p class="description">A mock Airbnb-style app where users can filter San Diego listings by city, price range, and property type. Built with HTML, CSS, and JavaScript using arrays, functions, and conditionals to handle real-time filtering. Highlights dynamic rendering and front-end logic for an intuitive user experience.</p>
+            <p class="skill-blurb">HTML</p>
+            <p class="skill-blurb">CSS</p>
+            <p class="skill-blurb">JavaScript</p>
+            <p class="skill-blurb">DOM Manipulation</p>
+            <p class="skill-blurb">UI/UX Design</p>
+          </div>
 
-    <div class="project-card" data-category="coding">
-      <h4>Bio Page</h4>
-      <br>
-        <img src="img/bio-page-ss.png" alt="Beige floral layout with round portrait, soft brown text, and a personal intro framed by illustrated leaves and flowers." class="screenshot">
-      <br><br>
-      <p class="cd-blurb">
-        <a href="https://github.com/arthelen/bio-page" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
-        <a href="https://arthelen.github.io/bio-page/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-      </p>
-      <p class="description">One of my first HTML/CSS projects, built to introduce myself using semantic tags, custom styling, and personal content. Features headings, images, lists, and links with a calm, neutral color palette. Highlights foundational web dev skills and creative self-expression through code.</p>
-      <p class="skill-blurb">HTML</p>
-      <p class="skill-blurb">CSS</p>
-      <p class="skill-blurb">Boostrap</p>
-      <p class="skill-blurb">Accessibility</p>
-      <p class="skill-blurb">Semantic Structure</p>
-    </div>
+          <div class="project-card" data-category="coding">
+            <h4>Bio Page</h4>
+            <br>
+              <img src="img/bio-page-ss.png" alt="Beige floral layout with round portrait, soft brown text, and a personal intro framed by illustrated leaves and flowers." class="screenshot">
+            <br><br>
+            <p class="cd-blurb">
+              <a href="https://github.com/arthelen/bio-page" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
+              <a href="https://arthelen.github.io/bio-page/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
+            </p>
+            <p class="description">One of my first HTML/CSS projects, built to introduce myself using semantic tags, custom styling, and personal content. Features headings, images, lists, and links with a calm, neutral color palette. Highlights foundational web dev skills and creative self-expression through code.</p>
+            <p class="skill-blurb">HTML</p>
+            <p class="skill-blurb">CSS</p>
+            <p class="skill-blurb">Boostrap</p>
+            <p class="skill-blurb">Accessibility</p>
+            <p class="skill-blurb">Semantic Structure</p>
+          </div>
 
-    <!-- Business Projects -->
-    <div class="project-card" data-category="business">
-      <h4>Charity: Water Marketing Campaign</h4>
-      <br>
-      <a href="img/Charity Water Marketing.pdf" target="_blank">
-        <img src="img/charity water thumbnail.png" alt="Man in a white outfit and green turban sits on bright white stairs, holding a metal cup. Large bold text on the left reads 'Activating the next generation of charity: water supporters' with 'charity: water' in vibrant yellow. A yellow footer bar displays the charity: water logo." class="screenshot">
-      </a>
-      <br><br>
-      <p class="cd-blurb">
-        <a href="img/Charity Water Marketing.pdf" target="_blank" id="project-link"><i class="bi bi-easel-fill"></i>&nbsp;slideshow</a>
-        <a href="" target="new" id="project-link"><a href="https://github.com/arthelen/CR-02-charity-water-lp" target="new" id="project-link"><i class="bi bi-github"></i>code</a>
-        <a href="" target="new" id="project-link"><a href="https://arthelen.github.io/CR-02-charity-water-lp/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-      </p>
-      <p class="description">Designed a donation-focused landing page aimed at college students using Canva. Based on a Gen Z persona, the project included an empathy map, value proposition, and tailored visuals aligned with Charity: Water’s brand. Focused on making giving feel easy, transparent, and impactful.</p>
-      <p class="skill-blurb">UI/UX Design</p>
-      <p class="skill-blurb">Brand Strategy & Visual Identity</p>
-      <p class="skill-blurb">Digital Marketing</p>
-      <p class="skill-blurb">Audience & Persona Targeting</p>
-      <p class="skill-blurb">Copywriting for Nonprofits</p>
-    </div>
+          <!-- Business Projects -->
+          <div class="project-card" data-category="business">
+            <h4>Charity: Water Marketing Campaign</h4>
+            <br>
+            <a href="img/Charity Water Marketing.pdf" target="_blank">
+              <img src="img/charity water thumbnail.png" alt="Man in a white outfit and green turban sits on bright white stairs, holding a metal cup. Large bold text on the left reads 'Activating the next generation of charity: water supporters' with 'charity: water' in vibrant yellow. A yellow footer bar displays the charity: water logo." class="screenshot">
+            </a>
+            <br><br>
+            <p class="cd-blurb">
+              <a href="img/Charity Water Marketing.pdf" target="_blank" id="project-link"><i class="bi bi-easel-fill"></i>&nbsp;slideshow</a>
+              <a href="" target="new" id="project-link"><a href="https://github.com/arthelen/CR-02-charity-water-lp" target="new" id="project-link"><i class="bi bi-github"></i>code</a>
+              <a href="" target="new" id="project-link"><a href="https://arthelen.github.io/CR-02-charity-water-lp/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
+            </p>
+            <p class="description">Designed a donation-focused landing page aimed at college students using Canva. Based on a Gen Z persona, the project included an empathy map, value proposition, and tailored visuals aligned with Charity: Water’s brand. Focused on making giving feel easy, transparent, and impactful.</p>
+            <p class="skill-blurb">UI/UX Design</p>
+            <p class="skill-blurb">Brand Strategy & Visual Identity</p>
+            <p class="skill-blurb">Digital Marketing</p>
+            <p class="skill-blurb">Audience & Persona Targeting</p>
+            <p class="skill-blurb">Copywriting for Nonprofits</p>
+          </div>
 
-    <div class="project-card" data-category="business">
-      <h4>Cerave SEO Marketing Campaign</h4>
-      <br>
-      <a href="img/CeraVe SEO.pdf" target="_blank">
-        <img src="img/cerave thumbnail.png" alt="CeraVe Hydrating Facial Cleanser and Moisturizing Cream sit on a marble tray in a softly lit bathroom. Bold white and blue headline on a black curved background reads 'Google It: Reaching CeraVe’s Male Skincare Searchers.'" class="screenshot">
-      </a>
-      <br><br>
-      <p class="cd-blurb">
-        <a href="img/CeraVe SEO.pdf" target="_blank" id="project-link"><i class="bi bi-easel-fill"></i>&nbsp;slideshow</a>
-      </p>
-      <p class="description">Developed a search-optimized content plan targeting a specific skincare persona. Conducted keyword research using SEMrush and Google Trends, refined CeraVe’s keyword list, and wrote three blog posts aligned with brand voice and user search intent. Strengthened skills in content strategy, SEO, and audience targeting.</p>
-      <p class="skill-blurb">Search Engine Optimization (SEO)</p>
-      <p class="skill-blurb">Content Marketing</p>
-      <p class="skill-blurb">Keyword Research</p>
-      <p class="skill-blurb">Audience & Persona Targeting</p>
-      <p class="skill-blurb">Brand Voice Alignment</p>
-    </div>
+          <div class="project-card" data-category="business">
+            <h4>Cerave SEO Marketing Campaign</h4>
+            <br>
+            <a href="img/CeraVe SEO.pdf" target="_blank">
+              <img src="img/cerave thumbnail.png" alt="CeraVe Hydrating Facial Cleanser and Moisturizing Cream sit on a marble tray in a softly lit bathroom. Bold white and blue headline on a black curved background reads 'Google It: Reaching CeraVe’s Male Skincare Searchers.'" class="screenshot">
+            </a>
+            <br><br>
+            <p class="cd-blurb">
+              <a href="img/CeraVe SEO.pdf" target="_blank" id="project-link"><i class="bi bi-easel-fill"></i>&nbsp;slideshow</a>
+            </p>
+            <p class="description">Developed a search-optimized content plan targeting a specific skincare persona. Conducted keyword research using SEMrush and Google Trends, refined CeraVe’s keyword list, and wrote three blog posts aligned with brand voice and user search intent. Strengthened skills in content strategy, SEO, and audience targeting.</p>
+            <p class="skill-blurb">Search Engine Optimization (SEO)</p>
+            <p class="skill-blurb">Content Marketing</p>
+            <p class="skill-blurb">Keyword Research</p>
+            <p class="skill-blurb">Audience & Persona Targeting</p>
+            <p class="skill-blurb">Brand Voice Alignment</p>
+          </div>
 
-    <div class="project-card" data-category="business">
-      <h4>Grammy's Analytics Evaluation</h4>
-      <br>
-      <a href="img/Grammys Social Media.pdf" target="_blank">
-        <img src="img/grammy thumbnail.png" alt="Beyoncé holds three Grammy trophies in her left hand and one in her right, smiling in front of a gold Grammy backdrop. On the left, a sleek black background with white and yellow text says 'Stage to Shelf: Grammys Merch That Rocks!'" class="screenshot">
-      </a>
-      <br><br>
-      <p class="cd-blurb">
-        <a href="img/Grammys Social Media.pdf" target="_blank" id="project-link"><i class="bi bi-easel-fill"></i>&nbsp;slideshow&nbsp;</a>
-      </p>
-      <p class="description">Built a paid social strategy to drive merch sales for the GRAMMY Awards, targeting a Gen Z persona with platform-specific ads. Selected channels and ad formats based on user behavior, and analyzed campaign metrics (CTR, CPC, CPA) to evaluate performance. Blended creative thinking with data-driven decision-making for a high-impact campaign.</p>
-      <p class="skill-blurb">Social Media Marketing</p>
-      <p class="skill-blurb">Audience Targeting & Persona Development</p>
-      <p class="skill-blurb">Campaign Data Analysis (CTR, CPC, CPA)</p>
-      <p class="skill-blurb">Marketing Strategy</p>
-      <p class="skill-blurb">Ad Platform & Format Selection</p>
-    </div>
-  </div>
+          <div class="project-card" data-category="business">
+            <h4>Grammy's Analytics Evaluation</h4>
+            <br>
+            <a href="img/Grammys Social Media.pdf" target="_blank">
+              <img src="img/grammy thumbnail.png" alt="Beyoncé holds three Grammy trophies in her left hand and one in her right, smiling in front of a gold Grammy backdrop. On the left, a sleek black background with white and yellow text says 'Stage to Shelf: Grammys Merch That Rocks!'" class="screenshot">
+            </a>
+            <br><br>
+            <p class="cd-blurb">
+              <a href="img/Grammys Social Media.pdf" target="_blank" id="project-link"><i class="bi bi-easel-fill"></i>&nbsp;slideshow&nbsp;</a>
+            </p>
+            <p class="description">Built a paid social strategy to drive merch sales for the GRAMMY Awards, targeting a Gen Z persona with platform-specific ads. Selected channels and ad formats based on user behavior, and analyzed campaign metrics (CTR, CPC, CPA) to evaluate performance. Blended creative thinking with data-driven decision-making for a high-impact campaign.</p>
+            <p class="skill-blurb">Social Media Marketing</p>
+            <p class="skill-blurb">Audience Targeting & Persona Development</p>
+            <p class="skill-blurb">Campaign Data Analysis (CTR, CPC, CPA)</p>
+            <p class="skill-blurb">Marketing Strategy</p>
+            <p class="skill-blurb">Ad Platform & Format Selection</p>
+          </div>
+        </div>
 
-  <!-- See More Button -->
-  <button class="see-more-btn">See More <i class="bi bi-arrow-down-short"></i></button>
-</section>
+        <!-- See More Button -->
+        <button class="see-more-btn">See More <i class="bi bi-arrow-down-short"></i></button>
+      </section>
 
-
-
-
-
-
-
-
-
-
-
-
+      <!-- projects section -->
 
 
 
