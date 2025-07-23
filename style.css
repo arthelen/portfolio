@@ -690,16 +690,6 @@ h4 {
   position: relative;
 }
 
-.see-more-btn {
-  align-self: center;
-  transition: all 0.4s ease;
-}
-
-.project-section.expand .see-more-wrapper {
-  order: 99;
-  margin-top: 2rem;
-}
-
 .project-card {
   border: 3px solid #F6B6AC;
   border-radius: 10px;
@@ -708,8 +698,8 @@ h4 {
   text-align: center;
   padding: 1rem;
   flex: 1 1 300px; /* flex-grow | flex-shrink | flex-basis */
-  min-width: 500px;
-  max-width: 700px;
+  min-width: 450px;
+  max-width: 550px;
   transition: transform 0.3s;
 }
 
@@ -730,14 +720,6 @@ h4 {
 	color: #B46D54;
 	text-decoration-color: #B46D54;
 }
-
-/* .project-icon {
-	height: auto;
-  width: 5em;
-  border-radius: 100px;
-  transition: .3s ease-in-out;
-	padding-bottom: 30px;
-} */
 
 .screenshot {
 	height: auto;

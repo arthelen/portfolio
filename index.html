@@ -15,16 +15,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+    <!-- style css sheet link -->
     <link rel="stylesheet" href="style.css">
-    <!-- add  javascript files or scripts here -->
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="30">
-
-    <!-- <header>
-        <h1>Welcome to My Website</h1>
-    </header> -->
-    <!-- navigation section -->
-    <!-- NEED TO GET SCROLLSPY WORKING BETTER -->
     <nav class="navbar navbar-custom navbar-expand-lg text-center fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand custom-toggler" href="#"><i class="bi bi-postcard-heart-fill"></i></a>
@@ -45,18 +39,12 @@
               <li class="nav-item">
                 <a class="nav-link" href="#project-section">Projects</a>
               </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="#business-section">Business Projects</a>
-              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="#design-section">Designs</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#music-section">Songs</a>
               </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="#about-section">contact</a>
-              </li> -->
             </ul>
           </div>
         </div>
@@ -98,6 +86,7 @@
             <p class="console-line"><span class="prompt">></span> Passionate about building interactive, human-centered digital experiences</p>
             <p class="console-line"><span class="prompt">></span> Some of my hobbies include listening to music, playing games, reading, doing puzzles, and dancing</p>
             <p class="console-line"><span class="prompt">></span> Contact me: <a href="https://www.linkedin.com/in/allisonrthelen/" target="_blank"><i class="bi bi-linkedin"></i>&nbsp;LinkedIn</a>, <a href="https://github.com/arthelen" target="_blank"><i class="bi bi-github"></i>&nbsp;GitHub</a>, <a href="mailto:allisonrthelen@gmail.com" target="_blank"><i class="bi bi-envelope-at-fill"></i>&nbsp;Email</a></p>
+            <br>
             <p class="console-line"><span class="prompt">></span> <em>Elevating experiences, one pixel at a time!</em></p>
           </div>
         </div>
@@ -116,6 +105,7 @@
         </div>
       </section>
 
+      <!-- cerfications and badges section -->
       <section id="badge-section" class="py-5 text-center reveal">
         <h4 class="mb-4 card-title">Certifications & Badges</h4>
         <div class="position-relative container">
@@ -253,43 +243,20 @@
         </div>
       </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <!-- projects section -->
       <section id="project-section" class="project-section text-center reveal">
         <h4 class="mb-4 card-title">Projects</h4>
-
         <div class="filter-buttons mb-3">
           <button class="filter-btn active" data-category="coding">Coding Projects</button>
           <button class="filter-btn" data-category="business">Business Projects</button>
         </div>
 
         <div class="project-container">
-          <!-- Coding Projects -->
+          <!-- coding Projects -->
           <div class="project-card" data-category="coding">
             <h4>L'Oréal AI Routine Assistant</h4>
             <br>
-            <!-- <a href="card-game-ss.png" target="_blank"> -->
               <img src="img/loreal-chatbot-ss.png" alt="Minimal black-and-white layout with dropdown filters, a chatbot box, and product selection panels under a L’Oréal header." class="screenshot">
-            <!-- </a> -->
             <br><br>
             <p class="cd-blurb">
               <a href="https://github.com/arthelen/09-prj-loreal-routine-builder/" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
@@ -307,9 +274,7 @@
           <div class="project-card" data-category="coding">
             <h4>Card Matching Game</h4>
             <br>
-            <!-- <a href="card-game-ss.png" target="_blank"> -->
               <img src="img/card-game-ss.png" alt="Pink Stray Kids (K-Pop group) themed memory game with cute cards, a 4x3 grid, and blush background featuring floating cartoon faces." class="screenshot">
-            <!-- </a> -->
             <br><br>
             <p class="cd-blurb">
               <a href="https://github.com/arthelen/card-match-game" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
@@ -341,8 +306,6 @@
             <p class="skill-blurb">AI Assisted</p>
             <p class="skill-blurb">UI/UX Design</p>
           </div>
-
-          <button class="card-subtitle toggle-trigger see-more-btn">See More <i class="bi bi-arrow-down-short"></i></button>
 
           <div class="project-card" data-category="coding">
             <h4>Hydro Hero Game</h4>
@@ -447,7 +410,7 @@
             <p class="skill-blurb">Semantic Structure</p>
           </div>
 
-          <!-- Business Projects -->
+          <!-- business Projects -->
           <div class="project-card" data-category="business">
             <h4>Charity: Water Marketing Campaign</h4>
             <br>
@@ -504,635 +467,338 @@
             <p class="skill-blurb">Ad Platform & Format Selection</p>
           </div>
         </div>
-
-        <!-- See More Button -->
-        <button class="see-more-btn">See More <i class="bi bi-arrow-down-short"></i></button>
       </section>
 
-      <!-- projects section -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <section id="project-section" class="py-5 text-center reveal">
-      <h4 class="mb-4 card-title text-center">Projects</h4>
-      <div id="project-filter" class="text-center mb-4">
-        <button class="filter-btn active" data-category="coding">Coding</button>
-
-        <button class="filter-btn active" data-category="business">Business</button>
-      </div>
-
-
-
-      <div class="project-card" data-category="coding">
-        <h4>Card Matching Game</h4>
-        <br>
-
-          <img src="img/card-game-ss.png" alt="Pink Stray Kids (K-Pop group) themed memory game with cute cards, a 4x3 grid, and blush background featuring floating cartoon faces." class="screenshot">
-
-        <br><br>
-        <p class="cd-blurb">
-          <a href="https://github.com/arthelen/card-match-game" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
-          <a href="https://arthelen.github.io/card-match-game/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-        </p>
-        <p class="description">Built a custom card-matching game using JavaScript to handle logic like flips, matches, and score tracking. Features a responsive grid, randomized cards, and flip/match counters. Styled with soft pastels and K-pop visuals to showcase both technical skills (arrays, loops, conditionals) and playful, user-centered design.</p>
-        <p class="skill-blurb">HTML</p>
-        <p class="skill-blurb">CSS</p>
-        <p class="skill-blurb">JavaScript</p>
-        <p class="skill-blurb">DOM Manipulation</p>
-        <p class="skill-blurb">Creative Theming</p>
-      </div>
-
-      <div class="project-card" data-category="coding">
-        <h4>Hydro Hero Game</h4>
-        <br>
-
-          <img src="img/hydro-hero-ss.png" alt="Pixel art game screen with a blue sky, green hills, and a caped character holding a jug. Bold yellow title along with charity: water branding, and difficulty buttons below." class="screenshot">
-
-        <br><br>
-        <p class="cd-blurb">
-          <a href="https://github.com/arthelen/05-cw-game-hydro-hero" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
-          <a href="https://arthelen.github.io/05-cw-game-hydro-hero/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-        </p>
-        <p class="description">A pixel-style, side-scrolling game built with HTML, CSS, and JavaScript to raise awareness for the global water crisis. Players dodge obstacles while carrying water, with features like multiple difficulty levels, scoring, avatar customization (soon), and Charity: Water branding. This project blends storytelling and advocacy with interactive game mechanics and front-end development skills.</p>
-        <p class="skill-blurb">HTML</p>
-        <p class="skill-blurb">CSS</p>
-        <p class="skill-blurb">JavaScript</p>
-        <p class="skill-blurb">Brand Integration</p>
-        <p class="skill-blurb">AI Assisted</p>
-        <p class="skill-blurb">UI/UX Design</p>
-      </div>
-
-      <div class="project-card" data-category="coding">
-        <h4>L'Oréal AI Routine Assistant</h4>
-        <br>
-
-          <img src="img/loreal-chatbot-ss.png" alt="Minimal black-and-white layout with dropdown filters, a chatbot box, and product selection panels under a L’Oréal header." class="screenshot">
-
-        <br><br>
-        <p class="cd-blurb">
-          <a href="https://github.com/arthelen/09-prj-loreal-routine-builder/" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
-          <a href="https://arthelen.github.io/09-prj-loreal-routine-builder/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-        </p>
-        <p class="description">A personalized skincare web app for L’Oréal that lets users search real product data, filter by category, and build custom routines. Features include a dynamic product selector and an AI-powered chatbot that mimics a digital beauty advisor. This project showcases my ability to merge frontend development with AI integration to create polished, user-centric experiences.</p>
-        <p class="skill-blurb">HTML</p>
-        <p class="skill-blurb">CSS</p>
-        <p class="skill-blurb">JavaScript</p>
-        <p class="skill-blurb">AI Integration</p>
-        <p class="skill-blurb">API Integration</p>
-        <p class="skill-blurb">UI/UX Design</p>
-      </div>
-
-      <div class="project-card" data-category="coding">
-        <h4>NASA APOD API Variation</h4>
-        <br>
-          <img src="img/nasa-apod-ss.png" alt="Light blue interface with NASA logo, date pickers, and red 'Get Space Images' button above a cartoon planet icon." class="screenshot">
-        <br><br>
-        <p class="cd-blurb">
-          <a href="https://github.com/arthelen/nasa-apod-api" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
-          
-          <a href="https://arthelen.github.io/nasa-apod-api/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-        </p>
-        <p class="description">An interactive web app that fetches and displays space imagery using NASA’s APOD API. Users can browse photos by custom date range, view high-res images in modals, and explore detailed descriptions within a clean, responsive UI. This project demonstrates my skills in API integration, dynamic rendering, and thoughtful front-end design.</p>
-        <p class="skill-blurb">HTML</p>
-        <p class="skill-blurb">CSS4</p>
-        <p class="skill-blurb">JavaScript</p>
-        <p class="skill-blurb">API Integration</p>
-        <p class="skill-blurb">AI Assisted</p>
-        <p class="skill-blurb">UI/UX Design</p>
-      </div>
-
-      <div class="project-card" data-category="coding">
-        <h4>Mad Libs Game</h4>
-        <br>
-
-          <img src="img/madlibs-ss.png" alt="Bright pink screen with gradient background, silly emoji title, white input boxes with orange borders, and a hot pink generate button." class="screenshot">
-
-        <br><br>
-        <p class="cd-blurb">
-          <a href="https://github.com/arthelen/madlibs-madness" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
-          
-          <a href="https://arthelen.github.io/madlibs-madness/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-        </p>
-        <p class="description">A playful web game where users fill out a form to generate a custom Mad Libs-style story. Built with HTML, CSS, and JavaScript, using string interpolation and dynamic user input. Highlights front-end development and user-focused design with a fun, colorful UI.</p>
-        <p class="skill-blurb">HTML</p>
-        <p class="skill-blurb">CSS</p>
-        <p class="skill-blurb">JavaScript</p>
-        <p class="skill-blurb">DOM Manipulation</p>
-        <p class="skill-blurb">UI/UX Design</p>
-      </div>
-
-      <div class="project-card" data-category="coding">
-        <h4>Words of Encouragement Generator</h4>
-        <br>
-
-          <img src="img/woe-ss.png" alt="Soft aqua design with calming fonts, white input boxes, volume slider, and a navy blue 'Hear It!' button at the bottom." class="screenshot">
-
-        <br><br>
-        <p class="cd-blurb">
-          <a href="https://github.com/arthelen/words-of-encouragement" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
-          <a href="https://arthelen.github.io/words-of-encouragement/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-        </p>
-        <p class="description">A feel-good web app that uses Google’s Text-to-Speech API to speak personalized encouragement messages aloud. Built with JavaScript, featuring dynamic input handling, a postscript add-on, and a volume slider. Blends accessible tech with calming, user-centered design.</p>
-        <p class="skill-blurb">HTML</p>
-        <p class="skill-blurb">CSS</p>
-        <p class="skill-blurb">JavaScript</p>
-        <p class="skill-blurb">API Integration</p>
-        <p class="skill-blurb">User Input & Audio Control</p>
-      </div>
-
-      <div class="project-card" data-category="coding">
-        <h4>Mock Airbnb Website</h4>
-        <br>
-
-          <img src="img/airbnb-ss.png" alt="Clean white layout with hot pink accents, filter bar, and colorful cards for San Diego listings showing prices and room types." class="screenshot">
-
-        <br><br>
-        <p class="cd-blurb">
-          <a href="https://github.com/arthelen/airbnb" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
-          <a href="https://arthelen.github.io/airbnb/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-        </p>
-        <p class="description">A mock Airbnb-style app where users can filter San Diego listings by city, price range, and property type. Built with HTML, CSS, and JavaScript using arrays, functions, and conditionals to handle real-time filtering. Highlights dynamic rendering and front-end logic for an intuitive user experience.</p>
-        <p class="skill-blurb">HTML</p>
-        <p class="skill-blurb">CSS</p>
-        <p class="skill-blurb">JavaScript</p>
-        <p class="skill-blurb">DOM Manipulation</p>
-        <p class="skill-blurb">UI/UX Design</p>
-      </div>
-
-      <div class="project-card" data-category="coding">
-        <h4>Magic 8 Ball Simulator</h4>
-        <br>
-
-          <img src="img/8ball-ss.png" alt="Starry dark blue background with large black 8-ball in the center and white prompt text above a translucent purple input box." class="screenshot">
-
-        <br><br>
-        <p class="cd-blurb">
-          <a href="https://github.com/arthelen/magic-8-ball" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
-          <a href="https://arthelen.github.io/magic-8-ball/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-        </p>
-        <p class="description">A playful web app that mimics the classic fortune-telling toy using HTML, CSS, and JavaScript. Users ask a yes-or-no question and receive a randomized response, styled with a cosmic theme. Showcases DOM manipulation, random logic, and interactive UI design.</p>
-        <p class="skill-blurb">HTML</p>
-        <p class="skill-blurb">CSS</p>
-        <p class="skill-blurb">JavaScript</p>
-        <p class="skill-blurb">User Input Handling</p>
-        <p class="skill-blurb">UI/UX Design</p>
-      </div>
-
-      <div class="project-card" data-category="coding">
-          <h4>Bio Page</h4>
-          <br>
-
-            <img src="img/bio-page-ss.png" alt="Beige floral layout with round portrait, soft brown text, and a personal intro framed by illustrated leaves and flowers." class="screenshot">
-
-          <br><br>
-          <p class="cd-blurb">
-            <a href="https://github.com/arthelen/bio-page" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
-            <a href="https://arthelen.github.io/bio-page/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-          </p>
-          <p class="description">One of my first HTML/CSS projects, built to introduce myself using semantic tags, custom styling, and personal content. Features headings, images, lists, and links with a calm, neutral color palette. Highlights foundational web dev skills and creative self-expression through code.</p>
-          <p class="skill-blurb">HTML</p>
-          <p class="skill-blurb">CSS</p>
-          <p class="skill-blurb">Boostrap</p>
-          <p class="skill-blurb">Accessibility</p>
-          <p class="skill-blurb">Semantic Structure</p>
-      </div>
-
-
-      </div> 
-
-
-      <div class="project-card" data-category="business">
-        <h4>Charity: Water Marketing Campaign</h4>
-        <br>
-        <a href="img/Charity Water Marketing.pdf" target="_blank">
-          <img src="img/charity water thumbnail.png" alt="Man in a white outfit and green turban sits on bright white stairs, holding a metal cup. Large bold text on the left reads 'Activating the next generation of charity: water supporters' with 'charity: water' in vibrant yellow. A yellow footer bar displays the charity: water logo." class="screenshot">
-        </a>
-        <br><br>
-        <p class="cd-blurb">
-          <a href="img/Charity Water Marketing.pdf" target="_blank" id="project-link"><i class="bi bi-easel-fill"></i>&nbsp;slideshow</a>
-          <a href="" target="new" id="project-link"><a href="https://github.com/arthelen/CR-02-charity-water-lp" target="new" id="project-link"><i class="bi bi-github"></i>code</a>
-          <a href="" target="new" id="project-link"><a href="https://arthelen.github.io/CR-02-charity-water-lp/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-        </p>
-        <p class="description">Designed a donation-focused landing page aimed at college students using Canva. Based on a Gen Z persona, the project included an empathy map, value proposition, and tailored visuals aligned with Charity: Water’s brand. Focused on making giving feel easy, transparent, and impactful.</p>
-        <p class="skill-blurb">UI/UX Design</p>
-        <p class="skill-blurb">Brand Strategy & Visual Identity</p>
-        <p class="skill-blurb">Digital Marketing</p>
-        <p class="skill-blurb">Audience & Persona Targeting</p>
-        <p class="skill-blurb">Copywriting for Nonprofits</p>
-      </div>
-
-      <div class="project-card" data-category="business">
-        <h4>Cerave SEO Marketing Campaign</h4>
-        <br>
-        <a href="img/CeraVe SEO.pdf" target="_blank">
-          <img src="img/cerave thumbnail.png" alt="CeraVe Hydrating Facial Cleanser and Moisturizing Cream sit on a marble tray in a softly lit bathroom. Bold white and blue headline on a black curved background reads 'Google It: Reaching CeraVe’s Male Skincare Searchers.'" class="screenshot">
-        </a>
-        <br><br>
-        <p class="cd-blurb">
-          <a href="img/CeraVe SEO.pdf" target="_blank" id="project-link"><i class="bi bi-easel-fill"></i>&nbsp;slideshow</a>
-        </p>
-        <p class="description">Developed a search-optimized content plan targeting a specific skincare persona. Conducted keyword research using SEMrush and Google Trends, refined CeraVe’s keyword list, and wrote three blog posts aligned with brand voice and user search intent. Strengthened skills in content strategy, SEO, and audience targeting.</p>
-        <p class="skill-blurb">Search Engine Optimization (SEO)</p>
-        <p class="skill-blurb">Content Marketing</p>
-        <p class="skill-blurb">Keyword Research</p>
-        <p class="skill-blurb">Audience & Persona Targeting</p>
-        <p class="skill-blurb">Brand Voice Alignment</p>
-      </div>
-
-      <div class="project-card" data-category="business">
-        <h4>Grammy's Analytics Evaluation</h4>
-        <br>
-        <a href="img/Grammys Social Media.pdf" target="_blank">
-          <img src="img/grammy thumbnail.png" alt="Beyoncé holds three Grammy trophies in her left hand and one in her right, smiling in front of a gold Grammy backdrop. On the left, a sleek black background with white and yellow text says 'Stage to Shelf: Grammys Merch That Rocks!'" class="screenshot">
-        </a>
-        <br><br>
-        <p class="cd-blurb">
-          <a href="img/Grammys Social Media.pdf" target="_blank" id="project-link"><i class="bi bi-easel-fill"></i>&nbsp;slideshow&nbsp;</a>
-        </p>
-        <p class="description">Built a paid social strategy to drive merch sales for the GRAMMY Awards, targeting a Gen Z persona with platform-specific ads. Selected channels and ad formats based on user behavior, and analyzed campaign metrics (CTR, CPC, CPA) to evaluate performance. Blended creative thinking with data-driven decision-making for a high-impact campaign.</p>
-        <p class="skill-blurb">Social Media Marketing</p>
-        <p class="skill-blurb">Audience Targeting & Persona Development</p>
-        <p class="skill-blurb">Campaign Data Analysis (CTR, CPC, CPA)</p>
-        <p class="skill-blurb">Marketing Strategy</p>
-        <p class="skill-blurb">Ad Platform & Format Selection</p>
-      </div>
-    </section> -->
-
-    <!-- design section -->
-    <section id="design-section" class="design-section light reveal">
-      <h4 class="mb-4 card-title text-center">Designs</h4>
-      <h6 class="mb-4 card-subtitle text-center">Re-Designs</h6>
-      <div class="mb-3">
-          <div class="container py-2">
-            <article class="postcard light green">
-              <a class="postcard__img_link" href="img/frans-flowers-design.png" target="_blank">
-                <img class="postcard__img" src="img/frans-flowers-design.png" alt="Side-by-side comparison of Fran’s Flowers website. Left: an older design with a peach background, standard fonts, and block layout. Right: a modern version with a pale pink background, green handwritten-style logo, rounded images, and red accent text." />
-              </a>
-              <div class="postcard__text t-dark">
-                <h1 class="postcard__title green">Fran's Flowers Accessibility Update</h1>
-                <div class="postcard__subtitle small">
-                  <!-- <time datetime="2020-05-25 12:00:00">
-                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                  </time> -->
+      <!-- design section -->
+      <section id="design-section" class="design-section light reveal">
+        <h4 class="mb-4 card-title text-center">Designs</h4>
+        <h6 class="mb-4 card-subtitle text-center">Re-Designs</h6>
+        <div class="mb-3">
+            <div class="container py-2">
+              <article class="postcard light green">
+                <a class="postcard__img_link" href="img/frans-flowers-design.png" target="_blank">
+                  <img class="postcard__img" src="img/frans-flowers-design.png" alt="Side-by-side comparison of Fran’s Flowers website. Left: an older design with a peach background, standard fonts, and block layout. Right: a modern version with a pale pink background, green handwritten-style logo, rounded images, and red accent text." />
+                </a>
+                <div class="postcard__text t-dark">
+                  <h1 class="postcard__title green">Fran's Flowers Accessibility Update</h1>
+                  <div class="postcard__subtitle small">
+                  </div>
+                  <div class="postcard__bar"></div>
+                  <div class="postcard__preview-txt">Redesigned a small business website to improve accessibility, readability, and visual clarity. Updated the original layout with higher contrast, better font choices, semantic HTML, and intentional spacing. This was done to create a more inclusive and user-friendly experience, especially for older audiences.</div>
+                  <p class="design-cd-blurb">
+                    <a href="https://github.com/arthelen/frans-flowers" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
+                    <a href="https://arthelen.github.io/frans-flowers/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
+                  </p>
+                  <ul class="postcard__tagbox__tools">
+                    <li class="skill-blurb"></i>UI/UX Design</li>
+                    <li class="skill-blurb"></i>Accessibilty</li>
+                    <li class="skill-blurb"></i>Responsive Design</li>
+                    <li class="skill-blurb"></i>CSS</li>
+                    <li class="skill-blurb"></i>HTML</li>
+                  </ul>
                 </div>
-                <div class="postcard__bar"></div>
-                <div class="postcard__preview-txt">Redesigned a small business website to improve accessibility, readability, and visual clarity. Updated the original layout with higher contrast, better font choices, semantic HTML, and intentional spacing. This was done to create a more inclusive and user-friendly experience, especially for older audiences.</div>
-                <p class="design-cd-blurb">
-                  <a href="https://github.com/arthelen/frans-flowers" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
-                  <a href="https://arthelen.github.io/frans-flowers/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-                </p>
-                <ul class="postcard__tagbox__tools">
-                  <li class="skill-blurb"></i>UI/UX Design</li>
-                  <li class="skill-blurb"></i>Accessibilty</li>
-                  <li class="skill-blurb"></i>Responsive Design</li>
-                  <li class="skill-blurb"></i>CSS</li>
-                  <li class="skill-blurb"></i>HTML</li>
-                </ul>
-              </div>
-            </article>
-            <button class="card-subtitle toggle-trigger see-more-btn">See More <i class="bi bi-arrow-down-short"></i></button>
+              </article>
+              <button class="card-subtitle toggle-trigger see-more-btn">See More <i class="bi bi-arrow-down-short"></i></button>
+              <div class="design-group">
+              <article class="postcard light green">
+                <a class="postcard__img_link" href="img/eco-friendly-steamers-design.png" target="_blank">
+                  <img class="postcard__img" src="img/eco-friendly-steamers-design.png" alt="Before-and-after design of Eco-Friendly Steamers site. Left: outdated version with harsh red, blue, and yellow sections. Right: updated site with an olive green header, soft beige contact form, and a background image of a vacuum on carpet." />
+                </a>
+                <div class="postcard__text t-dark">
+                  <h1 class="postcard__title green">Eco-Friendly Steamers Palette Improvement</h1>
+                  <div class="postcard__subtitle small">
+                  </div>
+                  <div class="postcard__bar"></div>
+                  <div class="postcard__preview-txt">Revamped a service-based landing page with accessible design, modern layout, and brand-consistent visuals. Replaced clashing colors and poor formatting with earthy tones (since they are an eco-friendly company), a hero image, and flexbox-based layout. This resulted in a clean, calming, and responsive user experience.</div>
+                  <p class="design-cd-blurb">
+                    <a href="https://github.com/arthelen/eco-friendly-steamers" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
+                    <a href="https://arthelen.github.io/eco-friendly-steamers/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
+                  </p>
+                  <ul class="postcard__tagbox__tools">
+                    <li class="skill-blurb"></i>UI/UX Design</li>
+                    <li class="skill-blurb"></i>Accessibilty</li>
+                    <li class="skill-blurb"></i>Responsive Design</li>
+                    <li class="skill-blurb"></i>CSS</li>
+                    <li class="skill-blurb"></i>HTML</li>
+                    <li class="skill-blurb"></i>Hero Image Implementation</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="postcard light green">
+                <a class="postcard__img_link" href="img/cowboy-calculator-design.png" target="_blank">
+                  <img class="postcard__img" src="img/cowboy-calculator-design.png" alt="Two versions of a carpet calculator site. Left: mint green theme with a green cowboy logo and bright green button. Right: beige theme with a brown horse illustration, rounded input boxes, and a tan 'Calculate' button." />
+                </a>
+                <div class="postcard__text t-dark">
+                  <h1 class="postcard__title green">Cowboy Carpet Calulator Brand Change</h1>
+                  <div class="postcard__subtitle small">
+                  </div>
+                  <div class="postcard__bar"></div>
+                  <div class="postcard__preview-txt">Redesigned a functional calculator tool with a western-themed UI, warm color palette, and improved layout for clarity. Used JavaScript to calculate carpet area with a built-in 10% buffer, and styled the form for readability across devices. The result is a responsive, branded tool that blends logic and design.</div>
+                  <p class="design-cd-blurb">
+                    <a href="https://github.com/arthelen/cowboy-robs-carpet-calculator" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
+                    <a href="https://arthelen.github.io/cowboy-robs-carpet-calculator/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
+                  </p>
+                  <ul class="postcard__tagbox__tools">
+                    <li class="skill-blurb"></i>HTML</li>
+                    <li class="skill-blurb"></i>CSS</li>
+                    <li class="skill-blurb"></i>Responsive Layout</li>
+                    <li class="skill-blurb"></i>UI/UX Design</li>
+                    <li class="skill-blurb"></i>Branding Integration</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="postcard light green">
+                <a class="postcard__img_link" href="img/van-instructions-redo.png" target="_blank">
+                  <img class="postcard__img" src="img/van-instructions-redo.png" alt="Two versions of a 15-passenger van safety flyer. Left: bold blue and yellow layout with a van photo and dense paragraphs. Right: cleaner design with blue icons, golden headers, and more spacing between safety tips." />
+                </a>
+                <div class="postcard__text t-dark">
+                  <h1 class="postcard__title green">Van Instructions Revamp</h1>
+                  <div class="postcard__subtitle small">
+                  </div>
+                  <div class="postcard__bar"></div>
+                  <div class="postcard__preview-txt">For this project, I redesigned an official NHTSA safety handout to improve readability, clarity, and visual flow. The original layout (left) was dense and visually flat, making it difficult to skim or navigate quickly. My updated version (right) uses Canva to restructure content with iconography, consistent spacing, and color-coded section headers. The end result is a more modern, reader-friendly format that improves accessibility and visual engagement without compromising the original information.</div>
+                  <ul class="postcard__tagbox__tools">
+                    <li class="skill-blurb"></i>Canva</li>
+                    <li class="skill-blurb"></i>Print & Layout Design</li>
+                    <li class="skill-blurb"></i>Visual Hierarchy</li>
+                    <li class="skill-blurb"></i>Accessibility</li>
+                    <li class="skill-blurb"></i>Content Organization</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <h6 class="mb-4 card-subtitle text-center">Original Designs</h6>
+            <div class="container py-2">
+              <article class="postcard light blue">
+                <a class="postcard__img_link" href="img/double-exposure.jpg" target="_blank">
+                  <img class="postcard__img" src="img/double-exposure.jpg" alt="Profile of Felix from K-Pop group Stray Kids with their hair replaced by a bouquet of pink and coral flowers with green leaves on a gray background." />
+                </a>
+                <div class="postcard__text t-dark">
+                  <h1 class="postcard__title blue">Double Exposure Edit</h1>
+                  <div class="postcard__subtitle small">
+                  </div>
+                  <div class="postcard__bar"></div>
+                  <div class="postcard__preview-txt">Created a blended composition using a portrait of Felix (from K-pop group "Stray Kids") and floral imagery to explore themes of growth and softness. Used masking and layering techniques to achieve a surreal double exposure effect. Completed as part of a digital design course focused on concept development and technical execution.</div>
+                  <ul class="postcard__tagbox">
+                    <li class="tag__item" id="double-exposure-one">#b18481</li>
+                    <li class="tag__item" id="double-exposure-two">#262024</li>
+                    <li class="tag__item" id="double-exposure-three">#48403d</li>
+                    <li class="tag__item" id="double-exposure-four">#ccc5cd</li>
+                    <li class="tag__item" id="double-exposure-five">#84575e</li>
+                  </ul>
+                  <ul class="postcard__tagbox__tools">
+                    <li class="skill-blurb"></i>Adobe Photoshop</li>
+                    <li class="skill-blurb"></i>Double Exposure Technique</li>
+                    <li class="skill-blurb"></i>Digital Photo Manipulation</li>
+                    <li class="skill-blurb"></i>Layer Masking & Blending</li>
+                    <li class="skill-blurb"></i>Color & Texture Harmony in Design</li>
+                  </ul>
+                </div>
+              </article>
+              <button class="card-subtitle toggle-trigger see-more-btn">See More <i class="bi bi-arrow-down-short"></i></button>
             <div class="design-group">
-            <article class="postcard light green">
-              <a class="postcard__img_link" href="img/eco-friendly-steamers-design.png" target="_blank">
-                <img class="postcard__img" src="img/eco-friendly-steamers-design.png" alt="Before-and-after design of Eco-Friendly Steamers site. Left: outdated version with harsh red, blue, and yellow sections. Right: updated site with an olive green header, soft beige contact form, and a background image of a vacuum on carpet." />
-              </a>
-              <div class="postcard__text t-dark">
-                <h1 class="postcard__title green">Eco-Friendly Steamers Palette Improvement</h1>
-                <div class="postcard__subtitle small">
-                  <!-- <time datetime="2020-05-25 12:00:00">
-                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                  </time> -->
+              <article class="postcard light red">
+                <a class="postcard__img_link" href="img/vinyl.png" target="_blank">
+                  <img class="postcard__img" src="img/vinyl.png" alt="Mockup of Stray Kids' Yellow Wood vinyl album with a mustard yellow cover featuring a bus and pine trees, and a tracklist on the back." />	
+                </a>
+                <div class="postcard__text t-dark">
+                  <h1 class="postcard__title red">Vinyl Design</h1>
+                  <div class="postcard__subtitle small">
+                  </div>
+                  <div class="postcard__bar"></div>
+                  <div class="postcard__preview-txt">Designed a custom front and back vinyl cover for a reimagined version of the "Clé 2: Yellow Wood" album from K-pop group "Stray Kids". Featured a moody forest theme with a tour bus illustration on the front and silhouettes of each member with a curated track list on the back. Balanced bold typography with a cohesive color palette to create a polished, collectible design.</div>
+                  <ul class="postcard__tagbox">
+                    <li class="tag__item" id="vinyl-one">#0f0f0f</li>
+                    <li class="tag__item" id="vinyl-two">#fcec8f</li>
+                    <li class="tag__item" id="vinyl-three">#a49142</li>
+                    <li class="tag__item" id="vinyl-four">#201f1b</li>
+                    <li class="tag__item" id="vinyl-five">#dadada</li>
+                  </ul>
+                  <ul class="postcard__tagbox__tools">
+                    <li class="skill-blurb"></i>Adobe Illustrator</li>
+                    <li class="skill-blurb"></i>Adobe InDesign</li>
+                    <li class="skill-blurb"></i>Adobe Photoshop</li>
+                    <li class="skill-blurb"></i>Vector Illustration & Iconography</li>
+                    <li class="skill-blurb"></i>Typography Pairing & Hierarchy</li>
+                    <li class="skill-blurb"></i>Color Palette Control & Brand Cohesion</li>
+                    <li class="skill-blurb"></i>Conceptual Art Direction</li>
+                  </ul>
                 </div>
-                <div class="postcard__bar"></div>
-                <div class="postcard__preview-txt">Revamped a service-based landing page with accessible design, modern layout, and brand-consistent visuals. Replaced clashing colors and poor formatting with earthy tones (since they are an eco-friendly company), a hero image, and flexbox-based layout. This resulted in a clean, calming, and responsive user experience.</div>
-                <p class="design-cd-blurb">
-                  <a href="https://github.com/arthelen/eco-friendly-steamers" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
-                  <a href="https://arthelen.github.io/eco-friendly-steamers/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-                </p>
-                <ul class="postcard__tagbox__tools">
-                  <li class="skill-blurb"></i>UI/UX Design</li>
-                  <li class="skill-blurb"></i>Accessibilty</li>
-                  <li class="skill-blurb"></i>Responsive Design</li>
-                  <li class="skill-blurb"></i>CSS</li>
-                  <li class="skill-blurb"></i>HTML</li>
-                  <li class="skill-blurb"></i>Hero Image Implementation</li>
-                </ul>
-              </div>
-            </article>
-            <article class="postcard light green">
-              <a class="postcard__img_link" href="img/cowboy-calculator-design.png" target="_blank">
-                <img class="postcard__img" src="img/cowboy-calculator-design.png" alt="Two versions of a carpet calculator site. Left: mint green theme with a green cowboy logo and bright green button. Right: beige theme with a brown horse illustration, rounded input boxes, and a tan 'Calculate' button." />
-              </a>
-              <div class="postcard__text t-dark">
-                <h1 class="postcard__title green">Cowboy Carpet Calulator Brand Change</h1>
-                <div class="postcard__subtitle small">
-                  <!-- <time datetime="2020-05-25 12:00:00">
-                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                  </time> -->
+              </article>
+              <article class="postcard light green">
+                <a class="postcard__img_link" href="img/covid-sns.png" target="_blank">
+                  <img class="postcard__img" src="img/covid-sns.png" alt="Four-panel COVID-19 mask infographic with tips on mask usage, types of masks, and safety guidelines in mint and navy colors." />
+                </a>
+                <div class="postcard__text t-dark">
+                  <h1 class="postcard__title green">Social Media Post</h1>
+                  <div class="postcard__subtitle small">
+                  </div>
+                  <div class="postcard__bar"></div>
+                  <div class="postcard__preview-txt">Designed a carousel-style post for Instagram to educate users on mask types, etiquette, and responsible use. Combined bold typography, iconography, and real imagery to create clear, engaging visuals. Originally created during the COVID-19 pandemic, the design remains adaptable for future health communications.</div>
+                  <ul class="postcard__tagbox">
+                    <li class="tag__item" id="covid-sns-one">#cdfdf0</li>
+                    <li class="tag__item" id="covid-sns-two">#315382</li>
+                    <li class="tag__item" id="covid-sns-three">#5190a0</li>
+                    <li class="tag__item" id="covid-sns-four">#131a50</li>
+                    <li class="tag__item" id="covid-sns-five">#2c3f69</li>
+                  </ul>
+                  <ul class="postcard__tagbox__tools">
+                    <li class="skill-blurb"></i>Adobe Illustrator</li>
+                    <li class="skill-blurb"></i>Social Media Campaign Design</li>
+                    <li class="skill-blurb"></i>Accessibility through Clear Contrast & Icons</li>
+                    <li class="skill-blurb"></i>Typography Hierarchy & Messaging</li>
+                    <li class="skill-blurb"></i>Grid Layout & Multi-Slide Cohesion</li>
+                    <li class="skill-blurb"></i>Visual Communication for Public Health</li>
+                  </ul>
                 </div>
-                <div class="postcard__bar"></div>
-                <div class="postcard__preview-txt">Redesigned a functional calculator tool with a western-themed UI, warm color palette, and improved layout for clarity. Used JavaScript to calculate carpet area with a built-in 10% buffer, and styled the form for readability across devices. The result is a responsive, branded tool that blends logic and design.</div>
-                <p class="design-cd-blurb">
-                  <a href="https://github.com/arthelen/cowboy-robs-carpet-calculator" target="_blank" id="project-link"><i class="bi bi-github"></i>code&nbsp;</a>
-                  <a href="https://arthelen.github.io/cowboy-robs-carpet-calculator/" target="new" id="project-link"><i class="bi bi-caret-right-square-fill"></i>&nbsp;demo</a>
-                </p>
-                <ul class="postcard__tagbox__tools">
-                  <li class="skill-blurb"></i>HTML</li>
-                  <li class="skill-blurb"></i>CSS</li>
-                  <li class="skill-blurb"></i>Responsive Layout</li>
-                  <li class="skill-blurb"></i>UI/UX Design</li>
-                  <li class="skill-blurb"></i>Branding Integration</li>
-                </ul>
-              </div>
-            </article>
-            <article class="postcard light green">
-              <a class="postcard__img_link" href="img/van-instructions-redo.png" target="_blank">
-                <img class="postcard__img" src="img/van-instructions-redo.png" alt="Two versions of a 15-passenger van safety flyer. Left: bold blue and yellow layout with a van photo and dense paragraphs. Right: cleaner design with blue icons, golden headers, and more spacing between safety tips." />
-              </a>
-              <div class="postcard__text t-dark">
-                <h1 class="postcard__title green">Van Instructions Revamp</h1>
-                <div class="postcard__subtitle small">
-                  <!-- <time datetime="2020-05-25 12:00:00">
-                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                  </time> -->
+              </article>
+              <article class="postcard light green">
+                <a class="postcard__img_link" href="img/concert-poster.jpg" target="_blank">
+                  <img class="postcard__img" src="img/concert-poster.jpg" alt="Stray Kids tour poster with their facial silhouettes facing a winding road through pine trees and the text 'The Road Not Taken Tour' in gold." />
+                </a>
+                <div class="postcard__text t-dark">
+                  <h1 class="postcard__title green">Concert Poster</h1>
+                  <div class="postcard__subtitle small">
+                  </div>
+                  <div class="postcard__bar"></div>
+                  <div class="postcard__preview-txt">Designed a conceptual concert poster featuring member facial silhouettes, a winding road motif, and typography inspired by one of the group’s past albums. The layout visually reinforces the tour title “Road Not Taken”, inspired by one of their past songs, while maintaining brand consistency. A bold, dynamic piece that blends concept design, layout, and storytelling for both digital and print use.</div>
+                  <ul class="postcard__tagbox">
+                    <li class="tag__item" id="poster-one">#03060c</li>
+                    <li class="tag__item" id="poster-two">#b69e35</li>
+                    <li class="tag__item" id="poster-three">#bc8e31</li>
+                    <li class="tag__item" id="poster-four">#979790</li>
+                    <li class="tag__item" id="poster-five">#f1eab7</li>
+                  </ul>
+                  <ul class="postcard__tagbox__tools">
+                    <li class="skill-blurb"></i>Adobe Illustrator</li>
+                    <li class="skill-blurb"></i>Adobe Photoshop</li>
+                    <li class="skill-blurb"></i>Poster Design & Layout Composition</li>
+                    <li class="skill-blurb"></i>Creative Use of Silhouettes & Negative Space</li>
+                    <li class="skill-blurb"></i>Typography Integration & Brand Referencing</li>
+                    <li class="skill-blurb"></i>Visual Storytelling & Conceptual Design</li>
+                  </ul>
                 </div>
-                <div class="postcard__bar"></div>
-                <div class="postcard__preview-txt">For this project, I redesigned an official NHTSA safety handout to improve readability, clarity, and visual flow. The original layout (left) was dense and visually flat, making it difficult to skim or navigate quickly. My updated version (right) uses Canva to restructure content with iconography, consistent spacing, and color-coded section headers. The end result is a more modern, reader-friendly format that improves accessibility and visual engagement without compromising the original information.</div>
-                <ul class="postcard__tagbox__tools">
-                  <li class="skill-blurb"></i>Canva</li>
-                  <li class="skill-blurb"></i>Print & Layout Design</li>
-                  <li class="skill-blurb"></i>Visual Hierarchy</li>
-                  <li class="skill-blurb"></i>Accessibility</li>
-                  <li class="skill-blurb"></i>Content Organization</li>
-                </ul>
-              </div>
-            </article>
+              </article>
+              <article class="postcard light green">
+                <a class="postcard__img_link" href="img/zine.png" target="_blank">
+                  <img class="postcard__img" src="img/zine.png" alt="Infographic titled 'The Basics of Popular Social Media Sites' in pink and white, describing features of platforms like Twitter, Instagram, and TikTok." />
+                </a>
+                <div class="postcard__text t-dark">
+                  <h1 class="postcard__title green">Zine</h1>
+                  <div class="postcard__subtitle small">
+                  </div>
+                  <div class="postcard__bar"></div>
+                  <div class="postcard__preview-txt">Created a beginner-friendly zine explaining how popular platforms like Instagram, TikTok, and Discord work. Designed with playful visuals, simple text, and a pink-toned aesthetic to keep it approachable and engaging. This project highlights visual hierarchy, accessibility, and educational design.</div>
+                  <ul class="postcard__tagbox">
+                    <li class="tag__item" id="zine-one">#fdb5b5</li>
+                    <li class="tag__item" id="zine-two">#bbbaba</li>
+                    <li class="tag__item" id="zine-three">#fedddd</li>
+                    <li class="tag__item" id="zine-four">#fffff</li>
+                    <li class="tag__item" id="zine-five">#878585</li>
+                  </ul>
+                  <ul class="postcard__tagbox__tools">
+                    <li class="skill-blurb"></i>Canva</li>
+                    <li class="skill-blurb"></i>Information Design & Visual Hierarchy</li>
+                    <li class="skill-blurb"></i>Typography & Layout for Print Media</li>
+                    <li class="skill-blurb"></i>Beginner-Focused Communication</li>
+                    <li class="skill-blurb"></i>Designing for Education & Accessibility</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="postcard light green">
+                <a class="postcard__img_link" href="img/wireframe.png" target="_blank">
+                  <img class="postcard__img" src="img/wireframe.png" alt="Wireframe mockup of a gluten-free recipe website called Glutino, showing dinner recipes, filters, and interface notes with pink and mustard accents." />
+                </a>
+                <div class="postcard__text t-dark">
+                  <h1 class="postcard__title green">Wireframe</h1>
+                  <div class="postcard__subtitle small">
+                  </div>
+                  <div class="postcard__bar"></div>
+                  <div class="postcard__preview-txt">Designed a high-fidelity wireframe for a gluten-free recipe site focused on user-centered design. Features include recipe filtering, a flower-based difficulty rating system, and a clean, accessible layout. Used soft color tones and detailed annotations to support a warm, intuitive user experience and showcase thoughtful UX decisions.</div>
+                  <ul class="postcard__tagbox">
+                    <li class="tag__item" id="wireframe-one">#e19f99</li>
+                    <li class="tag__item" id="wireframe-two">#ddb879</li>
+                    <li class="tag__item" id="wireframe-three">#1b171a</li>
+                    <li class="tag__item" id="wireframe-four">#c7bfbf</li>
+                    <li class="tag__item" id="wireframe-five">#ffffff</li>
+                  </ul>
+                  <ul class="postcard__tagbox__tools">
+                    <li class="skill-blurb"></i>Balsamiq</li>
+                    <li class="skill-blurb"></i>UI/UX Design</li>
+                    <li class="skill-blurb"></i>Wireframing</li>
+                    <li class="skill-blurb"></i>Accessibilty Awareness</li>
+                    <li class="skill-blurb"></i>Annotation & Communication</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="postcard light green">
+                <a class="postcard__img_link" href="img/covid-poster.jpg" target="_blank">
+                  <img class="postcard__img" src="img/covid-poster.jpg" alt="Teal-toned collage showing a masked woman surrounded by COVID-19 visuals including vaccine vials, masks, sanitizer, and social distancing signs." />
+                </a>
+                <div class="postcard__text t-dark">
+                  <h1 class="postcard__title green">COVID-19 Conceptual Illustration</h1>
+                  <div class="postcard__subtitle small">
+                  </div>
+                  <div class="postcard__bar"></div>
+                  <div class="postcard__preview-txt">Designed a poster illustrating the emotional contrast of the pandemic, with stress and struggle on one side and hope and progress on the other. A masked central figure and symbolic imagery connect the dual perspectives. This piece highlights visual storytelling and the ability to convey complex themes through design.</div>
+                  <ul class="postcard__tagbox">
+                    <li class="tag__item" id="covid-poster-one">#b2cfd2</li>
+                    <li class="tag__item" id="covid-poster-two">#3d626a</li>
+                    <li class="tag__item" id="covid-poster-three">#cfeaeb</li>
+                    <li class="tag__item" id="covid-poster-four">#a1c1c4</li>
+                    <li class="tag__item" id="covid-poster-five">#dcf5f6</li>
+                  </ul>
+                  <ul class="postcard__tagbox__tools">
+                    <li class="skill-blurb"></i>Adobe Photoshop</li>
+                    <li class="skill-blurb"></i>Visual Storytelling & Conceptual Design</li>
+                    <li class="skill-blurb"></i>Critical Thinking</li>
+                    <li class="skill-blurb"></i>Typography & Layout Awareness</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
+      </section>
 
-        <h6 class="mb-4 card-subtitle text-center">Original Designs</h6>
-          <div class="container py-2">
-            <article class="postcard light blue">
-              <a class="postcard__img_link" href="img/double-exposure.jpg" target="_blank">
-                <img class="postcard__img" src="img/double-exposure.jpg" alt="Profile of Felix from K-Pop group Stray Kids with their hair replaced by a bouquet of pink and coral flowers with green leaves on a gray background." />
-              </a>
-              <div class="postcard__text t-dark">
-                <h1 class="postcard__title blue">Double Exposure Edit</h1>
-                <div class="postcard__subtitle small">
-                  <!-- <time datetime="2020-05-25 12:00:00">
-                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                  </time> -->
-                </div>
-                <div class="postcard__bar"></div>
-                <div class="postcard__preview-txt">Created a blended composition using a portrait of Felix (from K-pop group "Stray Kids") and floral imagery to explore themes of growth and softness. Used masking and layering techniques to achieve a surreal double exposure effect. Completed as part of a digital design course focused on concept development and technical execution.</div>
-                <ul class="postcard__tagbox">
-                  <li class="tag__item" id="double-exposure-one">#b18481</li>
-                  <li class="tag__item" id="double-exposure-two">#262024</li>
-                  <li class="tag__item" id="double-exposure-three">#48403d</li>
-                  <li class="tag__item" id="double-exposure-four">#ccc5cd</li>
-                  <li class="tag__item" id="double-exposure-five">#84575e</li>
-                </ul>
-                <ul class="postcard__tagbox__tools">
-                  <li class="skill-blurb"></i>Adobe Photoshop</li>
-                  <li class="skill-blurb"></i>Double Exposure Technique</li>
-                  <li class="skill-blurb"></i>Digital Photo Manipulation</li>
-                  <li class="skill-blurb"></i>Layer Masking & Blending</li>
-                  <li class="skill-blurb"></i>Color & Texture Harmony in Design</li>
-                </ul>
-              </div>
-            </article>
-            <button class="card-subtitle toggle-trigger see-more-btn">See More <i class="bi bi-arrow-down-short"></i></button>
-          <div class="design-group">
-            <article class="postcard light red">
-              <a class="postcard__img_link" href="img/vinyl.png" target="_blank">
-                <img class="postcard__img" src="img/vinyl.png" alt="Mockup of Stray Kids' Yellow Wood vinyl album with a mustard yellow cover featuring a bus and pine trees, and a tracklist on the back." />	
-              </a>
-              <div class="postcard__text t-dark">
-                <h1 class="postcard__title red">Vinyl Design</h1>
-                <div class="postcard__subtitle small">
-                  <!-- <time datetime="2020-05-25 12:00:00">
-                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                  </time> -->
-                </div>
-                <div class="postcard__bar"></div>
-                <div class="postcard__preview-txt">Designed a custom front and back vinyl cover for a reimagined version of the "Clé 2: Yellow Wood" album from K-pop group "Stray Kids". Featured a moody forest theme with a tour bus illustration on the front and silhouettes of each member with a curated track list on the back. Balanced bold typography with a cohesive color palette to create a polished, collectible design.</div>
-                <ul class="postcard__tagbox">
-                  <li class="tag__item" id="vinyl-one">#0f0f0f</li>
-                  <li class="tag__item" id="vinyl-two">#fcec8f</li>
-                  <li class="tag__item" id="vinyl-three">#a49142</li>
-                  <li class="tag__item" id="vinyl-four">#201f1b</li>
-                  <li class="tag__item" id="vinyl-five">#dadada</li>
-                </ul>
-                <ul class="postcard__tagbox__tools">
-                  <li class="skill-blurb"></i>Adobe Illustrator</li>
-                  <li class="skill-blurb"></i>Adobe InDesign</li>
-                  <li class="skill-blurb"></i>Adobe Photoshop</li>
-                  <li class="skill-blurb"></i>Vector Illustration & Iconography</li>
-                  <li class="skill-blurb"></i>Typography Pairing & Hierarchy</li>
-                  <li class="skill-blurb"></i>Color Palette Control & Brand Cohesion</li>
-                  <li class="skill-blurb"></i>Conceptual Art Direction</li>
-                </ul>
-              </div>
-            </article>
-            <article class="postcard light green">
-              <a class="postcard__img_link" href="img/covid-sns.png" target="_blank">
-                <img class="postcard__img" src="img/covid-sns.png" alt="Four-panel COVID-19 mask infographic with tips on mask usage, types of masks, and safety guidelines in mint and navy colors." />
-              </a>
-              <div class="postcard__text t-dark">
-                <h1 class="postcard__title green">Social Media Post</h1>
-                <div class="postcard__subtitle small">
-                  <!-- <time datetime="2020-05-25 12:00:00">
-                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                  </time> -->
-                </div>
-                <div class="postcard__bar"></div>
-                <div class="postcard__preview-txt">Designed a carousel-style post for Instagram to educate users on mask types, etiquette, and responsible use. Combined bold typography, iconography, and real imagery to create clear, engaging visuals. Originally created during the COVID-19 pandemic, the design remains adaptable for future health communications.</div>
-                <ul class="postcard__tagbox">
-                  <li class="tag__item" id="covid-sns-one">#cdfdf0</li>
-                  <li class="tag__item" id="covid-sns-two">#315382</li>
-                  <li class="tag__item" id="covid-sns-three">#5190a0</li>
-                  <li class="tag__item" id="covid-sns-four">#131a50</li>
-                  <li class="tag__item" id="covid-sns-five">#2c3f69</li>
-                </ul>
-                <ul class="postcard__tagbox__tools">
-                  <li class="skill-blurb"></i>Adobe Illustrator</li>
-                  <li class="skill-blurb"></i>Social Media Campaign Design</li>
-                  <li class="skill-blurb"></i>Accessibility through Clear Contrast & Icons</li>
-                  <li class="skill-blurb"></i>Typography Hierarchy & Messaging</li>
-                  <li class="skill-blurb"></i>Grid Layout & Multi-Slide Cohesion</li>
-                  <li class="skill-blurb"></i>Visual Communication for Public Health</li>
-                </ul>
-              </div>
-            </article>
-            <article class="postcard light green">
-              <a class="postcard__img_link" href="img/concert-poster.jpg" target="_blank">
-                <img class="postcard__img" src="img/concert-poster.jpg" alt="Stray Kids tour poster with their facial silhouettes facing a winding road through pine trees and the text 'The Road Not Taken Tour' in gold." />
-              </a>
-              <div class="postcard__text t-dark">
-                <h1 class="postcard__title green">Concert Poster</h1>
-                <div class="postcard__subtitle small">
-                  <!-- <time datetime="2020-05-25 12:00:00">
-                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                  </time> -->
-                </div>
-                <div class="postcard__bar"></div>
-                <div class="postcard__preview-txt">Designed a conceptual concert poster featuring member facial silhouettes, a winding road motif, and typography inspired by one of the group’s past albums. The layout visually reinforces the tour title “Road Not Taken”, inspired by one of their past songs, while maintaining brand consistency. A bold, dynamic piece that blends concept design, layout, and storytelling for both digital and print use.</div>
-                <ul class="postcard__tagbox">
-                  <li class="tag__item" id="poster-one">#03060c</li>
-                  <li class="tag__item" id="poster-two">#b69e35</li>
-                  <li class="tag__item" id="poster-three">#bc8e31</li>
-                  <li class="tag__item" id="poster-four">#979790</li>
-                  <li class="tag__item" id="poster-five">#f1eab7</li>
-                </ul>
-                <ul class="postcard__tagbox__tools">
-                  <li class="skill-blurb"></i>Adobe Illustrator</li>
-                  <li class="skill-blurb"></i>Adobe Photoshop</li>
-                  <li class="skill-blurb"></i>Poster Design & Layout Composition</li>
-                  <li class="skill-blurb"></i>Creative Use of Silhouettes & Negative Space</li>
-                  <li class="skill-blurb"></i>Typography Integration & Brand Referencing</li>
-                  <li class="skill-blurb"></i>Visual Storytelling & Conceptual Design</li>
-                </ul>
-              </div>
-            </article>
-            <article class="postcard light green">
-              <a class="postcard__img_link" href="img/zine.png" target="_blank">
-                <img class="postcard__img" src="img/zine.png" alt="Infographic titled 'The Basics of Popular Social Media Sites' in pink and white, describing features of platforms like Twitter, Instagram, and TikTok." />
-              </a>
-              <div class="postcard__text t-dark">
-                <h1 class="postcard__title green">Zine</h1>
-                <div class="postcard__subtitle small">
-                  <!-- <time datetime="2020-05-25 12:00:00">
-                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                  </time> -->
-                </div>
-                <div class="postcard__bar"></div>
-                <div class="postcard__preview-txt">Created a beginner-friendly zine explaining how popular platforms like Instagram, TikTok, and Discord work. Designed with playful visuals, simple text, and a pink-toned aesthetic to keep it approachable and engaging. This project highlights visual hierarchy, accessibility, and educational design.</div>
-                <ul class="postcard__tagbox">
-                  <li class="tag__item" id="zine-one">#fdb5b5</li>
-                  <li class="tag__item" id="zine-two">#bbbaba</li>
-                  <li class="tag__item" id="zine-three">#fedddd</li>
-                  <li class="tag__item" id="zine-four">#fffff</li>
-                  <li class="tag__item" id="zine-five">#878585</li>
-                </ul>
-                <ul class="postcard__tagbox__tools">
-                  <li class="skill-blurb"></i>Canva</li>
-                  <li class="skill-blurb"></i>Information Design & Visual Hierarchy</li>
-                  <li class="skill-blurb"></i>Typography & Layout for Print Media</li>
-                  <li class="skill-blurb"></i>Beginner-Focused Communication</li>
-                  <li class="skill-blurb"></i>Designing for Education & Accessibility</li>
-                </ul>
-              </div>
-            </article>
-            <article class="postcard light green">
-              <a class="postcard__img_link" href="img/wireframe.png" target="_blank">
-                <img class="postcard__img" src="img/wireframe.png" alt="Wireframe mockup of a gluten-free recipe website called Glutino, showing dinner recipes, filters, and interface notes with pink and mustard accents." />
-              </a>
-              <div class="postcard__text t-dark">
-                <h1 class="postcard__title green">Wireframe</h1>
-                <div class="postcard__subtitle small">
-                  <!-- <time datetime="2020-05-25 12:00:00">
-                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                  </time> -->
-                </div>
-                <div class="postcard__bar"></div>
-                <div class="postcard__preview-txt">Designed a high-fidelity wireframe for a gluten-free recipe site focused on user-centered design. Features include recipe filtering, a flower-based difficulty rating system, and a clean, accessible layout. Used soft color tones and detailed annotations to support a warm, intuitive user experience and showcase thoughtful UX decisions.</div>
-                <ul class="postcard__tagbox">
-                  <li class="tag__item" id="wireframe-one">#e19f99</li>
-                  <li class="tag__item" id="wireframe-two">#ddb879</li>
-                  <li class="tag__item" id="wireframe-three">#1b171a</li>
-                  <li class="tag__item" id="wireframe-four">#c7bfbf</li>
-                  <li class="tag__item" id="wireframe-five">#ffffff</li>
-                </ul>
-                <ul class="postcard__tagbox__tools">
-                  <li class="skill-blurb"></i>Balsamiq</li>
-                  <li class="skill-blurb"></i>UI/UX Design</li>
-                  <li class="skill-blurb"></i>Wireframing</li>
-                  <li class="skill-blurb"></i>Accessibilty Awareness</li>
-                  <li class="skill-blurb"></i>Annotation & Communication</li>
-                </ul>
-              </div>
-            </article>
-            <article class="postcard light green">
-              <a class="postcard__img_link" href="img/covid-poster.jpg" target="_blank">
-                <img class="postcard__img" src="img/covid-poster.jpg" alt="Teal-toned collage showing a masked woman surrounded by COVID-19 visuals including vaccine vials, masks, sanitizer, and social distancing signs." />
-              </a>
-              <div class="postcard__text t-dark">
-                <h1 class="postcard__title green">COVID-19 Conceptual Illustration</h1>
-                <div class="postcard__subtitle small">
-                  <!-- <time datetime="2020-05-25 12:00:00">
-                    <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-                  </time> -->
-                </div>
-                <div class="postcard__bar"></div>
-                <div class="postcard__preview-txt">Designed a poster illustrating the emotional contrast of the pandemic, with stress and struggle on one side and hope and progress on the other. A masked central figure and symbolic imagery connect the dual perspectives. This piece highlights visual storytelling and the ability to convey complex themes through design.</div>
-                <ul class="postcard__tagbox">
-                  <li class="tag__item" id="covid-poster-one">#b2cfd2</li>
-                  <li class="tag__item" id="covid-poster-two">#3d626a</li>
-                  <li class="tag__item" id="covid-poster-three">#cfeaeb</li>
-                  <li class="tag__item" id="covid-poster-four">#a1c1c4</li>
-                  <li class="tag__item" id="covid-poster-five">#dcf5f6</li>
-                </ul>
-                <ul class="postcard__tagbox__tools">
-                  <li class="skill-blurb"></i>Adobe Photoshop</li>
-                  <li class="skill-blurb"></i>Visual Storytelling & Conceptual Design</li>
-                  <li class="skill-blurb"></i>Critical Thinking</li>
-                  <li class="skill-blurb"></i>Typography & Layout Awareness</li>
-                </ul>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="music-section" class="music-section light reveal text-center">
-      <h4 class="mb-4 card-title">Songs ADD VOL SLIDER</h4>
-      <div class="mb-3">
-        <div class="">
+      <!-- music/song section -->
+      <section id="music-section" class="music-section light reveal text-center">
+        <h4 class="mb-4 card-title">Songs ADD VOL SLIDER</h4>
+        <div class="mb-3">
           <div class="container py-2">
             <p>Some of my favorite songs to code to (or just listen in general)!<br></vr>Click on the artist image to hear a snippet, <strong>but be aware of volume</strong>!</p>
             <div class="music-cards">
-              <!-- Card for Song 1 -->
+              <!-- stray kids bounce back -->
               <div class="music-card">
                 <img src="img/stray-kids-card.jpg" alt="Eight members of K-Pop group Stray Kids pose together in layered black and gray outfits with bold hairstyles, set against a clean white background." class="circular-image" onclick="playAudio('audio/bounce-back.mp3', 'progress-bounce-back')">
                 <div class="progress-bar" id="progress-bounce-back"></div>
                 <h3>Bounce Back</h3>
                 <p>Stray Kids</p>
               </div>
-              <!-- Card for Song 2 -->
+              <!-- hans zimmer supermarine -->
               <div class="music-card">
                 <img src="img/hans-zimmer-card.jpg" alt="Portrait of composer Hans Zimmer smiling warmly in a purple blazer and blue shirt, resting his cheek on one hand, with a soft brown background." class="circular-image" onclick="playAudio('audio/supermarine.mp3', 'progress-hans-zimmer')">
                 <div class="progress-bar" id="progress-hans-zimmer"></div>
                 <h3>Supermarine</h3>
                 <p>Hans Zimmer</p>
               </div>
-              <!-- Card for Song 3 -->
+              <!-- sleep token alkaline -->
               <div class="music-card">
                 <img src="img/sleep-token-card.jpg" alt="Four members of the band Sleep Token on stage wearing dark clothing and black-and-red ritual-style masks, lit by intense red lighting." class="circular-image" onclick="playAudio('audio/alkaline.mp3', 'progress-sleep-token')">
                 <div class="progress-bar" id="progress-sleep-token"></div>
                 <h3>Alkaline</h3>
                 <p>Sleep Token</p>
               </div>
-              <!-- Card for Song 4 -->
+              <!-- tate mcrae run for the hills -->
               <div class="music-card">
                 <img src="img/tate-mcrae-card.jpg" alt="Singer Tate McRae poses in a fur-trimmed, strapless outfit with gold jewelry, looking off to the side against a neutral background." class="circular-image" onclick="playAudio('audio/run-for-the-hills.mp3', 'progress-tate-mcrae')">
                 <div class="progress-bar" id="progress-tate-mcrae"></div>
                 <h3>Run for the Hills</h3>
                 <p>Tate McRae</p>
               </div>
-              <!-- Card for Song 5 -->
+              <!-- marias heavy-->
               <div class="music-card">
                 <img src="img/the-marias-card.jpg" alt="Indie band The Marías pose in front of a moody blue backdrop. The lead singer wears a silver top and leather skirt, with three bandmates in relaxed dark clothing beside her." class="circular-image" onclick="playAudio('audio/heavy.mp3', 'progress-the-marias')">
                 <div class="progress-bar" id="progress-the-marias"></div>
@@ -1140,14 +806,14 @@
                 <p>The Marías</p>
               </div>
             </div>
-            <!-- Hidden audio player -->
+            <!-- hidden audio player -->
             <audio id="audio-player" controls style="display: none;"></audio>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     </main>
 
+    <!-- footer section -->
     <footer>
         <p class="text-center">&copy; 2025 Allison Thelen</p>
     </footer>

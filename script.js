@@ -1,4 +1,4 @@
-// typed name effect
+// ****intro section typing effect
 const name = "hi there! i'm allison :)";
 const typedElement = document.getElementById("typed-name");
 let i = 0;
@@ -7,13 +7,13 @@ function typeLetter() {
   if (i < name.length) {
     typedElement.textContent += name.charAt(i);
     i++;
-    setTimeout(typeLetter, 120);
+    setTimeout(typeLetter, 120); // typing speed
   }
 }
 
 document.addEventListener("DOMContentLoaded", typeLetter);
 
-// scroll reveal effect for each section
+// *******scroll reveal effect
 function revealOnScroll() {
   const reveals = document.querySelectorAll('.reveal');
 
@@ -34,39 +34,7 @@ function revealOnScroll() {
 window.addEventListener('scroll', revealOnScroll);
 document.addEventListener('DOMContentLoaded', revealOnScroll);
 
-// music section function to play/pause audio and animate the progress bar
-function playAudio(audioSrc, progressBarId) {
-  const audioPlayer = document.getElementById('audio-player');
-  const progressBar = document.getElementById(progressBarId);
-
-  // if the same audio is already playing, pause it
-  if (audioPlayer.src.includes(audioSrc) && !audioPlayer.paused) {
-    audioPlayer.pause();
-    clearInterval(audioPlayer.progressInterval);
-  } else {
-    // if a new audio is selected or the audio was paused, set the source and play
-    if (!audioPlayer.src.includes(audioSrc)) {
-      audioPlayer.src = audioSrc;
-    }
-    audioPlayer.play();
-
-    // reset and animate the progress bar
-    progressBar.style.width = '0'; 
-    clearInterval(audioPlayer.progressInterval); 
-    audioPlayer.progressInterval = setInterval(() => {
-      // calculate progress percentage
-      const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
-      progressBar.style.width = progress + '%';
-      if (audioPlayer.ended) {
-        // stop updating when audio ends
-        clearInterval(audioPlayer.progressInterval);
-      }
-      // update every 100ms
-    }, 100); 
-  }
-}
-
-// certification & badge section
+// ***********Badge or certification section scroll functionality
 function scrollBadges(direction) {
   const carousel = document.getElementById('badgeCarousel');
   const card = carousel.querySelector('.badge-card');
@@ -74,7 +42,7 @@ function scrollBadges(direction) {
   carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
 }
 
-// skills sections
+// ********skills section buttons for skill tabs
 function showSkillInfo(id) {
   // Close all other subskills
   const allCards = document.querySelectorAll('.skill-card');
@@ -124,6 +92,7 @@ const skills = {
           
 let activeCategory = 'frontend'; // Track current active category
 
+// *****skills section functionality for button dropdown
 function showSkillCategory(category, buttonEl = null) {
   const container = document.getElementById('skill-display');
   const button = buttonEl || document.querySelector(`.skill-tab[data-category="${category}"]`);
@@ -145,7 +114,7 @@ function showSkillCategory(category, buttonEl = null) {
   }
 }
 
-// Load default
+// ********skill section button bouncin
 document.querySelectorAll('.skill-tab').forEach(button => {
   button.addEventListener('click', () => {
     const category = button.dataset.category;
@@ -158,7 +127,7 @@ document.querySelectorAll('.skill-tab').forEach(button => {
   });
 });
 
-// Default load on page
+// ******
 window.addEventListener('DOMContentLoaded', () => {
   const defaultTab = document.querySelector('.skill-tab[data-category="frontend"]');
   if (defaultTab) {
@@ -166,6 +135,20 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// ********design section query selector for see more buttons to change text accordingly
+document.querySelectorAll('.see-more-btn').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const isSeeMore = btn.innerHTML.includes("See More");
+
+    // Swap inner HTML with icon + text
+    btn.innerHTML = isSeeMore
+  ? 'See Less <i class="bi bi-arrow-up-short"></i>'
+  : 'See More <i class="bi bi-arrow-down-short"></i>';
+
+  });
+});
+
+// ******* design section see more buttons bounce effect
 document.querySelectorAll('.card-subtitle').forEach(button => {
   button.addEventListener('click', () => {
     button.classList.remove('bounce'); // Reset animation if already applied
@@ -174,15 +157,9 @@ document.querySelectorAll('.card-subtitle').forEach(button => {
   });
 });
 
-document.querySelectorAll('.filter-btn').forEach(button => {
-  button.addEventListener('click', () => {
-    button.classList.remove('bounce'); // Reset animation if already applied
-    void button.offsetWidth; // Trigger reflow to restart animation
-    button.classList.add('bounce');
-  });
-});
 
-// Design section toggle
+
+// *******Design section see more button functionality toggle
 const triggers = document.querySelectorAll('.toggle-trigger');
 
 triggers.forEach(trigger => {
@@ -206,13 +183,33 @@ triggers.forEach(trigger => {
   });
 });
 
-document.querySelectorAll('.see-more-btn').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    const container = btn.closest('.project-section');
-    const isExpanded = container.classList.toggle('expand');
+// ********Function to play or pause audio and animate the progress bar
+function playAudio(audioSrc, progressBarId) {
+  const audioPlayer = document.getElementById('audio-player');
+  const progressBar = document.getElementById(progressBarId);
 
-    btn.innerHTML = isExpanded
-      ? 'See Less <i class="bi bi-arrow-up-short"></i>'
-      : 'See More <i class="bi bi-arrow-down-short"></i>';
-  });
-});
+  // If the same audio is already playing, pause it
+  if (audioPlayer.src.includes(audioSrc) && !audioPlayer.paused) {
+    audioPlayer.pause();
+    clearInterval(audioPlayer.progressInterval); // Stop updating the progress bar
+  } else {
+    // If a new audio is selected or the audio was paused, set the source and play
+    if (!audioPlayer.src.includes(audioSrc)) {
+      audioPlayer.src = audioSrc; // Set the audio source
+    }
+    audioPlayer.play(); // Resume or start playing
+
+    // Reset and animate the progress bar
+    progressBar.style.width = '0'; // Reset progress bar width
+    clearInterval(audioPlayer.progressInterval); // Clear any existing interval
+    audioPlayer.progressInterval = setInterval(() => {
+      const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100; // Calculate progress percentage
+      progressBar.style.width = progress + '%'; // Update progress bar width
+      if (audioPlayer.ended) {
+        // stop updating when audio ends
+        clearInterval(audioPlayer.progressInterval);
+      }
+    // update every 100ms
+    }, 100);
+  }
+}
