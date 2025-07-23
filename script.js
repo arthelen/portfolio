@@ -1,3 +1,4 @@
+// typed name effect
 const name = "hi there! i'm allison :)";
 const typedElement = document.getElementById("typed-name");
 let i = 0;
@@ -6,13 +7,13 @@ function typeLetter() {
   if (i < name.length) {
     typedElement.textContent += name.charAt(i);
     i++;
-    setTimeout(typeLetter, 120); // typing speed
+    setTimeout(typeLetter, 120);
   }
 }
 
 document.addEventListener("DOMContentLoaded", typeLetter);
 
-// scroll reveal effect
+// scroll reveal effect for each section
 function revealOnScroll() {
   const reveals = document.querySelectorAll('.reveal');
 
@@ -33,36 +34,39 @@ function revealOnScroll() {
 window.addEventListener('scroll', revealOnScroll);
 document.addEventListener('DOMContentLoaded', revealOnScroll);
 
-// Function to play or pause audio and animate the progress bar
+// music section function to play/pause audio and animate the progress bar
 function playAudio(audioSrc, progressBarId) {
   const audioPlayer = document.getElementById('audio-player');
   const progressBar = document.getElementById(progressBarId);
 
-  // If the same audio is already playing, pause it
+  // if the same audio is already playing, pause it
   if (audioPlayer.src.includes(audioSrc) && !audioPlayer.paused) {
     audioPlayer.pause();
-    clearInterval(audioPlayer.progressInterval); // Stop updating the progress bar
+    clearInterval(audioPlayer.progressInterval);
   } else {
-    // If a new audio is selected or the audio was paused, set the source and play
+    // if a new audio is selected or the audio was paused, set the source and play
     if (!audioPlayer.src.includes(audioSrc)) {
-      audioPlayer.src = audioSrc; // Set the audio source
+      audioPlayer.src = audioSrc;
     }
-    audioPlayer.play(); // Resume or start playing
+    audioPlayer.play();
 
-    // Reset and animate the progress bar
-    progressBar.style.width = '0'; // Reset progress bar width
-    clearInterval(audioPlayer.progressInterval); // Clear any existing interval
+    // reset and animate the progress bar
+    progressBar.style.width = '0'; 
+    clearInterval(audioPlayer.progressInterval); 
     audioPlayer.progressInterval = setInterval(() => {
-      const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100; // Calculate progress percentage
-      progressBar.style.width = progress + '%'; // Update progress bar width
+      // calculate progress percentage
+      const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+      progressBar.style.width = progress + '%';
       if (audioPlayer.ended) {
-        clearInterval(audioPlayer.progressInterval); // Stop updating when audio ends
+        // stop updating when audio ends
+        clearInterval(audioPlayer.progressInterval);
       }
-    }, 100); // Update every 100ms
+      // update every 100ms
+    }, 100); 
   }
 }
 
-// Badge or certification section
+// certification & badge section
 function scrollBadges(direction) {
   const carousel = document.getElementById('badgeCarousel');
   const card = carousel.querySelector('.badge-card');
@@ -70,63 +74,7 @@ function scrollBadges(direction) {
   carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
 }
 
-// Business section
-function scrollBusiness(direction) {
-  const carousel = document.getElementById('businessCarousel');
-  const card = carousel.querySelector('.business-card');
-  const scrollAmount = card.offsetWidth + 24; // 24 = gap size
-  carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
-}
-
-
-
-
-
-
-
-
-
-
-
-// new project section
-const buttons = document.querySelectorAll(".filter-btn");
-  const projectCards = document.querySelectorAll(".project-card");
-
-  buttons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      btn.classList.toggle("active");
-
-      const activeCategories = Array.from(buttons)
-        .filter(b => b.classList.contains("active"))
-        .map(b => b.dataset.category);
-
-      projectCards.forEach((card) => {
-        const cardCategory = card.dataset.category;
-        card.style.display = activeCategories.includes(cardCategory) ? "block" : "none";
-      });
-
-      // OPTIONAL: if nothing selected, show all
-      if (activeCategories.length === 0) {
-        projectCards.forEach((card) => card.style.display = "block");
-      }
-    });
-  });
-
-
-// see more buttons
-document.querySelectorAll('.see-more-btn').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    const isSeeMore = btn.innerHTML.includes("See More");
-
-    // Swap inner HTML with icon + text
-    btn.innerHTML = isSeeMore
-  ? 'See Less <i class="bi bi-arrow-up-short"></i>'
-  : 'See More <i class="bi bi-arrow-down-short"></i>';
-
-  });
-});
-
-// Skills section new
+// skills sections
 function showSkillInfo(id) {
   // Close all other subskills
   const allCards = document.querySelectorAll('.skill-card');
@@ -268,4 +216,3 @@ document.querySelectorAll('.see-more-btn').forEach((btn) => {
       : 'See More <i class="bi bi-arrow-down-short"></i>';
   });
 });
-

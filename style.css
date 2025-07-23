@@ -608,35 +608,12 @@ h4 {
   background: #f6b6ac;
 }
 
-
-
-
-
-
-
-
-
-.project-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  padding: 1rem;
-}
-
-/* Individual card responsiveness */
-.project-card {
-  border: 3px solid #F6B6AC;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  text-align: center;
-  padding: 1rem;
-  flex: 1 1 300px; /* flex-grow | flex-shrink | flex-basis */
-  max-width: 350px;
-  min-width: 260px;
-  transition: transform 0.3s;
-}
+/* .project-section h6 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #B46D54;
+  cursor: default;
+} */
 
 .project-card:hover {
   transform: translateY(-5px);
@@ -667,23 +644,6 @@ h4 {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .project-section .description {
   padding: 20px 0;
   font-size: clamp(0.3rem, 1rem, 1.3rem);
@@ -691,12 +651,9 @@ h4 {
   margin: 0;
 }
 
-
-
 .project-section h4 {
   margin-top: 20px;
 }
-
 
 .skill-blurb {
   display: inline-block;
@@ -716,13 +673,6 @@ h4 {
   margin: 0;
 }
 
-
-
-
-
-
-
-
 .project-section {
   display: flex;
   flex-direction: column;
@@ -740,15 +690,6 @@ h4 {
   position: relative;
 }
 
-.project-card {
-  min-width: 500px;
-  max-width: 700px;
-  border: 1px solid #ddd;
-  padding: 1rem;
-  border-radius: 12px;
-  background: white;
-}
-
 .see-more-btn {
   align-self: center;
   transition: all 0.4s ease;
@@ -759,15 +700,18 @@ h4 {
   margin-top: 2rem;
 }
 
-
-
-
-
-
-
-
-
-
+.project-card {
+  border: 3px solid #F6B6AC;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 1rem;
+  flex: 1 1 300px; /* flex-grow | flex-shrink | flex-basis */
+  min-width: 500px;
+  max-width: 700px;
+  transition: transform 0.3s;
+}
 
 .project-section a {
 	font-size: clamp(1.5rem, 1vw, 2.3rem);
@@ -787,13 +731,13 @@ h4 {
 	text-decoration-color: #B46D54;
 }
 
-.project-icon {
+/* .project-icon {
 	height: auto;
   width: 5em;
   border-radius: 100px;
   transition: .3s ease-in-out;
 	padding-bottom: 30px;
-}
+} */
 
 .screenshot {
 	height: auto;
@@ -828,7 +772,7 @@ h4 {
   /* transform: scale(1.05); */
 	transition: .3s ease-in-out;
 }
-
+/* *****project section end***** */
 
 
 
