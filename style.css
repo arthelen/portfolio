@@ -5,7 +5,7 @@ body {
 
 section {
   /* width: clamp(200px, 70vw, 1200px); */
-  padding: 70px;
+  padding: 70px 70px 0 70px;
   margin: auto;
   scroll-margin-top: 80px;
 }
@@ -590,7 +590,7 @@ h4 {
 
 
 /* *****project section start***** */
-.filter-btn {
+/* .filter-btn {
   margin: 2rem auto 1rem;
   font-weight: bold;
   color: #B46D54;
@@ -606,17 +606,33 @@ h4 {
 
 .filter-btn.active, .filter-btn:hover {
   background: #f6b6ac;
-}
+} */
 
-/* .project-section h6 {
+.project-section h6 {
   font-weight: 700;
   font-size: 1.5rem;
+  padding-top: 25px;
   color: #B46D54;
   cursor: default;
-} */
+}
 
 .project-card:hover {
   transform: translateY(-5px);
+}
+
+.project-group {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.project-group.showing {
+  display: block;
+  opacity: 0;
+}
+
+.project-group.fading-in {
+  opacity: 1;
 }
 
 /* For smaller screens */
@@ -688,6 +704,7 @@ h4 {
   gap: 2rem;
   max-width: 1700px;
   position: relative;
+  padding: 1rem;
 }
 
 .project-card {
@@ -697,10 +714,26 @@ h4 {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   text-align: center;
   padding: 1rem;
-  flex: 1 1 300px; /* flex-grow | flex-shrink | flex-basis */
-  min-width: 450px;
-  max-width: 550px;
   transition: transform 0.3s;
+  flex: 1 1 calc(33.333% - 2rem); /* 3 across minus gap */
+  max-width: calc(33.333% - 2rem);
+  min-width: 280px;
+}
+
+/* Medium screens (2 cards per row) */
+@media (max-width: 992px) {
+  .project-card {
+    flex: 1 1 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+  }
+}
+
+/* Small screens (1 card per row) */
+@media (max-width: 600px) {
+  .project-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
 
 .project-section a {
@@ -754,9 +787,26 @@ h4 {
   /* transform: scale(1.05); */
 	transition: .3s ease-in-out;
 }
+
+.project-toggle-trigger {
+  display: block;
+  margin: 2rem auto 1rem;
+  font-weight: bold;
+  color: #B46D54;
+  border: solid 3px #f6b6ac;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  background: #F7E6DE;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.project-toggle-trigger.active, .project-toggle-trigger:hover {
+  background: #f6b6ac;
+}
 /* *****project section end***** */
-
-
 
 
 /* *****design section start***** */
@@ -774,11 +824,10 @@ h4 {
 .design-section h6 {
   font-weight: 700;
   font-size: 1.5rem;
-  padding-top: 15px;
+  padding-top: 25px;
   color: #B46D54;
   cursor: default;
 }
-
 
 .toggle-trigger {
   display: block;
@@ -1329,8 +1378,13 @@ h1,	.h1 {
   padding-top: 0;
 }
 
+.music-section h4 {
+  padding: 50px 0 0 0;
+  margin: 0 !important;
+}
+
 .music-section p {
-  padding: 20px 0;
+  padding-top: 15px;
   font-size: clamp(0.2rem, 1.2rem, 1.5rem);
   cursor: default;
 }
@@ -1407,6 +1461,7 @@ h1,	.h1 {
 /* *****music/song section end***** */
 
 
+/* *****design section responsiveness start***** */
 @media screen and (min-width: 1200px) {
   .postcard {
     flex-wrap: inherit;
@@ -1466,12 +1521,21 @@ h1,	.h1 {
 		}
   }
 }
+/* *****design section responsiveness end***** */
+
 
 /* *****footer section start***** */
 footer {
     background-color: #F6B6AC;
     color: #B46D54;
     padding: 50px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
     /* margin-bottom: 77px; */
+}
+
+footer p {
+    margin: 0 !important;
 }
 /* *****footer section end***** */

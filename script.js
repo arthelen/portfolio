@@ -49,7 +49,7 @@ function showSkillInfo(id) {
   allCards.forEach(card => {
     if (card.querySelector('.subskills').id !== id) {
       card.classList.remove('active');
-    }
+    } 
   });
 
   // Toggle clicked one
@@ -135,6 +135,75 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+
+
+
+
+
+
+
+// NEW NEW project section query selector for see more buttons to change text accordingly
+// document.querySelectorAll('.project-see-more-btn').forEach((btn) => {
+//   btn.addEventListener('click', () => {
+//     const isSeeMore = btn.innerHTML.includes("See More");
+
+//     // Swap inner HTML with icon + text
+//     btn.innerHTML = isSeeMore
+//   ? 'See Less <i class="bi bi-arrow-up-short"></i>'
+//   : 'See More <i class="bi bi-arrow-down-short"></i>';
+
+//   });
+// });
+
+// NEW NEW project section see more button functionality toggle for business??
+document.querySelectorAll('.project-toggle-trigger').forEach(button => {
+  button.addEventListener('click', () => {
+    const wrapper = button.closest('.project-group-wrapper');
+    const group = wrapper.querySelector('.project-group');
+    const isOpen = group.classList.contains('fading-in');
+
+    if (isOpen) {
+      group.classList.remove('fading-in');
+      setTimeout(() => {
+        group.classList.remove('showing');
+        group.style.display = 'none';
+      }, 400); // match CSS transition duration
+      button.innerHTML = 'See More <i class="bi bi-arrow-down-short"></i>';
+      wrapper.insertBefore(button, group);
+    } else {
+      group.style.display = 'block';
+      group.classList.add('showing');
+      setTimeout(() => {
+        group.classList.add('fading-in');
+      }, 5); // small delay so transition kicks in
+      button.innerHTML = 'See Less <i class="bi bi-arrow-up-short"></i>';
+      group.appendChild(button);
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ********design section query selector for see more buttons to change text accordingly
 document.querySelectorAll('.see-more-btn').forEach((btn) => {
   btn.addEventListener('click', () => {
@@ -148,7 +217,7 @@ document.querySelectorAll('.see-more-btn').forEach((btn) => {
   });
 });
 
-// ******* design section see more buttons bounce effect
+// ******* design and project section see more buttons bounce effect
 document.querySelectorAll('.card-subtitle').forEach(button => {
   button.addEventListener('click', () => {
     button.classList.remove('bounce'); // Reset animation if already applied
