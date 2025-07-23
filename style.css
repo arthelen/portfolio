@@ -1058,6 +1058,31 @@ h4 {
   cursor: default;
 }
 
+.design-section .card-title {
+  margin: 50px auto -20px auto;
+  padding: 0;
+}
+
+.design-section h6 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-top: 15px;
+  color: #B46D54;
+  cursor: default;
+}
+
+/* .design-section i {
+  color: #B46D54;
+  font-size: 1rem;
+  transition: .3s ease-in-out;
+} */
+
+
+
+
+
+
+
 /* .design-section .card-subtitle {
   background-color: #F6B6AC;
   color: #B46D54;

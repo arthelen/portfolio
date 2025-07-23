@@ -113,22 +113,18 @@ const buttons = document.querySelectorAll(".filter-btn");
   });
 
 
+// see more buttons
+document.querySelectorAll('.see-more-btn').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const isSeeMore = btn.innerHTML.includes("See More");
 
+    // Swap inner HTML with icon + text
+    btn.innerHTML = isSeeMore
+  ? 'See Less <i class="bi bi-arrow-up-short"></i>'
+  : 'See More <i class="bi bi-arrow-down-short"></i>';
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  });
+});
 
 
 
