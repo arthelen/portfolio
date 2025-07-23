@@ -126,61 +126,6 @@ document.querySelectorAll('.see-more-btn').forEach((btn) => {
   });
 });
 
-
-
-
-
-
-
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const filterGroup = document.getElementById('skillFilter');
-//   const checkboxes = filterGroup.querySelectorAll('input[type="checkbox"]');
-//   const projects = document.querySelectorAll('.col-xl-4');
-//   const showAllBtn = document.getElementById('showAllBtn');
-//   const selectedSkillsDisplay = document.getElementById('selectedSkillsDisplay');
-
-//   function getSelectedSkills() {
-//     return Array.from(checkboxes)
-//       .filter(cb => cb.checked)
-//       .map(cb => cb.value);
-//   }
-
-//   function updateSelectedSkillsDisplay(selectedSkills) {
-//     if (selectedSkills.length === 0) {
-//       selectedSkillsDisplay.textContent = 'No skills selected.';
-//     } else {
-//       selectedSkillsDisplay.textContent = 'Selected: ' + selectedSkills.join(', ');
-//     }
-//   }
-
-//   function filterProjects() {
-//     const selectedSkills = getSelectedSkills();
-//     projects.forEach(project => {
-//       const projectSkills = Array.from(project.querySelectorAll('.skill-blurb')).map(skill => skill.textContent.trim());
-//       const hasMatch = selectedSkills.some(skill => projectSkills.includes(skill));
-//       project.style.display = selectedSkills.length === 0 || hasMatch ? 'block' : 'none';
-//     });
-//     updateSelectedSkillsDisplay(selectedSkills);
-//   }
-
-//   checkboxes.forEach(cb => {
-//     cb.addEventListener('change', filterProjects);
-//   });
-
-//   showAllBtn.addEventListener('click', () => {
-//     checkboxes.forEach(cb => cb.checked = false);
-//     projects.forEach(project => {
-//       project.style.display = 'block';
-//     });
-//     updateSelectedSkillsDisplay([]);
-//   });
-
-//   // Initial display
-//   updateSelectedSkillsDisplay([]);
-// });
-
 // Skills section new
 function showSkillInfo(id) {
   // Close all other subskills
@@ -312,3 +257,15 @@ triggers.forEach(trigger => {
     }
   });
 });
+
+document.querySelectorAll('.see-more-btn').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const container = btn.closest('.project-section');
+    const isExpanded = container.classList.toggle('expand');
+
+    btn.innerHTML = isExpanded
+      ? 'See Less <i class="bi bi-arrow-up-short"></i>'
+      : 'See More <i class="bi bi-arrow-down-short"></i>';
+  });
+});
+
