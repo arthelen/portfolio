@@ -259,29 +259,70 @@ document.querySelectorAll('.toggle-trigger').forEach(button => {
 function playAudio(audioSrc, progressBarId) {
   const audioPlayer = document.getElementById('audio-player');
   const progressBar = document.getElementById(progressBarId);
+  const volumeSlider = document.getElementById('volume-slider');
+
+  // Sync volume if slider moved
+  if (volumeSlider) {
+    audioPlayer.volume = volumeSlider.value;
+  }
 
   // If the same audio is already playing, pause it
   if (audioPlayer.src.includes(audioSrc) && !audioPlayer.paused) {
     audioPlayer.pause();
-    clearInterval(audioPlayer.progressInterval); // Stop updating the progress bar
+    clearInterval(audioPlayer.progressInterval);
   } else {
-    // If a new audio is selected or the audio was paused, set the source and play
     if (!audioPlayer.src.includes(audioSrc)) {
-      audioPlayer.src = audioSrc; // Set the audio source
+      audioPlayer.src = audioSrc;
     }
-    audioPlayer.play(); // Resume or start playing
+    audioPlayer.play();
 
-    // Reset and animate the progress bar
-    progressBar.style.width = '0'; // Reset progress bar width
-    clearInterval(audioPlayer.progressInterval); // Clear any existing interval
+    progressBar.style.width = '0';
+    clearInterval(audioPlayer.progressInterval);
     audioPlayer.progressInterval = setInterval(() => {
-      const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100; // Calculate progress percentage
-      progressBar.style.width = progress + '%'; // Update progress bar width
+      const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+      progressBar.style.width = progress + '%';
       if (audioPlayer.ended) {
-        // stop updating when audio ends
         clearInterval(audioPlayer.progressInterval);
       }
-    // update every 100ms
     }, 100);
   }
+}
+
+const volumeSlider = document.getElementById('volume-slider');
+const volumeIcon = document.getElementById('volume-icon');
+const audioPlayer = document.getElementById('audio-player');
+
+// *******Function to update the volume icon based on the current volume level
+function updateVolumeIcon(volume) {
+  if (volume == 0) {
+    volumeIcon.className = 'bi bi-volume-mute-fill';
+  } else if (volume > 0 && volume <= 0.3) {
+    volumeIcon.className = 'bi bi-volume-off-fill';
+  } else if (volume > 0.3 && volume <= 0.6) {
+    volumeIcon.className = 'bi bi-volume-down-fill';
+  } else {
+    volumeIcon.className = 'bi bi-volume-up-fill';
+  }
+}
+
+function updateSliderFill() {
+  const value = volumeSlider.value;
+  volumeSlider.style.setProperty('--value', `${value}%`);
+  audioPlayer.volume = value / 100;
+}
+
+// Update on input
+volumeSlider.addEventListener('input', updateSliderFill);
+
+if (volumeSlider && audioPlayer) {
+  volumeSlider.addEventListener('input', () => {
+    const volume = parseFloat(volumeSlider.value);
+    audioPlayer.volume = volume;
+    updateVolumeIcon(volume);
+  });
+
+  // Keep icon updated if volume changes elsewhere
+  audioPlayer.addEventListener('volumechange', () => {
+    updateVolumeIcon(audioPlayer.volume);
+  });
 }

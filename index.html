@@ -823,10 +823,16 @@
 
       <!-- music/song section -->
       <section id="music-section" class="music-section light reveal text-center">
-        <h4 class="mb-4 card-title">Songs ADD VOL SLIDER</h4>
+        <h4 class="mb-4 card-title">Songs</h4>
         <div class="mb-3">
           <div class="container py-2">
             <p>Some of my favorite songs to code to (or just listen in general)!<br></vr>Click on the artist image to hear a snippet, <strong>but be aware of volume</strong>!</p>
+            
+            <div class="volume-control">
+              <i id="volume-icon" class="bi bi-volume-up-fill"></i>
+              <input class="pink-slider" type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+            </div>
+
             <div class="music-cards">
               <!-- stray kids bounce back -->
               <div class="music-card">
