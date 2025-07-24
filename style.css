@@ -455,7 +455,7 @@ h4 {
   width: 90%;
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  max-width: 280px;
+  max-width: 300px;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
@@ -493,6 +493,7 @@ h4 {
 @media (min-width: 768px) {
   .badge-card { width: 45%; }
 }
+
 @media (min-width: 992px) {
   .badge-card { width: 30%; }
 }
@@ -695,7 +696,7 @@ h4 {
   transition: transform 0.3s;
   flex: 1 1 calc(33.333% - 2rem); /* 3 across minus gap */
   max-width: calc(33.333% - 2rem);
-  min-width: 500px;
+  min-width: 320px;
 }
 
 /* Medium screens (2 cards per row) */
@@ -1276,8 +1277,10 @@ h1,	.h1 {
     text-overflow: ellipsis;
     text-align: justify;
     height: 100%;
+    word-break: break-word;
     font-size: 1.1rem;
     color: black;
+    line-height: 1.5;
   }
 
   .postcard__tagbox {
@@ -1363,6 +1366,7 @@ h1,	.h1 {
 
 .music-section {
   padding-top: 0;
+  padding-bottom: 45px;
 }
 
 .music-section h4 {
