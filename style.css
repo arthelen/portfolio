@@ -583,10 +583,14 @@ h4 {
 
 
 /* *****project section start***** */
+.business-title {
+  padding-top: 25px !important;
+}
+
 .project-section h6 {
   font-weight: 700;
   font-size: 1.5rem;
-  padding-top: 25px;
+  padding-top: 0;
   color: #B46D54;
   cursor: default;
 }
@@ -641,7 +645,7 @@ h4 {
 }
 
 .project-section h4 {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .skill-blurb {
@@ -667,6 +671,7 @@ h4 {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  padding-top: 0;
   position: relative;
 }
 
@@ -794,6 +799,11 @@ h4 {
   padding: 0;
 }
 
+.design-section h4 {
+  padding-top: 0;
+  margin-top: 0;
+}
+
 .design-section h6 {
   font-weight: 700;
   font-size: 1.5rem;
@@ -819,6 +829,10 @@ h4 {
 
 .toggle-trigger.active, .toggle-trigger:hover {
   background: #f6b6ac;
+}
+
+.design-section {
+  padding-top: 15px;
 }
 
 .design-group {
