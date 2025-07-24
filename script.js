@@ -1,4 +1,4 @@
-// ****intro section typing effect
+// intro section typing effect
 const name = "hi there! i'm allison :)";
 const typedElement = document.getElementById("typed-name");
 let i = 0;
@@ -13,7 +13,7 @@ function typeLetter() {
 
 document.addEventListener("DOMContentLoaded", typeLetter);
 
-// *******scroll reveal effect
+// scroll reveal effect for sections
 function revealOnScroll() {
   const reveals = document.querySelectorAll('.reveal');
 
@@ -34,7 +34,7 @@ function revealOnScroll() {
 window.addEventListener('scroll', revealOnScroll);
 document.addEventListener('DOMContentLoaded', revealOnScroll);
 
-// ***********Badge or certification section scroll functionality
+// badge or certification section scroll functionality
 function scrollBadges(direction) {
   const carousel = document.getElementById('badgeCarousel');
   const card = carousel.querySelector('.badge-card');
@@ -42,9 +42,9 @@ function scrollBadges(direction) {
   carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
 }
 
-// ********skills section buttons for skill tabs
+// skills section category buttons
 function showSkillInfo(id) {
-  // Close all other subskills
+  // close all other subskills
   const allCards = document.querySelectorAll('.skill-card');
   allCards.forEach(card => {
     if (card.querySelector('.subskills').id !== id) {
@@ -52,7 +52,7 @@ function showSkillInfo(id) {
     } 
   });
 
-  // Toggle clicked one
+  // toggle clicked skill category
   const clickedCard = document.getElementById(id).parentElement;
   clickedCard.classList.toggle('active');
 }
@@ -89,10 +89,11 @@ const skills = {
     { name: 'Notion', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg' }
   ]
 };        
-          
-let activeCategory = 'frontend'; // Track current active category
 
-// *****skills section functionality for button dropdown
+// track current active category
+let activeCategory = 'frontend';
+
+// skills section category buttons display function
 function showSkillCategory(category, buttonEl = null) {
   const container = document.getElementById('skill-display');
   const button = buttonEl || document.querySelector(`.skill-tab[data-category="${category}"]`);
@@ -114,7 +115,7 @@ function showSkillCategory(category, buttonEl = null) {
   }
 }
 
-// ********skill section button bouncin
+// skill section category buttons bounce effect
 document.querySelectorAll('.skill-tab').forEach(button => {
   button.addEventListener('click', () => {
     const category = button.dataset.category;
@@ -127,7 +128,7 @@ document.querySelectorAll('.skill-tab').forEach(button => {
   });
 });
 
-// ******
+// window event listener to show default frontend skill category on page load
 window.addEventListener('DOMContentLoaded', () => {
   const defaultTab = document.querySelector('.skill-tab[data-category="frontend"]');
   if (defaultTab) {
@@ -135,27 +136,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-
-
-
-
-
-
-
-// NEW NEW project section query selector for see more buttons to change text accordingly
-// document.querySelectorAll('.project-see-more-btn').forEach((btn) => {
-//   btn.addEventListener('click', () => {
-//     const isSeeMore = btn.innerHTML.includes("See More");
-
-//     // Swap inner HTML with icon + text
-//     btn.innerHTML = isSeeMore
-//   ? 'See Less <i class="bi bi-arrow-up-short"></i>'
-//   : 'See More <i class="bi bi-arrow-down-short"></i>';
-
-//   });
-// });
-
-// NEW NEW project section see more button functionality toggle for business??
+// project section "see more" button functionality toggle
 document.querySelectorAll('.project-toggle-trigger').forEach(button => {
   button.addEventListener('click', () => {
     const wrapper = button.closest('.project-group-wrapper');
@@ -167,7 +148,8 @@ document.querySelectorAll('.project-toggle-trigger').forEach(button => {
       setTimeout(() => {
         group.classList.remove('showing');
         group.style.display = 'none';
-      }, 400); // match CSS transition duration
+      // match CSS transition duration
+      }, 400); 
       button.innerHTML = 'See More <i class="bi bi-arrow-down-short"></i>';
       wrapper.insertBefore(button, group);
     } else {
@@ -175,49 +157,14 @@ document.querySelectorAll('.project-toggle-trigger').forEach(button => {
       group.classList.add('showing');
       setTimeout(() => {
         group.classList.add('fading-in');
-      }, 5); // small delay so transition kicks in
+      }, 5);
       button.innerHTML = 'See Less <i class="bi bi-arrow-up-short"></i>';
       group.appendChild(button);
     }
   });
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ********design section query selector for see more buttons to change text accordingly
-// document.querySelectorAll('.see-more-btn').forEach((btn) => {
-//   btn.addEventListener('click', () => {
-//     const isSeeMore = btn.innerHTML.includes("See More");
-
-//     // Swap inner HTML with icon + text
-//     btn.innerHTML = isSeeMore
-//   ? 'See Less <i class="bi bi-arrow-up-short"></i>'
-//   : 'See More <i class="bi bi-arrow-down-short"></i>';
-
-//   });
-// });
-
-// ******* design and project section see more buttons bounce effect
+// design and project section "see more" buttons bounce effect
 document.querySelectorAll('.card-subtitle').forEach(button => {
   button.addEventListener('click', () => {
     button.classList.remove('bounce'); // Reset animation if already applied
@@ -226,9 +173,7 @@ document.querySelectorAll('.card-subtitle').forEach(button => {
   });
 });
 
-
-
-// *******Design section see more button functionality toggle
+// design section "see more" button functionality toggle
 document.querySelectorAll('.toggle-trigger').forEach(button => {
   button.addEventListener('click', () => {
     const wrapper = button.closest('.design-group-wrapper');
@@ -240,7 +185,8 @@ document.querySelectorAll('.toggle-trigger').forEach(button => {
       setTimeout(() => {
         group.classList.remove('showing');
         group.style.display = 'none';
-      }, 400); // match CSS transition duration
+      // match CSS transition duration
+      }, 400); 
       button.innerHTML = 'See More <i class="bi bi-arrow-down-short"></i>';
       wrapper.insertBefore(button, group);
     } else {
@@ -248,25 +194,25 @@ document.querySelectorAll('.toggle-trigger').forEach(button => {
       group.classList.add('showing');
       setTimeout(() => {
         group.classList.add('fading-in');
-      }, 5); // small delay so transition kicks in
+      }, 5); 
       button.innerHTML = 'See Less <i class="bi bi-arrow-up-short"></i>';
       group.appendChild(button);
     }
   });
 });
 
-// ********Function to play or pause audio and animate the progress bar
+// play or pause audio and animate the progress bar
 function playAudio(audioSrc, progressBarId) {
   const audioPlayer = document.getElementById('audio-player');
   const progressBar = document.getElementById(progressBarId);
   const volumeSlider = document.getElementById('volume-slider');
 
-  // Sync volume if slider moved
+  // sync volume if slider moved
   if (volumeSlider) {
     audioPlayer.volume = volumeSlider.value;
   }
 
-  // If the same audio is already playing, pause it
+  // if the same audio is already playing, pause it
   if (audioPlayer.src.includes(audioSrc) && !audioPlayer.paused) {
     audioPlayer.pause();
     clearInterval(audioPlayer.progressInterval);
@@ -292,7 +238,7 @@ const volumeSlider = document.getElementById('volume-slider');
 const volumeIcon = document.getElementById('volume-icon');
 const audioPlayer = document.getElementById('audio-player');
 
-// *******Function to update the volume icon based on the current volume level
+// update the volume icon based on the current volume level
 function updateVolumeIcon(volume) {
   if (volume == 0) {
     volumeIcon.className = 'bi bi-volume-mute-fill';
@@ -305,15 +251,16 @@ function updateVolumeIcon(volume) {
   }
 }
 
+// update volume slider fill based on the current volume
 function updateSliderFill() {
   const value = volumeSlider.value;
   volumeSlider.style.setProperty('--value', `${value}%`);
   audioPlayer.volume = value / 100;
 }
 
-// Update on input
 volumeSlider.addEventListener('input', updateSliderFill);
 
+// make sure volumse slider detects volume/input change and updates immediately
 if (volumeSlider && audioPlayer) {
   volumeSlider.addEventListener('input', () => {
     const volume = parseFloat(volumeSlider.value);
@@ -321,7 +268,7 @@ if (volumeSlider && audioPlayer) {
     updateVolumeIcon(volume);
   });
 
-  // Keep icon updated if volume changes elsewhere
+  // keep icon updated if volume changes elsewhere
   audioPlayer.addEventListener('volumechange', () => {
     updateVolumeIcon(audioPlayer.volume);
   });
