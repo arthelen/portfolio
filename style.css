@@ -639,19 +639,19 @@ h4 {
 @media (max-width: 768px) {
   .project-cards {
     gap: 1.25rem;
-    padding: 0.5rem;
+    padding: 0.25rem;
   }
 
   .project-card {
     flex: 1 1 90%;
-    max-width: 100%;
+    max-width: 70%;
   }
 }
 
 /* For extra small screens */
 @media (max-width: 480px) {
   .project-card {
-    padding: 0.75rem;
+    padding: 0.25rem;
   }
 
   .project-card img {
@@ -704,7 +704,7 @@ h4 {
   gap: 2rem;
   max-width: 1700px;
   position: relative;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .project-card {
@@ -717,7 +717,7 @@ h4 {
   transition: transform 0.3s;
   flex: 1 1 calc(33.333% - 2rem); /* 3 across minus gap */
   max-width: calc(33.333% - 2rem);
-  min-width: 280px;
+  min-width: 500px;
 }
 
 /* Medium screens (2 cards per row) */
@@ -1013,7 +1013,6 @@ h4 {
   box-shadow: 1px 5px 7px #fedc76;
 }
 
-
 #van-redo-two {
   background-color: #1983b9;
 }
@@ -1075,7 +1074,6 @@ h4 {
   background-color: #979790;
 }
 
-
 #poster-four:hover {
   box-shadow: 1px 5px 7px #979790;
 }
@@ -1121,7 +1119,6 @@ h4 {
   color: black;
 }
 
-
 #zine-four:hover {
   box-shadow: 1px 5px 7px #ffffff;
 }
@@ -1157,7 +1154,6 @@ h4 {
 #wireframe-three:hover {
   box-shadow: 1px 5px 7px #1b171a;
 }
-
 
 #wireframe-four {
   background-color: #c7bfbf;
