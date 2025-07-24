@@ -18,13 +18,6 @@ h4 {
   margin: 55px auto -10px auto;
 }
 
-/* .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-} */
-
 .card-title {
   font-weight: 700;
   padding: 0;
@@ -590,24 +583,6 @@ h4 {
 
 
 /* *****project section start***** */
-/* .filter-btn {
-  margin: 2rem auto 1rem;
-  font-weight: bold;
-  color: #B46D54;
-  border: solid 3px #f6b6ac;
-  border-radius: 8px;
-  text-align: center;
-  transition: all 0.3s ease;
-  background: #F7E6DE;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.filter-btn.active, .filter-btn:hover {
-  background: #f6b6ac;
-} */
-
 .project-section h6 {
   font-weight: 700;
   font-size: 1.5rem;
@@ -635,7 +610,6 @@ h4 {
   opacity: 1;
 }
 
-/* For smaller screens */
 @media (max-width: 768px) {
   .project-cards {
     gap: 1.25rem;
@@ -648,7 +622,6 @@ h4 {
   }
 }
 
-/* For extra small screens */
 @media (max-width: 480px) {
   .project-card {
     padding: 0.25rem;
