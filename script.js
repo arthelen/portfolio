@@ -1,5 +1,5 @@
 // intro section typing effect
-const name = "hi there! i'm allison :)";
+const name = "Hi there! I'm Allison :)";
 const typedElement = document.getElementById("typed-name");
 let i = 0;
 
