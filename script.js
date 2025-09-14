@@ -86,6 +86,8 @@ const skills = {
     { name: 'PowerPoint', icon: 'https://img.icons8.com/?size=100&id=ifP93G7BXUhU&format=png&color=000000' },
     { name: 'Word', icon: 'https://img.icons8.com/?size=100&id=pGHcje298xSl&format=png&color=000000' },
     { name: 'ChatGPT', icon: 'https://img.icons8.com/?size=100&id=TUk7vxvtu6hX&format=png&color=000000' },
+    { name: 'Copilot', icon: 'https://img.icons8.com/?size=100&id=Yl9ip6CjqAEI&format=png&color=000000' },
+    { name: 'Teams', icon: 'https://img.icons8.com/?size=100&id=zQ92KI7XjZgR&format=png&color=000000' },
     { name: 'Slack', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-original.svg' },
     { name: 'Notion', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg' }
   ]
