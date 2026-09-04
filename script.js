@@ -58,10 +58,15 @@ function showSkillInfo(id) {
 }
 
 const skills = {
+  // changed to "programming"
   frontend: [
+    { name: 'VSCode', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg' },
+    { name: 'GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
+    { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-plain.svg' },
     { name: 'HTML', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
     { name: 'CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
     { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+    { name: 'Cloudflare', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original.svg' },
     { name: 'Bootstrap', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg' }
   ],
   design: [
@@ -70,13 +75,12 @@ const skills = {
     { name: 'Photoshop', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg' },
     { name: 'Illustrator', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/illustrator/illustrator-original.svg' },
     { name: 'InDesign', icon: 'https://img.icons8.com/?size=100&id=51lMuEpYaQ8k&format=png&color=000000' },
+    { name: 'Balsamiq', icon: 'img/balsamiq-logo.png' },
     { name: 'Wireframing', icon: 'img/wireframe-logo.png' },
     { name: 'Prototyping', icon: 'img/prototype-logo.png' },
     { name: 'Accessibility & Responsive Design', icon: 'img/accessible-logo.png' }
   ],
   tools: [
-    { name: 'VSCode', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg' },
-    { name: 'GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
     { name: 'Docs', icon: 'https://img.icons8.com/?size=100&id=30464&format=png&color=000000' },
     { name: 'Sheets', icon: 'https://img.icons8.com/?size=100&id=30461&format=png&color=000000' },
     { name: 'Slides', icon: 'https://img.icons8.com/?size=100&id=30462&format=png&color=000000' },
@@ -89,6 +93,15 @@ const skills = {
     { name: 'Copilot', icon: 'https://img.icons8.com/?size=100&id=Yl9ip6CjqAEI&format=png&color=000000' },
     { name: 'Teams', icon: 'https://img.icons8.com/?size=100&id=zQ92KI7XjZgR&format=png&color=000000' },
     { name: 'Slack', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-original.svg' },
+    { name: 'Agilysys', icon: 'img/agilysys-logo.png' },
+    { name: 'SpectrumCSI', icon: 'img/spectrumcsi-logo.jpg' },
+    { name: 'Oracle', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg' },
+    { name: 'PeopleSoft', icon: 'img/peoplesoft-logo.jpg' },
+    { name: 'Tableau', icon: 'img/tableau-logo.PNG' },
+    { name: 'SQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg' },
+
+
+
     { name: 'Notion', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg' }
   ]
 };        
