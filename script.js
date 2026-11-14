@@ -97,7 +97,7 @@ const skills = {
     { name: 'SpectrumCSI', icon: 'img/spectrumcsi-logo.jpg' },
     { name: 'Oracle', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg' },
     { name: 'PeopleSoft', icon: 'img/peoplesoft-logo.jpg' },
-    { name: 'Tableau', icon: 'img/tableau-logo.PNG' },
+    { name: 'Tableau', icon: 'img/tableau-logo.png' },
     { name: 'SQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg' },
 
 
