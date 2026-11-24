@@ -1839,6 +1839,78 @@ h1,	.h1 {
 /* *****design section responsiveness end***** */
 
 
+/* *****featured section mobile responsiveness start***** */
+@media (max-width: 768px) {
+
+  #project-section {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  #featured-projects {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+
+  #featuredCarousel {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0 auto 40px;
+  }
+
+  #featuredCarousel .carousel-item {
+    padding: 10px 8px 20px;
+    box-sizing: border-box;
+  }
+
+  #featuredCarousel .project-card {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  #featuredCarousel .project-card h4 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    margin-top: 15px;
+  }
+
+  #featuredCarousel .screenshot {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #featuredCarousel .cd-blurb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #featuredCarousel #project-link {
+    font-size: 1.1rem;
+    white-space: nowrap;
+  }
+
+  #featuredCarousel .featured-navigation {
+    width: 100%;
+    justify-content: center;
+    margin: 10px auto 0;
+  }
+}
+/* *****featured section mobile responsiveness end***** */
+
+
 /* *****footer section start***** */
 footer {
     background-color: #F6B6AC;
